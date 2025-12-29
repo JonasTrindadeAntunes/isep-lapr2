@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="600px" preserveAspectRatio="none" style="width:420px;height:600px;background:#FFFFFF;" version="1.1" viewBox="0 0 420 600" width="420px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="416.625" style="stroke:#181818;stroke-width:1.0;" width="10" x="64" y="92.6094"/><rect fill="#FFFFFF" height="46.7031" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="114.9609"/><rect fill="#FFFFFF" height="46.7031" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="192.0156"/><rect fill="#FFFFFF" height="46.7031" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="269.0703"/><rect fill="#FFFFFF" height="46.7031" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="346.125"/><rect fill="#FFFFFF" height="77.0547" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="423.1797"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="69" x2="69" y1="82.6094" y2="518.2344"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="382" x2="382" y1="82.6094" y2="518.2344"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="5" y="79.5332">Center Coordinator</text><ellipse cx="69" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M69,21.5 L69,48.5 M56,29.5 L82,29.5 M69,48.5 L56,63.5 M69,48.5 L82,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="5" y="531.7676">Center Coordinator</text><ellipse cx="69" cy="543.3438" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M69,551.3438 L69,578.3438 M56,559.3438 L82,559.3438 M69,578.3438 L56,593.3438 M69,578.3438 L82,593.3438 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64" x="350" y="50"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="357" y="71.5332">:System</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64" x="350" y="517.2344"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="357" y="538.7676">:System</text><rect fill="#FFFFFF" height="416.625" style="stroke:#181818;stroke-width:1.0;" width="10" x="64" y="92.6094"/><rect fill="#FFFFFF" height="46.7031" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="114.9609"/><rect fill="#FFFFFF" height="46.7031" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="192.0156"/><rect fill="#FFFFFF" height="46.7031" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="269.0703"/><rect fill="#FFFFFF" height="46.7031" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="346.125"/><rect fill="#FFFFFF" height="77.0547" style="stroke:#181818;stroke-width:1.0;" width="10" x="377" y="423.1797"/><polygon fill="#181818" points="365,110.9609,375,114.9609,365,118.9609,369,114.9609" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="74" x2="371" y1="114.9609" y2="114.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="81" y="110.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="236" x="92" y="110.1045">Starts the export of vaccination statistics</text><polygon fill="#181818" points="85,157.6641,75,161.6641,85,165.6641,81,161.6641" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="79" x2="381" y1="161.6641" y2="161.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="91" y="148.6318">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="264" x="102" y="140.4561">asks the user to specify the beginning date to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="106" y="156.8076">do the vaccinations statistics</text><polygon fill="#181818" points="365,188.0156,375,192.0156,365,196.0156,369,192.0156" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="74" x2="371" y1="192.0156" y2="192.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="81" y="187.1592">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="149" x="92" y="187.1592">Inserts the beginning date</text><polygon fill="#181818" points="85,234.7188,75,238.7188,85,242.7188,81,238.7188" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="79" x2="381" y1="238.7188" y2="238.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="91" y="225.6865">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="230" x="102" y="217.5107">asks the user to specify the end date to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="106" y="233.8623">do the vaccinations statistics</text><polygon fill="#181818" points="365,265.0703,375,269.0703,365,273.0703,369,269.0703" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="74" x2="371" y1="269.0703" y2="269.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="81" y="264.2139">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="92" y="264.2139">Inserts the end date</text><polygon fill="#181818" points="85,311.7734,75,315.7734,85,319.7734,81,315.7734" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="79" x2="381" y1="315.7734" y2="315.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="91" y="302.7412">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="215" x="102" y="294.5654">show list of vaccination statistics and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="153" x="106" y="310.917">and request a confirmation</text><polygon fill="#181818" points="365,342.125,375,346.125,365,350.125,369,346.125" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="74" x2="371" y1="346.125" y2="346.125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="81" y="341.2686">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="92" y="341.2686">confirms data</text><polygon fill="#181818" points="85,388.8281,75,392.8281,85,396.8281,81,392.8281" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="79" x2="381" y1="392.8281" y2="392.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="91" y="379.7959">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="237" x="102" y="371.6201">ask the user to introduce the file name to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199" x="106" y="387.9717">where the data should be exported</text><polygon fill="#181818" points="365,419.1797,375,423.1797,365,427.1797,369,423.1797" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="74" x2="371" y1="423.1797" y2="423.1797"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="81" y="418.3232">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="92" y="418.3232">introduces the file name</text><polygon fill="#181818" points="85,465.8828,75,469.8828,85,473.8828,81,469.8828" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="79" x2="376" y1="469.8828" y2="469.8828"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="91" y="456.8506">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="109" y="448.6748">show name and type of the file</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="113" y="465.0264">where data was exported</text><polygon fill="#181818" points="85,496.2344,75,500.2344,85,504.2344,81,500.2344" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="79" x2="381" y1="500.2344" y2="500.2344"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="91" y="495.3779">11</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="166" x="109" y="495.3779">informs of operation success</text><!--MD5=[ec38074ff7232ffef50872d8c39960e3]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+'hide footbox
+actor "Center Coordinator" as CC
+participant ":System" as SYS
+
+activate CC
+CC -> SYS : Starts the export of vaccination statistics
+activate SYS
+SYS - -> CC : asks the user to specify the beginning date to \n do the vaccinations statistics
+deactivate SYS
+CC -> SYS : Inserts the beginning date
+activate SYS
+SYS - -> CC : asks the user to specify the end date to \n do the vaccinations statistics
+deactivate SYS
+
+CC -> SYS :Inserts the end date
+activate SYS
+SYS - -> CC: show list of vaccination statistics and \n and request a confirmation
+deactivate SYS
+
+CC -> SYS: confirms data
+activate SYS
+SYS - -> CC : ask the user to introduce the file name to \n where the data should be exported
+
+deactivate SYS
+
+CC -> SYS : introduces the file name
+activate SYS
+SYS - -> CC : show name and type of the file \n where data was exported
+SYS - -> CC : informs of operation success
+deactivate SYS
+
+
+
+
+@enduml
+
+@startuml
+
+autonumber
+actor "Center Coordinator" as CC
+participant ":System" as SYS
+
+activate CC
+CC -> SYS : Starts the export of vaccination statistics
+activate SYS
+SYS - -> CC : asks the user to specify the beginning date to \n do the vaccinations statistics
+deactivate SYS
+CC -> SYS : Inserts the beginning date
+activate SYS
+SYS - -> CC : asks the user to specify the end date to \n do the vaccinations statistics
+deactivate SYS
+
+CC -> SYS :Inserts the end date
+activate SYS
+SYS - -> CC: show list of vaccination statistics and \n and request a confirmation
+deactivate SYS
+
+CC -> SYS: confirms data
+activate SYS
+SYS - -> CC : ask the user to introduce the file name to \n where the data should be exported
+
+deactivate SYS
+
+CC -> SYS : introduces the file name
+activate SYS
+SYS - -> CC : show name and type of the file \n where data was exported
+SYS - -> CC : informs of operation success
+deactivate SYS
+
+
+
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant "glc\n:LoadUsersFromCSV" as LFC
+participant "auth\n:AuthFacade" as AF
+participant "mapper\n: UserMapper" as MAP
+participant ":UserStore" as US
+participant "luDTO \n:List<UserDTO>" as DTO
+participant "setusers \n:Set<User>"
+
+
+
+
+activate LFC
+LFC -> AF: getUsers()
+activate AF
+AF --> MAP **: create()
+AF -> US : setusers = getAll()
+activate US
+deactivate US
+AF -> MAP: luDTO = toDTO(setusers)
+activate MAP
+deactivate MAP
+deactivate AF
+
+
+
+
+@enduml

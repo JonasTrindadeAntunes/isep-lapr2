@@ -1,0 +1,90 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class WaitingRoomUI
+class WaitingRoomController{
+  -App m_oApp
+   -Platform m_oPlatform
+   + checkLogin()
+   +getWorkingVaccinationCenter()
+   +getListUsersInWaitingRoom()
+}
+class Company{
+-designation
++getPlatform()
++getAuthFacade()
+
+}
+class Platform{
+-description
+-RegisterEmployee m_oRegisterEmployee
++getRegisterEmployee()
+
+}
+
+class App{
++getCompany()
+    +getCurrentUserSession()
+    +{static} static getInstance()
+    -bootstrap()
+}
+
+
+
+class WaitingRoom{
+- TreeMap<SNSUser,Date> map
++getUsersByArrivalDate()
+}
+
+
+class SNSUser
+{
+-name
+-address
+-gender
+-email
+-birthDate
+-snsUserNumber
+-citizenCardNumber
+}
+
+class RegisterEmployee{
+-List<Employee> listEmployee
++getWorkingVaccinationCenter(email)
+}
+
+class Employee{
+-VaccinationCenter vaccinationCenter
++getWorkingVaccinationCenter()
+}
+
+
+class VaccinationCenter{
+-WaitingRoom waitingRoom
++getWaitingRoomSNSUsers()
+}
+
+class AuthFacade
+{
++getCurrentUserSession()
+
+}
+
+
+WaitingRoomUI ..> WaitingRoomController
+WaitingRoomController ..> Company
+WaitingRoomController ..> Platform
+Company "1" --> "1" Platform : has >
+Platform "1" --> "1" RegisterEmployee : has >
+RegisterEmployee "1" --> "*" Employee : knows >
+VaccinationCenter "1" --> "1" WaitingRoom : has >
+WaitingRoom "1" --> "*" SNSUser : has >
+WaitingRoomController ..> App
+Employee "*" -- "1" VaccinationCenter : works in >
+Company ..> AuthFacade
+App ..> AuthFacade
+@enduml

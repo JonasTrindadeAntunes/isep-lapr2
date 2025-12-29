@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="440px" preserveAspectRatio="none" style="width:1339px;height:440px;background:#FFFFFF;" version="1.1" viewBox="0 0 1339 440" width="1339px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="312.1094" style="stroke:#181818;stroke-width:1.0;" width="10" x="93.5" y="65.2188"/><rect fill="#FFFFFF" height="281.7578" style="stroke:#181818;stroke-width:1.0;" width="10" x="98.5" y="95.5703"/><rect fill="#FFFFFF" height="57.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="103.5" y="319.9766"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="641" y="130.9219"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="739.5" y="191.2734"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="739.5" y="251.625"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="98" x2="98" y1="55.2188" y2="386.3281"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="449" x2="449" y1="55.2188" y2="386.3281"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="646" x2="646" y1="55.2188" y2="386.3281"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="744" x2="744" y1="55.2188" y2="386.3281"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="839" x2="839" y1="55.2188" y2="386.3281"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1004" x2="1004" y1="55.2188" y2="386.3281"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1132" x2="1132" y1="55.2188" y2="386.3281"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1209" x2="1209" y1="55.2188" y2="386.3281"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1297" x2="1297" y1="55.2188" y2="386.3281"/><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="187" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="85.5" y="26.5332">evs:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="16" y="44.1426">ExportVaccinationStatistics</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="187" x="5" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="85.5" y="406.8613">evs:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="16" y="424.4707">ExportVaccinationStatistics</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="239" x="330" y="22.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="337" y="44.1426">List&lt;String&gt; listVaccinationStatistics</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="239" x="330" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="337" y="406.8613">List&lt;String&gt; listVaccinationStatistics</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="134" x="579" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="635" y="26.5332">vac</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="586" y="44.1426">:VaccinationCenter</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="134" x="579" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="635" y="406.8613">vac</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="586" y="424.4707">:VaccinationCenter</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="43" x="723" y="22.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="730" y="44.1426">:Day</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="43" x="723" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="730" y="406.8613">:Day</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="126" x="776" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="783" y="26.5332">listOperatingDays</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="824.5" y="44.1426">:Day</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="126" x="776" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="783" y="406.8613">listOperatingDays</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="824.5" y="424.4707">:Day</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="184" x="912" y="22.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="919" y="44.1426">countTotalVaccinations: int</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="184" x="912" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="919" y="406.8613">countTotalVaccinations: int</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="52" x="1106" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="1120.5" y="26.5332">day</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="1113" y="44.1426">: Date</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="52" x="1106" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="1120.5" y="406.8613">day</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="1113" y="424.4707">: Date</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="83" x="1168" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1175" y="26.5332">beginDate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="1192.5" y="44.1426">:Date</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="83" x="1168" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1175" y="406.8613">beginDate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="1192.5" y="424.4707">:Date</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1261" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="1268" y="26.5332">endDate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="1280" y="44.1426">:Date</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1261" y="385.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="1268" y="406.8613">endDate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="1280" y="424.4707">:Date</text><rect fill="#FFFFFF" height="312.1094" style="stroke:#181818;stroke-width:1.0;" width="10" x="93.5" y="65.2188"/><rect fill="#FFFFFF" height="281.7578" style="stroke:#181818;stroke-width:1.0;" width="10" x="98.5" y="95.5703"/><rect fill="#FFFFFF" height="57.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="103.5" y="319.9766"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="641" y="130.9219"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="739.5" y="191.2734"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="739.5" y="251.625"/><line style="stroke:#181818;stroke-width:1.0;" x1="103.5" x2="150.5" y1="82.5703" y2="82.5703"/><line style="stroke:#181818;stroke-width:1.0;" x1="150.5" x2="150.5" y1="82.5703" y2="95.5703"/><line style="stroke:#181818;stroke-width:1.0;" x1="109.5" x2="150.5" y1="95.5703" y2="95.5703"/><polygon fill="#181818" points="119.5,91.5703,109.5,95.5703,119.5,99.5703,115.5,95.5703" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="115.5" y="77.7139">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="316" x="126.5" y="77.7139">addFullyVaccinatedSNSUsers(vac,beginDate,endDate)</text><polygon fill="#181818" points="629,126.9219,639,130.9219,629,134.9219,633,130.9219" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="108.5" x2="635" y1="130.9219" y2="130.9219"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="115.5" y="126.0654">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="231" x="126.5" y="126.0654">listOperatingDays = getOperatingDays()</text><polygon fill="#181818" points="727.5,187.2734,737.5,191.2734,727.5,195.2734,731.5,191.2734" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="108.5" x2="733.5" y1="191.2734" y2="191.2734"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="115.5" y="186.417">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="270" x="126.5" y="186.417">countTotalVaccinations = getFullyVaccinated()</text><polygon fill="#181818" points="727.5,247.625,737.5,251.625,727.5,255.625,731.5,251.625" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="108.5" x2="733.5" y1="251.625" y2="251.625"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="115.5" y="246.7686">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="126.5" y="246.7686">day = getDay()</text><line style="stroke:#181818;stroke-width:1.0;" x1="108.5" x2="155.5" y1="306.9766" y2="306.9766"/><line style="stroke:#181818;stroke-width:1.0;" x1="155.5" x2="155.5" y1="306.9766" y2="319.9766"/><line style="stroke:#181818;stroke-width:1.0;" x1="114.5" x2="155.5" y1="319.9766" y2="319.9766"/><polygon fill="#181818" points="124.5,315.9766,114.5,319.9766,124.5,323.9766,120.5,319.9766" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="120.5" y="302.1201">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="285" x="131.5" y="302.1201">addFullyVaccination(countTotalVaccinations,day)</text><line style="stroke:#181818;stroke-width:1.0;" x1="113.5" x2="155.5" y1="355.3281" y2="355.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="155.5" x2="155.5" y1="355.3281" y2="368.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="114.5" x2="155.5" y1="368.3281" y2="368.3281"/><polygon fill="#181818" points="124.5,364.3281,114.5,368.3281,124.5,372.3281,120.5,368.3281" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="120.5" y="350.4717">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="229" x="131.5" y="350.4717">buildString(countTotalVaccinations,day)</text><!--MD5=[c6541a59021106d2bb0b7fa8e82b04a4]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant "evs:\n ExportVaccinationStatistics" as EVS
+participant "List<String> listVaccinationStatistics"
+participant "vac\n:VaccinationCenter" as VAC
+participant ":Day" as D
+participant "listOperatingDays\n:Day"
+participant "countTotalVaccinations: int"
+participant "day\n: Date"
+participant "beginDate \n:Date"
+participant "endDate \n:Date"
+
+
+activate EVS
+EVS -> EVS ++: addFullyVaccinatedSNSUsers(vac,beginDate,endDate)
+EVS -> VAC : listOperatingDays = getOperatingDays()
+
+activate VAC
+deactivate VAC
+EVS -> D : countTotalVaccinations = getFullyVaccinated()
+activate D
+deactivate D
+EVS -> D : day = getDay()
+activate D
+deactivate D
+EVS -> EVS : addFullyVaccination(countTotalVaccinations,day)
+activate EVS
+EVS -> EVS: buildString(countTotalVaccinations,day)
+
+
+@enduml
+
+@startuml
+
+autonumber
+participant "evs:\n ExportVaccinationStatistics" as EVS
+participant "List<String> listVaccinationStatistics"
+participant "vac\n:VaccinationCenter" as VAC
+participant ":Day" as D
+participant "listOperatingDays\n:Day"
+participant "countTotalVaccinations: int"
+participant "day\n: Date"
+participant "beginDate \n:Date"
+participant "endDate \n:Date"
+
+
+activate EVS
+EVS -> EVS ++: addFullyVaccinatedSNSUsers(vac,beginDate,endDate)
+EVS -> VAC : listOperatingDays = getOperatingDays()
+
+activate VAC
+deactivate VAC
+EVS -> D : countTotalVaccinations = getFullyVaccinated()
+activate D
+deactivate D
+EVS -> D : day = getDay()
+activate D
+deactivate D
+EVS -> EVS : addFullyVaccination(countTotalVaccinations,day)
+activate EVS
+EVS -> EVS: buildString(countTotalVaccinations,day)
+
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

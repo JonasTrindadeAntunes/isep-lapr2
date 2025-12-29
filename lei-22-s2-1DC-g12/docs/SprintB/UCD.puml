@@ -1,0 +1,64 @@
+@startuml
+left to right direction
+
+:CenterCoordinator: as CC
+(UC24- Evaluate performance of vaccination process) as UC24
+(UC25- Generate Reports) as UC25
+(UC26- Analyze data from other centers) as UC26
+
+CC --> (UC24)
+CC --> (UC25)
+CC --> (UC26)
+
+
+
+:SNSUser: as User
+(UC22- Schedule vaccination) as UC22
+(UC23- Request EU COVID digital certificate) as UC23
+
+User --> (UC22)
+User --> (UC23)
+
+
+:Administrator: as Admin
+(UC08- Register SNS Users) as UC08
+(UC09- I want to register a vaccination center to respond to a certain pandemic.) as UC09
+(UC10- Register Employee) as UC10
+(UC11 - I want to get a list of Employees with a given function/role) as UC11
+(UC12- Specify a new vaccine type) as UC12
+(UC13- Specify a new vaccine, and it's administration process) as UC13
+(UC14- Register Centers) as UC14
+(UC15- Register Center Coordinator) as UC15
+
+Admin --> (UC08)
+Admin --> (UC09)
+Admin --> (UC10)
+Admin --> (UC11)
+Admin --> (UC12)
+Admin --> (UC13)
+Admin --> (UC14)
+Admin --> (UC15)
+
+
+:Nurse: as Nurse
+(UC16- Schedule vaccine in healthcare center) as UC16
+(UC17- Call next SNS User to receive vaccine) as UC17
+(UC18- Administrate the vaccine) as UC18
+(UC19- Issue/Deliver vaccination certificate) as UC19
+(UC20- Send SNS User to recovery room) as UC20
+(UC21- Register adverse reactions) as UC21
+
+Nurse --> (UC16)
+Nurse --> (UC17)
+Nurse --> (UC18)
+Nurse --> (UC19)
+Nurse --> (UC20)
+Nurse --> (UC21)
+
+:Receptionist: as Receptionist
+(UC02- Register arrival of the SNS Users) as UC02
+(UC03- As a receptionist, I want to register an SNS user) as UC03
+
+Receptionist --> (UC02)
+Receptionist --> (UC03)
+@enduml

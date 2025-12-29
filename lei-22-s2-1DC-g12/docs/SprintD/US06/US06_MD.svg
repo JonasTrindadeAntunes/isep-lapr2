@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="511px" preserveAspectRatio="none" style="width:615px;height:511px;background:#FFFFFF;" version="1.1" viewBox="0 0 615 511" width="615px" zoomAndPan="magnify"><defs/><g><!--MD5=[de60e6d4f424ae4d0522096f76a59010]
+class VaccinationCenter--><g id="elem_VaccinationCenter"><rect codeLine="11" fill="#F1F1F1" height="497.5313" id="VaccinationCenter" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="316" x="292" y="7"/><ellipse cx="370.75" cy="25.3203" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M372.75,21.8203 Q372.9531,21.3203 373.1875,21.0703 Q373.4219,20.8203 373.6875,20.8203 Q374.1563,20.8203 374.4531,21.1016 Q374.75,21.3828 374.75,22.0391 L374.75,23.6016 Q374.75,24.2578 374.4688,24.5391 Q374.1875,24.8203 373.75,24.8203 Q373.3594,24.8203 373.1094,24.6484 Q372.8594,24.4766 372.75,24.0234 Q372.7031,23.7109 372.5313,23.5391 Q372.2188,23.2109 371.6563,23.0234 Q371.0938,22.8203 370.5313,22.8203 Q369.8281,22.8203 369.2344,23.1016 Q368.6563,23.3828 368.2031,24.0078 Q367.75,24.6328 367.75,25.4922 L367.75,26.4141 Q367.75,27.4453 368.5938,28.1328 Q369.4375,28.8203 370.9375,28.8203 Q371.8281,28.8203 372.4531,28.6172 Q372.8125,28.5078 373.2188,28.1484 Q373.4844,27.9453 373.625,27.8828 Q373.7656,27.8203 373.9375,27.8203 Q374.2656,27.8203 374.5,28.0859 Q374.75,28.3359 374.75,28.6953 Q374.75,29.0391 374.4063,29.4453 Q373.9063,30.0391 373.1094,30.3672 Q372.0625,30.8203 370.7813,30.8203 Q369.2813,30.8203 368.0781,30.2266 Q367.1094,29.7578 366.4219,28.7422 Q365.75,27.7266 365.75,26.5234 L365.75,25.4297 Q365.75,24.1797 366.3438,23.0859 Q366.9531,21.9922 368,21.4141 Q369.0625,20.8203 370.25,20.8203 Q370.9688,20.8203 371.5938,21.0703 Q372.2188,21.3203 372.75,21.8203 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="146" x="393.25" y="32.6855">VaccinationCenter</text><line style="stroke:#181818;stroke-width:0.5;" x1="293" x2="607" y1="43.6406" y2="43.6406"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="50" x="300" y="68.3262">-name</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="70" x="300" y="94.9668">-address</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="119" x="300" y="121.6074">-phoneNumber</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="113" x="300" y="148.248">-emailAddress</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="92" x="300" y="174.8887">-faxNumber</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="132" x="300" y="201.5293">-websiteAddress</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="118" x="300" y="228.1699">-openingHours</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="133" x="300" y="254.8105">-openingMinutes</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="110" x="300" y="281.4512">-closingHours</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="125" x="300" y="308.0918">-closingMinutes</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="102" x="300" y="334.7324">-slotDuration</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="173" x="300" y="361.373">-maxNumberVaccines</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="185" x="300" y="388.0137">-numTotalVaccinesDay</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="209" x="300" y="414.6543">-List&lt;Day&gt; operatingDays</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="221" x="300" y="441.2949">-WaitingRoom waitingRoom</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="218" x="300" y="467.9355">-List&lt;Vaccine&gt; listVaccines</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="300" x="300" y="494.5762">-List&lt;VaccineType&gt; listVaccineTypes</text></g><!--MD5=[99b8db98afdc2c8404e39242ef4c1e65]
+class Platform--><g id="elem_Platform"><rect codeLine="32" fill="#F1F1F1" height="44.6406" id="Platform" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="7" y="233.5"/><ellipse cx="22" cy="251.8203" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M24,248.3203 Q24.2031,247.8203 24.4375,247.5703 Q24.6719,247.3203 24.9375,247.3203 Q25.4063,247.3203 25.7031,247.6016 Q26,247.8828 26,248.5391 L26,250.1016 Q26,250.7578 25.7188,251.0391 Q25.4375,251.3203 25,251.3203 Q24.6094,251.3203 24.3594,251.1484 Q24.1094,250.9766 24,250.5234 Q23.9531,250.2109 23.7813,250.0391 Q23.4688,249.7109 22.9063,249.5234 Q22.3438,249.3203 21.7813,249.3203 Q21.0781,249.3203 20.4844,249.6016 Q19.9063,249.8828 19.4531,250.5078 Q19,251.1328 19,251.9922 L19,252.9141 Q19,253.9453 19.8438,254.6328 Q20.6875,255.3203 22.1875,255.3203 Q23.0781,255.3203 23.7031,255.1172 Q24.0625,255.0078 24.4688,254.6484 Q24.7344,254.4453 24.875,254.3828 Q25.0156,254.3203 25.1875,254.3203 Q25.5156,254.3203 25.75,254.5859 Q26,254.8359 26,255.1953 Q26,255.5391 25.6563,255.9453 Q25.1563,256.5391 24.3594,256.8672 Q23.3125,257.3203 22.0313,257.3203 Q20.5313,257.3203 19.3281,256.7266 Q18.3594,256.2578 17.6719,255.2422 Q17,254.2266 17,253.0234 L17,251.9297 Q17,250.6797 17.5938,249.5859 Q18.2031,248.4922 19.25,247.9141 Q20.3125,247.3203 21.5,247.3203 Q22.2188,247.3203 22.8438,247.5703 Q23.4688,247.8203 24,248.3203 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="66" x="38" y="259.1855">Platform</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="108" y1="270.1406" y2="270.1406"/></g><!--MD5=[9084761d50b3ae63772cbd16d81d5f7b]
+link Platform to VaccinationCenter--><g id="link_Platform_VaccinationCenter"><path codeLine="34" d="M109.19,256 C155.37,256 226.39,256 291.58,256 " fill="none" id="Platform-VaccinationCenter" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="159,245.1758,168.0451,248.1147,168.0451,242.2369,159,245.1758" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="175" y="250.4951">registers in</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="119.162" y="272.9514">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="277.1977" y="271.9668">*</text></g><!--MD5=[b58190172136056b061dc3f597e23c48]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+
+class VaccinationCenter
+{
+-name
+- address
+- phoneNumber
+- emailAddress
+ -faxNumber
+ -websiteAddress
+ -openingHours
+ -openingMinutes
+ -closingHours
+ -closingMinutes
+ -slotDuration
+ -maxNumberVaccines
+ -numTotalVaccinesDay
+ -List<Day> operatingDays
+ -WaitingRoom waitingRoom
+ -List<Vaccine> listVaccines
+ -List<VaccineType> listVaccineTypes
+}
+
+class Platform
+
+Platform "1" - - "*" VaccinationCenter : registers in <
+
+
+@enduml
+
+@startuml
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+
+class VaccinationCenter
+{
+-name
+- address
+- phoneNumber
+- emailAddress
+ -faxNumber
+ -websiteAddress
+ -openingHours
+ -openingMinutes
+ -closingHours
+ -closingMinutes
+ -slotDuration
+ -maxNumberVaccines
+ -numTotalVaccinesDay
+ -List<Day> operatingDays
+ -WaitingRoom waitingRoom
+ -List<Vaccine> listVaccines
+ -List<VaccineType> listVaccineTypes
+}
+
+class Platform
+
+Platform "1" - - "*" VaccinationCenter : registers in <
+
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,160 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+
+class ExportVaccinationStatisticsUI
+
+class ExportVaccinationStatisticsController{
++App m_oApp
++Platform m_oPlatform
++Vaccination Center
++checkLogin()
++getVaccinationCenter()
++addFullyVaccinatedUsers(beginDate,endDate)
++getData()
++exportVaccinationStatistics()
+
+
+}
+
+class App
+{
+    +getCompany()
+    +getCurrentUserSession()
+    +{static} static getInstance()
+    -bootstrap()
+}
+
+class Company {
+-designation
+-RegisterUsers registerUsers
+-Platform m_oPlatform
++getPlatform()
++getUserRoleStore()
+}
+
+class Constants
+{
++ROLE_CENTER_COORDINATOR
+}
+
+
+class RegisterUsers
+{
++getAuthFacade()
+}
+
+class AuthFacade
+{
++getCurrentUserSession()
+}
+
+class Platform
+{
+-description
+-ExportVaccinationStatistics exportVaccinationStatistics
+-RegisterEmployee m_oRegisterEmployee
++getRegisterEmployee()
++getExportVaccinationStatistics()
++initializeRegisters(RegisterUsers registerUsers)
+}
+
+class RegisterEmployee
+{
+-List<Employee> listEmployee
+- transient RegisterUsers registerUsers;
++getEmployeeByEmail(String email)
+}
+
+class ExportVaccinationStatistics
+{
+-List<String> listVaccinationStatistics
++addFullyVaccinatedSNSUsers(vaccinationCenter,beginDate,endDate)
++addFullyVaccination(countTotalVaccinations,day)
+-buildString(countTotalVaccinations, day)
++getData()
++exportVaccinationStatistics()
+
+}
+
+class Employee
+{
+-id
+  -name
+  -address
+  -phoneNumber
+  -emailAddress
+  -citizenCardNumber
+  -{static}count_num_employees
+  -VaccinationCenter vaccinationCenter
++getEmailAddress()
++getWorkingVaccinationCenter()
+}
+
+class VaccinationCenter
+{
+-name
+-address
+-phoneNumber
+-emailAddress
+-faxNumber
+-websiteAddress
+-openingHours
+-openingMinutes
+-closingHours
+-closingMinutes
+-slotDuration
+-maxNumberVaccines
+-List<Day> operatingDays
+-WaitingRoom waitingRoom
+-List<Vaccine> listVaccines
+-List<VaccineType> listVaccineTypes
+-RecoveryRoom recoveryRoom
+-CenterPerformanceAnalysis centerPerformanceAnalysis
+-CenterCoordinator centerCoordinator
++getOperatingDays()
+}
+
+class Day
+{
+-Date day
+-List<Slot> slots
+-int fullyVaccinated
+-List<VaccineAdministration> vaccineAdministrations
+-int maxNumberVaccines
++getFullyVaccinated()
++getDay()
+
+}
+
+class CenterCoordinator
+
+ExportVaccinationStatisticsUI ..> ExportVaccinationStatisticsController
+ExportVaccinationStatisticsController ..> Platform
+ExportVaccinationStatisticsController ..> App
+ExportVaccinationStatisticsController ..> Constants
+ExportVaccinationStatisticsController ..> Employee
+ExportVaccinationStatisticsController ..> VaccinationCenter
+Company "1" --> "1" Platform : has >
+Company ..> RegisterUsers
+App ..> RegisterUsers
+App..>Company
+RegisterUsers ..> AuthFacade
+Platform "1" --> "1" RegisterEmployee : has >
+Platform "1" --> "1" ExportVaccinationStatistics : has >
+RegisterEmployee "1" -->"*" Employee : has >
+VaccinationCenter "1" -- "*" Day :has >
+Employee <|-- CenterCoordinator
+ExportVaccinationStatistics ..> Day
+ExportVaccinationStatistics ..> VaccinationCenter
+
+
+
+@enduml

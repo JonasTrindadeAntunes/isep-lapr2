@@ -1,0 +1,139 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > SortDataUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.console.CenterCoordinator</a>
+</div>
+
+<h1>Coverage Summary for Class: SortDataUI (app.ui.console.CenterCoordinator)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SortDataUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/10)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.console.CenterCoordinator;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.controller.CenterCoordinator.SortDataController;
+<i class="no-highlight">4</i>&nbsp;import app.domain.shared.MessageBundle;
+<i class="no-highlight">5</i>&nbsp;import app.ui.console.utils.Utils;
+<i class="no-highlight">6</i>&nbsp;
+<i class="no-highlight">7</i>&nbsp;public class SortDataUI implements Runnable{
+<i class="no-highlight">8</i>&nbsp;
+<i class="no-highlight">9</i>&nbsp;    private SortDataController m_controller;
+<i class="no-highlight">10</i>&nbsp;
+<b class="nc"><i class="no-highlight">11</i>&nbsp;    public SortDataUI(){</b>
+<b class="nc"><i class="no-highlight">12</i>&nbsp;        this.m_controller = new SortDataController();</b>
+<i class="no-highlight">13</i>&nbsp;    }
+<i class="no-highlight">14</i>&nbsp;
+<i class="no-highlight">15</i>&nbsp;    public void run(){
+<b class="nc"><i class="no-highlight">16</i>&nbsp;        System.out.println(&quot;Sorting Algorithms&quot;);</b>
+<i class="no-highlight">17</i>&nbsp;
+<b class="nc"><i class="no-highlight">18</i>&nbsp;        if (!m_controller.checkLogin()) {</b>
+<b class="nc"><i class="no-highlight">19</i>&nbsp;            System.out.println(MessageBundle.getString(&quot;unauthorizeduser&quot;));</b>
+<i class="no-highlight">20</i>&nbsp;            return;
+<i class="no-highlight">21</i>&nbsp;        }
+<i class="no-highlight">22</i>&nbsp;
+<b class="nc"><i class="no-highlight">23</i>&nbsp;        int typeOfData =  Utils.showAndSelectIndex(m_controller.selectTypeOfDataToSort(),&quot;Select type of data to sort and sorting technique&quot;);</b>
+<i class="no-highlight">24</i>&nbsp;
+<b class="nc"><i class="no-highlight">25</i>&nbsp;        while(typeOfData &gt;= 0 &amp;&amp; typeOfData &lt; 4 ) {</b>
+<i class="no-highlight">26</i>&nbsp;
+<b class="nc"><i class="no-highlight">27</i>&nbsp;                for (String s : m_controller.sortBy(typeOfData))</b>
+<b class="nc"><i class="no-highlight">28</i>&nbsp;                    System.out.println(s);</b>
+<i class="no-highlight">29</i>&nbsp;
+<b class="nc"><i class="no-highlight">30</i>&nbsp;            typeOfData =  Utils.showAndSelectIndex(m_controller.selectTypeOfDataToSort(),&quot;Select type of data to sort and sorting technique&quot;);</b>
+<i class="no-highlight">31</i>&nbsp;        }
+<i class="no-highlight">32</i>&nbsp;
+<i class="no-highlight">33</i>&nbsp;    }
+<i class="no-highlight">34</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

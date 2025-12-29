@@ -1,0 +1,58 @@
+@startuml
+
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+class Administrator
+
+
+class CenterCoordinator
+
+class Receptionist
+
+class Nurse
+
+class Company {
+-designation
+}
+
+class Platform
+
+
+class Employee
+{
+  -id
+  -name;
+  -address;
+  -phoneNumber;
+  -emailAddress;
+  -citizenCardNumber;
+  -{static}count_num_employees
+}
+
+
+
+class UserRole{
+-id
+-description
+}
+
+
+Employee <|-- CenterCoordinator
+Employee <|-- Administrator
+Employee <|-- Nurse
+Employee <|-- Receptionist
+Employee "*" -- "1" Platform : registers in >
+
+Employee "*" -- "1" UserRole : plays/has >
+Company "1" -- "*" UserRole :comprehends >
+
+Company "1" -- "1" Platform : has >
+
+Company "1" -- "*" Administrator : has >
+@enduml

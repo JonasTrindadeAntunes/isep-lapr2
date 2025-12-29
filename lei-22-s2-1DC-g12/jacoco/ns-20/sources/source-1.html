@@ -1,0 +1,205 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > RegisterAdverseReactionGUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.view.Nurse.RegisterAdverseReaction</a>
+</div>
+
+<h1>Coverage Summary for Class: RegisterAdverseReactionGUI (app.ui.view.Nurse.RegisterAdverseReaction)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">RegisterAdverseReactionGUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/48)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.view.Nurse.RegisterAdverseReaction;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.controller.Nurse.RecordAdverseReactionController;
+<i class="no-highlight">4</i>&nbsp;import app.domain.model.SNSUser;
+<i class="no-highlight">5</i>&nbsp;import app.domain.model.VaccineAdministration;
+<i class="no-highlight">6</i>&nbsp;import app.ui.view.Nurse.NurseOptionsMenu;
+<i class="no-highlight">7</i>&nbsp;import javafx.scene.control.Alert;
+<i class="no-highlight">8</i>&nbsp;
+<i class="no-highlight">9</i>&nbsp;public class RegisterAdverseReactionGUI {
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;
+<i class="no-highlight">12</i>&nbsp;    RecordAdverseReactionController controller;
+<i class="no-highlight">13</i>&nbsp;
+<i class="no-highlight">14</i>&nbsp;    NurseOptionsMenu nurseOptionsMenu;
+<i class="no-highlight">15</i>&nbsp;
+<i class="no-highlight">16</i>&nbsp;    int vaccineAdministrationIndex;
+<i class="no-highlight">17</i>&nbsp;    private SNSUser user;
+<i class="no-highlight">18</i>&nbsp;
+<b class="nc"><i class="no-highlight">19</i>&nbsp;    public RegisterAdverseReactionGUI(NurseOptionsMenu nurseOptionsMenu){</b>
+<b class="nc"><i class="no-highlight">20</i>&nbsp;        this.nurseOptionsMenu = nurseOptionsMenu;</b>
+<b class="nc"><i class="no-highlight">21</i>&nbsp;        controller = new RecordAdverseReactionController();</b>
+<i class="no-highlight">22</i>&nbsp;
+<i class="no-highlight">23</i>&nbsp;    }
+<i class="no-highlight">24</i>&nbsp;
+<i class="no-highlight">25</i>&nbsp;    public void start() {
+<i class="no-highlight">26</i>&nbsp;        try {
+<b class="nc"><i class="no-highlight">27</i>&nbsp;            RegisterAdverseReaction_1 registerAdverseReaction_1 = (RegisterAdverseReaction_1) this.nurseOptionsMenu.getNurseGUI().getMainApp().replaceSceneContent(&quot;/fxml/RegisterAdverseReaction_1.fxml&quot;);</b>
+<b class="nc"><i class="no-highlight">28</i>&nbsp;            registerAdverseReaction_1.setRegisterAdverseReactionGUI(this);</b>
+<b class="nc"><i class="no-highlight">29</i>&nbsp;        }catch(Exception e){</b>
+<b class="nc"><i class="no-highlight">30</i>&nbsp;            throw new RuntimeException(e);</b>
+<b class="nc"><i class="no-highlight">31</i>&nbsp;        }</b>
+<i class="no-highlight">32</i>&nbsp;
+<i class="no-highlight">33</i>&nbsp;    }
+<i class="no-highlight">34</i>&nbsp;
+<i class="no-highlight">35</i>&nbsp;    public void getSNSUser(String text) {
+<b class="nc"><i class="no-highlight">36</i>&nbsp;        if(!controller.checkIfExistsSNSUser(text)){</b>
+<b class="nc"><i class="no-highlight">37</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">38</i>&nbsp;            a.setContentText(&quot;SNS user not found!&quot;);</b>
+<b class="nc"><i class="no-highlight">39</i>&nbsp;            a.show();</b>
+<i class="no-highlight">40</i>&nbsp;            return;
+<i class="no-highlight">41</i>&nbsp;        }
+<i class="no-highlight">42</i>&nbsp;        try {
+<b class="nc"><i class="no-highlight">43</i>&nbsp;            this.user = controller.getSNSUser(text);</b>
+<b class="nc"><i class="no-highlight">44</i>&nbsp;            if(controller.getVaccineAdministrations(user).isEmpty()){</b>
+<b class="nc"><i class="no-highlight">45</i>&nbsp;                Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">46</i>&nbsp;                a.setContentText(&quot;No vaccine administrations for this user!&quot;);</b>
+<b class="nc"><i class="no-highlight">47</i>&nbsp;                a.show();</b>
+<b class="nc"><i class="no-highlight">48</i>&nbsp;                backToNurseMenu();</b>
+<i class="no-highlight">49</i>&nbsp;            }
+<b class="nc"><i class="no-highlight">50</i>&nbsp;            RegisterAdverseReaction_2 registerAdverseReaction_2 = (RegisterAdverseReaction_2) this.nurseOptionsMenu.getNurseGUI().getMainApp().replaceSceneContent(&quot;/fxml/RegisterAdverseReaction_2.fxml&quot;);</b>
+<b class="nc"><i class="no-highlight">51</i>&nbsp;            registerAdverseReaction_2.setRegisterAdverseReactionGUI(this);</b>
+<b class="nc"><i class="no-highlight">52</i>&nbsp;            registerAdverseReaction_2.getSNSUserVaccineAdministrations(user);</b>
+<i class="no-highlight">53</i>&nbsp;
+<b class="nc"><i class="no-highlight">54</i>&nbsp;        }catch(Exception e){</b>
+<b class="nc"><i class="no-highlight">55</i>&nbsp;            throw new RuntimeException(e);</b>
+<b class="nc"><i class="no-highlight">56</i>&nbsp;        }</b>
+<i class="no-highlight">57</i>&nbsp;    }
+<i class="no-highlight">58</i>&nbsp;
+<i class="no-highlight">59</i>&nbsp;    public void getAdverseReactionDescription(int vaccineAdministration){
+<b class="nc"><i class="no-highlight">60</i>&nbsp;        if(vaccineAdministration&lt;0){</b>
+<b class="nc"><i class="no-highlight">61</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">62</i>&nbsp;            a.setContentText(&quot;No vaccine administration selected!&quot;);</b>
+<b class="nc"><i class="no-highlight">63</i>&nbsp;            a.show();</b>
+<i class="no-highlight">64</i>&nbsp;            return;
+<i class="no-highlight">65</i>&nbsp;        }
+<i class="no-highlight">66</i>&nbsp;        try {
+<b class="nc"><i class="no-highlight">67</i>&nbsp;            vaccineAdministrationIndex = vaccineAdministration;</b>
+<b class="nc"><i class="no-highlight">68</i>&nbsp;            RegisterAdverseReaction_3 registerAdverseReaction_3 = (RegisterAdverseReaction_3) this.nurseOptionsMenu.getNurseGUI().getMainApp().replaceSceneContent(&quot;/fxml/RegisterAdverseReaction_3.fxml&quot;);</b>
+<b class="nc"><i class="no-highlight">69</i>&nbsp;            registerAdverseReaction_3.setRegisterAdverseReactionGUI(this);</b>
+<b class="nc"><i class="no-highlight">70</i>&nbsp;        }catch(Exception e){</b>
+<b class="nc"><i class="no-highlight">71</i>&nbsp;            throw new RuntimeException(e);</b>
+<b class="nc"><i class="no-highlight">72</i>&nbsp;        }</b>
+<i class="no-highlight">73</i>&nbsp;
+<i class="no-highlight">74</i>&nbsp;    }
+<i class="no-highlight">75</i>&nbsp;
+<i class="no-highlight">76</i>&nbsp;    public void registerAdverseReaction(String text) {
+<b class="nc"><i class="no-highlight">77</i>&nbsp;        if(text == null || text.isEmpty()){</b>
+<b class="nc"><i class="no-highlight">78</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">79</i>&nbsp;            a.setContentText(&quot;No description was inserted.!&quot;);</b>
+<b class="nc"><i class="no-highlight">80</i>&nbsp;            a.show();</b>
+<i class="no-highlight">81</i>&nbsp;            return;
+<i class="no-highlight">82</i>&nbsp;        }
+<b class="nc"><i class="no-highlight">83</i>&nbsp;        if(this.controller.recordAdverseReaction(user,text,vaccineAdministrationIndex)) {</b>
+<b class="nc"><i class="no-highlight">84</i>&nbsp;            Alert a = new Alert(Alert.AlertType.INFORMATION);</b>
+<b class="nc"><i class="no-highlight">85</i>&nbsp;            a.setContentText(&quot;Sucessfully registered adverse reaction!&quot;);</b>
+<b class="nc"><i class="no-highlight">86</i>&nbsp;            a.show();</b>
+<b class="nc"><i class="no-highlight">87</i>&nbsp;        }else{</b>
+<b class="nc"><i class="no-highlight">88</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">89</i>&nbsp;            a.setContentText(&quot;Error creating adverse reaction!&quot;);</b>
+<b class="nc"><i class="no-highlight">90</i>&nbsp;            a.show();</b>
+<i class="no-highlight">91</i>&nbsp;        }
+<b class="nc"><i class="no-highlight">92</i>&nbsp;        backToNurseMenu();</b>
+<i class="no-highlight">93</i>&nbsp;    }
+<i class="no-highlight">94</i>&nbsp;
+<i class="no-highlight">95</i>&nbsp;    private void backToNurseMenu() {
+<b class="nc"><i class="no-highlight">96</i>&nbsp;        this.nurseOptionsMenu.getNurseGUI().runNurseUI();</b>
+<i class="no-highlight">97</i>&nbsp;    }
+<i class="no-highlight">98</i>&nbsp;
+<i class="no-highlight">99</i>&nbsp;
+<i class="no-highlight">100</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

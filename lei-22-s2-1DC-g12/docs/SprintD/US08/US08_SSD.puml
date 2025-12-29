@@ -1,0 +1,33 @@
+@startuml
+
+autonumber
+actor "Nurse" as NUR
+
+participant ":System" as SYS
+
+activate NUR
+NUR -> SYS : Administer a vaccine
+activate SYS
+SYS --> NUR : Shows a list of users in the waiting room and asks the nurse to select one
+deactivate SYS
+
+NUR -> SYS : selects the user
+activate SYS
+SYS --> NUR : Displays user health data, vaccine dosage and previous vaccination (if applicable)
+deactivate SYS
+NUR --> SYS: Continue
+activate SYS
+SYS --> NUR: Displays available vaccines and asks the nurse for the lot number
+deactivate SYS
+NUR -> SYS : registers brand and the lot number
+activate SYS
+SYS --> NUR : shows the data and requests a confirmation
+deactivate SYS
+
+NUR -> SYS : confirms data
+activate SYS
+SYS --> NUR : informs operation success
+deactivate SYS
+deactivate NUR
+
+@enduml

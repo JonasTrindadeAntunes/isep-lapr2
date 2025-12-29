@@ -1,0 +1,45 @@
+@startuml Domain Model
+skinparam classAttributeIconSize 0
+hide methods
+left to right direction
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class Receptionist
+
+class SNSUser {
+name
+birthDate
+}
+
+
+class Company {
+designation
+}
+
+
+class AdverseReaction{
+Date
+}
+
+class UserHealthHistory
+
+
+class Platform
+
+
+
+class Employee
+
+Platform "1" -- "*" SNSUser : registers in <
+Employee <|-- Receptionist
+Employee "*" -- "1" Platform : registers in >
+Company "1" -- "1" Platform : has >
+Company "1" -- "*" VaccinationCenter : manages >
+SNSUser "*"-- "1" UserHealthHistory : has >
+UserHealthHistory "1" --- "*" AdverseReaction : has >
+
+
+
+@enduml

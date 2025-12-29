@@ -1,0 +1,106 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Nurse" as NRS
+participant ":WaitingRoomUI" as UI
+participant ":WaitingRoomController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "session \n:UserSession" as SESSION
+participant "comp\n:Company" as Comp
+participant "plat\n:Platform" as PLAT
+participant "reg\n :RegisterEmployee" as RE
+participant "email\n :Email" as EMAIL
+participant "emp\n :Employee" as EMP
+participant "vac\n :VaccinationCenter" as VAC
+participant "le\n :List<Employee>"
+participant "lsns\n :List<SNSUser>"
+
+
+
+activate NRS
+'1
+NRS -> UI : asks to consult the list of users in the waiting room
+activate UI
+'2
+UI -> CTRL** : controller = WaitingRoomController()
+activate CTRL
+'3
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'5
+CTRL -> Comp : plat = getPlatform()
+activate Comp
+deactivate Comp
+deactivate CTRL
+
+'6
+UI ->CTRL :checkLogin()
+activate CTRL
+'7
+CTRL -> App : session = getCurrentUserSession()
+activate App
+deactivate App
+'8
+CTRL -> SESSION : answer= isLoggedInWithRole(Constants.ROLE_NURSE)
+activate SESSION
+deactivate SESSION
+deactivate CTRL
+
+
+'9
+UI -> CTRL : vac = getWorkingVaccinationCenter()
+activate CTRL
+'10
+CTRL -> PLAT : reg = getRegisterEmployee()
+activate PLAT
+deactivate PLAT
+'11
+CTRL -> App : email = getCurrentUserSession()
+activate App
+'12
+App -> SESSION : getUserId()
+activate SESSION
+'13
+SESSION -> EMAIL : getEmail()
+activate EMAIL
+deactivate EMAIL
+deactivate SESSION
+deactivate App
+
+'14
+CTRL -> RE : getWorkingVaccinationCenter(email)
+activate RE
+'15
+RE -> EMP : getWorkingVaccinationCenter(email)
+activate EMP
+deactivate EMP
+deactivate RE
+deactivate CTRL
+'16
+UI -> CTRL : lsns = getListUsersInWaitingRoom(vac)
+activate CTRL
+'17
+CTRL -> VAC : getWaitingRoomSNSUsers()
+activate VAC
+deactivate VAC
+deactivate RE
+deactivate CTRL
+'18
+UI --> NRS : show list of SNS users in the waiting room and requests a confirmation
+deactivate UI
+'19
+NRS -> UI:  confirms the data
+activate UI
+'20
+UI --> NRS : informs operation success
+deactivate UI
+
+@enduml

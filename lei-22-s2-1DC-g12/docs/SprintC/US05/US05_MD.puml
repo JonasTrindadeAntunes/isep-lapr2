@@ -1,0 +1,86 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+
+class Company
+
+class Nurse
+
+
+class Platform
+
+class WaitingRoom
+
+class SNSUser{
+-name
+-address
+-gender
+-email
+-birthDate
+-snsUserNumber
+-citizenCardNumber
+}
+
+class Employee
+{
+-id
+  -name;
+  -address;
+  -phoneNumber;
+  -emailAddress;
+  -citizenCardNumber;
+  -{static}count_num_employees
+  }
+
+class VaccinationCenter
+{
+-name
+- address
+- phoneNumber
+- emailAddress
+ -faxNumber
+ -websiteAddress
+ -openingHours
+ -openingMinutes
+ -closingHours
+ -closingMinutes
+ -slotDuration
+ -maxNumberVaccines
+-List<Day> operatingDays
+-WaitingRoom waitingRoom
+ -List<Vaccine> listVaccines
+ -List<VaccineType> listVaccineTypes
+}
+
+class User{
+-id
+-password
+-name
+-roles
+}
+
+class UserRole{
+-id
+-description
+}
+
+
+Company "1" -- "1" Platform : has >
+WaitingRoom "1" -- "1..*" SNSUser : has >
+Platform "1" -- "*" Employee : registers in <
+Employee <|-- Nurse
+Nurse "*" -- "1" VaccinationCenter : works in >
+Platform "1" -- "*" SNSUser : registers in <
+VaccinationCenter "1" -- "1" WaitingRoom : has >
+User "1" -- "1" Email : has >
+Company "1" -- "*" User :comprehends >
+User "1" -- "1..*" UserRole : plays >
+User "1" -- "1..*" Nurse: < Is a
+
+@enduml

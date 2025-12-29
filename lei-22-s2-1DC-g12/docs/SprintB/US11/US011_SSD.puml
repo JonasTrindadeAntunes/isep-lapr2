@@ -1,0 +1,12 @@
+@startuml
+autonumber
+
+actor "Administrator" as ADM
+activate ADM
+ADM -> System : asks to get list of roles
+activate System
+System --> ADM : shows list of roles and ask to select role
+ADM -> System : selects role
+System --> ADM :shows list of employees with selected role
+deactivate System
+@enduml

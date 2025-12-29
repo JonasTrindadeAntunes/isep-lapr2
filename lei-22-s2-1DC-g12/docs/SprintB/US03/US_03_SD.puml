@@ -1,0 +1,76 @@
+@startuml
+autonumber
+actor "Receptionist" as RECEP
+control RegisterSNSUserUI as UI
+control RegisterSNSUserController as Controller
+
+
+RECEP -> UI: register new sns user
+activate UI
+UI-> Controller : create
+activate Controller
+Controller -> App: app=getInstance()
+activate App
+deactivate App
+Controller -> "app : App": session = getCurrentUserSession()
+activate "app : App"
+deactivate "app : App"
+Controller -> "session : UserSession": answer = isLoggedInWithRole(ROLE_RECEPTIONIST)
+activate "session : UserSession"
+deactivate "session : UserSession"
+deactivate Controller
+
+alt answer = true
+UI -> RECEP: Asks for the user's information. (Email, Name, Address, Phone number and Health user number)
+deactivate UI
+
+RECEP->UI: inserts info
+activate UI
+UI -> Controller: newSnsUser(email, name,address,phonenumber.healthusernumber)
+activate Controller
+Controller -> "app : App" : getCompany()
+activate "app : App"
+deactivate "app : App"
+Controller -> "company : Company": getAuthFacade()
+activate "company : Company"
+deactivate "company : Company"
+Controller -> "auth : AuthFacade": answer = existsUser(email)
+activate "auth : AuthFacade"
+deactivate "auth : AuthFacade"
+alt answer = false
+Controller -> "company : Company()" : getPlaform()
+activate "company : Company()"
+deactivate "company : Company()"
+Controller -> "platform : Platform" : getRegisterSNSUser()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> RegisterSNSUser: user = newUser(email,name,address,phonenumber,healthusernumber)
+activate RegisterSNSUser
+RegisterSNSUser -> RegisterSNSUser: validateUser(user)
+deactivate RegisterSNSUser
+deactivate Controller
+
+UI-> RECEP: Shows the new user's data and asks to confirm
+deactivate UI
+
+RECEP -> UI: confirms
+activate UI
+UI -> Controller: addUser()
+activate Controller
+Controller -> RegisterSNSUser : addUser(user,company)
+activate RegisterSNSUser
+RegisterSNSUser -> RegisterSNSUser: pwd = generatePassword()
+RegisterSNSUser -> "company : Company()": auth = getAuthFacade()
+activate "company : Company()"
+deactivate "company : Company()"
+RegisterSNSUser -> "auth : AuthFacade": addUserWithRole(user,ROLE_SNS_USER)
+activate "auth : AuthFacade"
+deactivate "auth : AuthFacade"
+deactivate RegisterSNSUser
+deactivate Controller
+UI -> RECEP: Success
+deactivate UI
+end
+end
+
+@enduml

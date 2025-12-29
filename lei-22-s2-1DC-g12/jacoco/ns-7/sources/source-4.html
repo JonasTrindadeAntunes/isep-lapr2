@@ -1,0 +1,162 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > EmailNotifier</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.domain.model</a>
+</div>
+
+<h1>Coverage Summary for Class: EmailNotifier (app.domain.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">EmailNotifier</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (1/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    28,6%
+  </span>
+  <span class="absValue">
+    (2/7)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.domain.model;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.domain.model.VaccinationCenter.VaccinationCenter;
+<i class="no-highlight">4</i>&nbsp;import app.domain.shared.MessageBundle;
+<i class="no-highlight">5</i>&nbsp;
+<i class="no-highlight">6</i>&nbsp;import java.io.Serializable;
+<i class="no-highlight">7</i>&nbsp;import java.util.ArrayList;
+<i class="no-highlight">8</i>&nbsp;import java.util.List;
+<i class="no-highlight">9</i>&nbsp;
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;
+<i class="no-highlight">12</i>&nbsp;/**
+<i class="no-highlight">13</i>&nbsp; * The type Email notifier.
+<i class="no-highlight">14</i>&nbsp; */
+<i class="no-highlight">15</i>&nbsp;public class EmailNotifier implements Serializable {
+<i class="no-highlight">16</i>&nbsp;
+<i class="no-highlight">17</i>&nbsp;    private List&lt;String&gt; listEmailsSchedules;
+<i class="no-highlight">18</i>&nbsp;
+<i class="no-highlight">19</i>&nbsp;    /**
+<i class="no-highlight">20</i>&nbsp;     * Instantiates a new Email notifier.
+<i class="no-highlight">21</i>&nbsp;     */
+<b class="fc"><i class="no-highlight">22</i>&nbsp;    public EmailNotifier() {</b>
+<b class="fc"><i class="no-highlight">23</i>&nbsp;        this.listEmailsSchedules = new ArrayList&lt;&gt;();</b>
+<i class="no-highlight">24</i>&nbsp;    }
+<i class="no-highlight">25</i>&nbsp;
+<i class="no-highlight">26</i>&nbsp;    /**
+<i class="no-highlight">27</i>&nbsp;     * Add vaccine schedule boolean.
+<i class="no-highlight">28</i>&nbsp;     *
+<i class="no-highlight">29</i>&nbsp;     * @param vaccinationCenter the vaccination center
+<i class="no-highlight">30</i>&nbsp;     * @param vaccineSchedule   the vaccine schedule
+<i class="no-highlight">31</i>&nbsp;     * @return the boolean
+<i class="no-highlight">32</i>&nbsp;     */
+<i class="no-highlight">33</i>&nbsp;    public boolean addVaccineSchedule(VaccinationCenter vaccinationCenter, VaccineSchedule vaccineSchedule) {
+<b class="nc"><i class="no-highlight">34</i>&nbsp;        SendEmail(vaccinationCenter, vaccineSchedule);</b>
+<b class="nc"><i class="no-highlight">35</i>&nbsp;        return this.listEmailsSchedules.add(buildString(vaccinationCenter, vaccineSchedule));</b>
+<i class="no-highlight">36</i>&nbsp;    }
+<i class="no-highlight">37</i>&nbsp;
+<i class="no-highlight">38</i>&nbsp;    private String buildString(VaccinationCenter vc, VaccineSchedule vs) {
+<b class="nc"><i class="no-highlight">39</i>&nbsp;        return MessageBundle.getString(&quot;to&quot;) + &quot;:&quot; + vs.getSnsUser().getPhoneNumber() + MessageBundle.getString(&quot;message&quot;) + MessageBundle.getString(&quot;theuser&quot;) + vs.getSnsUser().getName() + MessageBundle.getString(&quot;hasavaccinationscheduledfor&quot;) + vs.getDate() + MessageBundle.getString(&quot;atthevaccinationcenter&quot;) + vc.getName() + MessageBundle.getString(&quot;foravaccineofthetype&quot;) + vs.getVaccineType().getDesignation() + &quot;.&quot;;</b>
+<i class="no-highlight">40</i>&nbsp;    }
+<i class="no-highlight">41</i>&nbsp;
+<i class="no-highlight">42</i>&nbsp;    /**
+<i class="no-highlight">43</i>&nbsp;     * Sent email.
+<i class="no-highlight">44</i>&nbsp;     *
+<i class="no-highlight">45</i>&nbsp;     * @param vaccinationCenter the vaccination center
+<i class="no-highlight">46</i>&nbsp;     * @param vaccineSchedule   the vaccine schedule
+<i class="no-highlight">47</i>&nbsp;     */
+<i class="no-highlight">48</i>&nbsp;    private static void SendEmail(VaccinationCenter vaccinationCenter, VaccineSchedule vaccineSchedule) {
+<i class="no-highlight">49</i>&nbsp;
+<i class="no-highlight">50</i>&nbsp;
+<b class="nc"><i class="no-highlight">51</i>&nbsp;        String emailMessage = String.format(MessageBundle.getString(&quot;theuser&quot;) + vaccineSchedule.getSnsUser().getName() + MessageBundle.getString(&quot;hasavaccinationscheduledfor&quot;) + vaccineSchedule.getDate() + MessageBundle.getString(&quot;atthevaccinationcenter&quot;) + vaccinationCenter.getName() + MessageBundle.getString(&quot;foravaccineofthetype&quot;) + vaccineSchedule.getVaccineType().getDesignation() + &quot;.&quot;);</b>
+<i class="no-highlight">52</i>&nbsp;
+<b class="nc"><i class="no-highlight">53</i>&nbsp;        SendEmail.SendEmail(vaccineSchedule.getSnsUser().getEmail(),emailMessage,MessageBundle.getString(&quot;vaccineschedule&quot;));</b>
+<i class="no-highlight">54</i>&nbsp;
+<i class="no-highlight">55</i>&nbsp;    }
+<i class="no-highlight">56</i>&nbsp;}
+<i class="no-highlight">57</i>&nbsp;
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

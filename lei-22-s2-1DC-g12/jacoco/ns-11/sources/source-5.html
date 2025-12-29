@@ -1,0 +1,198 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > RegisterVaccinationCenterUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.console.Admin</a>
+</div>
+
+<h1>Coverage Summary for Class: RegisterVaccinationCenterUI (app.ui.console.Admin)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">RegisterVaccinationCenterUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/30)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.console.Admin;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.controller.Admin.RegisterVaccinationCenterController;
+<i class="no-highlight">4</i>&nbsp;import app.domain.shared.MessageBundle;
+<i class="no-highlight">5</i>&nbsp;import app.ui.console.utils.Utils;
+<i class="no-highlight">6</i>&nbsp;
+<i class="no-highlight">7</i>&nbsp;/**
+<i class="no-highlight">8</i>&nbsp; * The type Register vaccination center ui.
+<i class="no-highlight">9</i>&nbsp; */
+<i class="no-highlight">10</i>&nbsp;public class RegisterVaccinationCenterUI implements Runnable{
+<i class="no-highlight">11</i>&nbsp;
+<i class="no-highlight">12</i>&nbsp;    private RegisterVaccinationCenterController m_controller;
+<i class="no-highlight">13</i>&nbsp;
+<i class="no-highlight">14</i>&nbsp;    /**
+<i class="no-highlight">15</i>&nbsp;     * Instantiates a new Register vaccination center ui.
+<i class="no-highlight">16</i>&nbsp;     */
+<b class="nc"><i class="no-highlight">17</i>&nbsp;    public RegisterVaccinationCenterUI(){this.m_controller = new RegisterVaccinationCenterController();}</b>
+<i class="no-highlight">18</i>&nbsp;
+<i class="no-highlight">19</i>&nbsp;    public void run() {
+<i class="no-highlight">20</i>&nbsp;
+<b class="nc"><i class="no-highlight">21</i>&nbsp;        System.out.println(MessageBundle.getString(&quot;registervaccinationcenter&quot;));</b>
+<i class="no-highlight">22</i>&nbsp;
+<i class="no-highlight">23</i>&nbsp;
+<b class="nc"><i class="no-highlight">24</i>&nbsp;        int typeOfVaccinationCenter = Utils.showAndSelectIndex(this.m_controller.getTypesOfVaccinationCenter(), MessageBundle.getString(&quot;selectvaccinationcentertype&quot;));</b>
+<i class="no-highlight">25</i>&nbsp;
+<b class="nc"><i class="no-highlight">26</i>&nbsp;        if (typeOfVaccinationCenter &gt;= 0 &amp;&amp; typeOfVaccinationCenter &lt; 2)</b>
+<i class="no-highlight">27</i>&nbsp;        {
+<i class="no-highlight">28</i>&nbsp;
+<b class="nc"><i class="no-highlight">29</i>&nbsp;            if (enterData(typeOfVaccinationCenter))</b>
+<i class="no-highlight">30</i>&nbsp;            {
+<b class="nc"><i class="no-highlight">31</i>&nbsp;                showData();</b>
+<i class="no-highlight">32</i>&nbsp;
+<b class="nc"><i class="no-highlight">33</i>&nbsp;                if (Utils.confirm(MessageBundle.getString(&quot;confirmdata&quot;) + &quot; (S/N)&quot;))</b>
+<i class="no-highlight">34</i>&nbsp;                {
+<b class="nc"><i class="no-highlight">35</i>&nbsp;                    if (m_controller.registerVaccinationCenter())</b>
+<i class="no-highlight">36</i>&nbsp;                    {
+<b class="nc"><i class="no-highlight">37</i>&nbsp;                        System.out.println(MessageBundle.getString(&quot;registrationsucessful&quot;));</b>
+<i class="no-highlight">38</i>&nbsp;                    }
+<i class="no-highlight">39</i>&nbsp;                    else
+<b class="nc"><i class="no-highlight">40</i>&nbsp;                        run();</b>
+<i class="no-highlight">41</i>&nbsp;
+<i class="no-highlight">42</i>&nbsp;                }
+<i class="no-highlight">43</i>&nbsp;                else
+<i class="no-highlight">44</i>&nbsp;                {
+<b class="nc"><i class="no-highlight">45</i>&nbsp;                    run();</b>
+<i class="no-highlight">46</i>&nbsp;                }
+<i class="no-highlight">47</i>&nbsp;            }
+<i class="no-highlight">48</i>&nbsp;
+<i class="no-highlight">49</i>&nbsp;
+<i class="no-highlight">50</i>&nbsp;        }else {
+<b class="nc"><i class="no-highlight">51</i>&nbsp;            System.out.println(MessageBundle.getString(&quot;backtoadminmenu&quot;));</b>
+<i class="no-highlight">52</i>&nbsp;        }
+<i class="no-highlight">53</i>&nbsp;    }
+<i class="no-highlight">54</i>&nbsp;
+<i class="no-highlight">55</i>&nbsp;    private boolean enterData(int typeOfVaccinationCenter){
+<i class="no-highlight">56</i>&nbsp;
+<b class="nc"><i class="no-highlight">57</i>&nbsp;        String name = Utils.readLineFromConsole(MessageBundle.getString(&quot;name&quot;));</b>
+<b class="nc"><i class="no-highlight">58</i>&nbsp;        String address = Utils.readLineFromConsole(MessageBundle.getString(&quot;address&quot;));</b>
+<b class="nc"><i class="no-highlight">59</i>&nbsp;        String phoneNumber = Utils.readLineFromConsole(MessageBundle.getString(&quot;phonenumber&quot;));</b>
+<b class="nc"><i class="no-highlight">60</i>&nbsp;        String emailAddress = Utils.readLineFromConsole(MessageBundle.getString(&quot;email&quot;));</b>
+<b class="nc"><i class="no-highlight">61</i>&nbsp;        String faxNumber = Utils.readLineFromConsole(MessageBundle.getString(&quot;faxnumber&quot;));</b>
+<b class="nc"><i class="no-highlight">62</i>&nbsp;        String websiteAddress = Utils.readLineFromConsole(MessageBundle.getString(&quot;websiteaddress&quot;));</b>
+<i class="no-highlight">63</i>&nbsp;        Integer openingHours;
+<i class="no-highlight">64</i>&nbsp;        do {
+<b class="nc"><i class="no-highlight">65</i>&nbsp;            openingHours = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;openinghours24&quot;));</b>
+<b class="nc"><i class="no-highlight">66</i>&nbsp;        }while(!(0&lt;=openingHours &amp;&amp; openingHours &lt; 24));</b>
+<i class="no-highlight">67</i>&nbsp;
+<i class="no-highlight">68</i>&nbsp;        Integer openingMinutes;
+<i class="no-highlight">69</i>&nbsp;        do{
+<b class="nc"><i class="no-highlight">70</i>&nbsp;            openingMinutes = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;openingminutes&quot;));</b>
+<b class="nc"><i class="no-highlight">71</i>&nbsp;        }while(!(0&lt;=openingMinutes &amp;&amp; openingMinutes &lt; 60));</b>
+<i class="no-highlight">72</i>&nbsp;
+<i class="no-highlight">73</i>&nbsp;        Integer closingHours;
+<i class="no-highlight">74</i>&nbsp;        do {
+<b class="nc"><i class="no-highlight">75</i>&nbsp;            closingHours = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;closinghours24&quot;));</b>
+<b class="nc"><i class="no-highlight">76</i>&nbsp;        }while(!(0&lt;=closingHours &amp;&amp; closingHours &lt; 24));</b>
+<i class="no-highlight">77</i>&nbsp;
+<i class="no-highlight">78</i>&nbsp;        Integer closingMinutes;
+<i class="no-highlight">79</i>&nbsp;        do {
+<b class="nc"><i class="no-highlight">80</i>&nbsp;            closingMinutes = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;closingminutes&quot;));</b>
+<b class="nc"><i class="no-highlight">81</i>&nbsp;        }while(!(0&lt;=closingMinutes &amp;&amp; closingMinutes &lt; 60));</b>
+<b class="nc"><i class="no-highlight">82</i>&nbsp;        Integer slotDuration = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;slotduration&quot;));</b>
+<b class="nc"><i class="no-highlight">83</i>&nbsp;        int maxNumberVaccines = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;maxnumbervaccines&quot;));</b>
+<i class="no-highlight">84</i>&nbsp;
+<i class="no-highlight">85</i>&nbsp;
+<b class="nc"><i class="no-highlight">86</i>&nbsp;        return m_controller.newVaccinationCenter(name,address,phoneNumber,emailAddress,faxNumber,websiteAddress,openingHours,openingMinutes,closingHours,closingMinutes,slotDuration,maxNumberVaccines,typeOfVaccinationCenter);</b>
+<i class="no-highlight">87</i>&nbsp;
+<i class="no-highlight">88</i>&nbsp;    }
+<i class="no-highlight">89</i>&nbsp;
+<b class="nc"><i class="no-highlight">90</i>&nbsp;    private void showData(){System.out.println(m_controller.getVaccinationCenterString());}</b>
+<i class="no-highlight">91</i>&nbsp;
+<i class="no-highlight">92</i>&nbsp;
+<i class="no-highlight">93</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

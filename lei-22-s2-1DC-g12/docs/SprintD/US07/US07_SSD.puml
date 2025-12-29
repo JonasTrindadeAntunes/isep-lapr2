@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Nurse" as N
+participant ":System" as SYS
+
+activate N
+N -> SYS : Starts the recording of adverse reactions
+activate SYS
+SYS --> N : asks the user to insert the SNSUser number
+deactivate SYS
+N -> SYS : Insert SNSUser number
+activate SYS
+SYS --> N : show list of vaccines administrated to a \n specific SNSUser and aks to select one
+SYS --> N: ask the user to Type a short description about \nthe adverse reaction (with at most 300 characters)
+deactivate SYS
+
+N -> SYS : Writes a short description
+activate SYS
+SYS-->N : ask user to confirm the data
+deactivate SYS
+N->SYS:confirms data
+activate SYS
+SYS-->N : Informs of operation success
+deactivate SYS
+deactivate N
+
+
+
+@enduml

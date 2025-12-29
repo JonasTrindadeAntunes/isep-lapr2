@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="2007px" preserveAspectRatio="none" style="width:699px;height:2007px;" version="1.1" viewBox="0 0 699 2007" width="699px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1co6pe3m02xtx" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <!--entity CC-->
+        <ellipse cx="65" cy="1853.5" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M65,1861.5 L65,1888.5 M52,1869.5 L78,1869.5 M65,1888.5 L52,1903.5 M65,1888.5 L78,1903.5 " fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="6" y="1925.0332">CenterCoordinator</text>
+        <ellipse cx="438.306" cy="1792.9612" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="172.806" ry="36.9612" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="328" x="274.306" y="1798.2659">UC24- Evaluate performance of vaccination process</text>
+        <ellipse cx="438.4382" cy="1886.0876" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="93.4382" ry="21.0876" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="359.4382" y="1891.3923">UC25- Generate Reports</text>
+        <ellipse cx="438.6703" cy="1971.0341" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="133.1703" ry="29.0341" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="245" x="316.1703" y="1976.3388">UC26- Analyze data from other centers</text>
+        <!--entity User-->
+        <ellipse cx="65" cy="1611.5" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M65,1619.5 L65,1646.5 M52,1627.5 L78,1627.5 M65,1646.5 L52,1661.5 M65,1646.5 L78,1661.5 " fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="37" y="1683.0332">SNSUser</text>
+        <ellipse cx="438.2928" cy="1598.8586" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="102.2928" ry="22.8586" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="178" x="349.2928" y="1604.1633">UC22- Schedule vaccination</text>
+        <ellipse cx="438.4478" cy="1689.0896" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="145.9478" ry="31.5896" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="272" x="302.4478" y="1694.3942">UC23- Request EU COVID digital certificate</text>
+        <!--entity Admin-->
+        <ellipse cx="65" cy="1144.5" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M65,1152.5 L65,1179.5 M52,1160.5 L78,1160.5 M65,1179.5 L52,1194.5 M65,1179.5 L78,1194.5 " fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="23.5" y="1216.0332">Administrator</text>
+        <ellipse cx="438.337" cy="801.9674" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="97.837" ry="21.9674" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="168" x="354.337" y="807.2721">UC08- Register SNS Users</text>
+        <ellipse cx="438.3848" cy="912.777" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="254.3848" ry="53.277" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="495" x="190.8848" y="918.0816">UC09- I want to register a vaccination center to respond to a certain pandemic.</text>
+        <ellipse cx="438.63" cy="1023.026" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="95.63" ry="21.526" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="163" x="357.13" y="1028.3307">UC10- Register Employee</text>
+        <ellipse cx="438.7187" cy="1124.0437" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="210.7187" ry="44.5437" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="406" x="235.7187" y="1129.3484">UC11 - I want to get a list of Employees with a given function/role</text>
+        <ellipse cx="438.7025" cy="1230.1405" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="118.7025" ry="26.1405" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="214" x="331.7025" y="1235.4452">UC12- Specify a new vaccine type</text>
+        <ellipse cx="438.5078" cy="1333.2016" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="199.0078" ry="42.2016" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="382" x="247.5078" y="1338.5063">UC13- Specify a new vaccine, and it's administration process</text>
+        <ellipse cx="438.3974" cy="1430.9795" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="90.3974" ry="20.4795" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="151" x="362.8974" y="1436.2842">UC14- Register Centers</text>
+        <ellipse cx="438.3762" cy="1513.9752" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="122.8762" ry="26.9752" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="223" x="326.8762" y="1519.2799">UC15- Register Center Coordinator</text>
+        <!--entity Nurse-->
+        <ellipse cx="65" cy="454.5" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M65,462.5 L65,489.5 M52,470.5 L78,470.5 M65,489.5 L52,504.5 M65,489.5 L78,504.5 " fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="46.5" y="526.0332">Nurse</text>
+        <ellipse cx="438.6453" cy="247.8291" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="152.1453" ry="32.8291" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="285" x="296.1453" y="253.1337">UC16- Schedule vaccine in healthcare center</text>
+        <ellipse cx="438.2585" cy="348.8517" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="149.7585" ry="32.3517" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="280" x="298.2585" y="354.1564">UC17- Call next SNS User to receive vaccine</text>
+        <ellipse cx="438.347" cy="441.1694" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="111.347" ry="24.6694" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="198" x="339.347" y="446.4741">UC18- Administrate the vaccine</text>
+        <ellipse cx="438.622" cy="531.9244" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="142.622" ry="30.9244" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="265" x="306.122" y="537.2291">UC19- Issue/Deliver vaccination certificate</text>
+        <ellipse cx="438.4693" cy="628.1939" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="136.4693" ry="29.6939" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="252" x="312.4693" y="633.4986">UC20- Send SNS User to recovery room</text>
+        <ellipse cx="438.7025" cy="719.1405" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="118.7025" ry="26.1405" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="214" x="331.7025" y="724.4452">UC21- Register adverse reactions</text>
+        <!--entity Receptionist-->
+        <ellipse cx="65" cy="57.5" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M65,65.5 L65,92.5 M52,73.5 L78,73.5 M65,92.5 L52,107.5 M65,92.5 L78,107.5 " fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="26" y="129.0332">Receptionist</text>
+        <ellipse cx="438.4974" cy="38.0995" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="135.9974" ry="29.5995" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="251" x="312.9974" y="43.4042">UC02- Register arrival of the SNS Users</text>
+        <ellipse cx="438.5445" cy="141.0089" fill="#FEFECE" filter="url(#f1co6pe3m02xtx)" rx="180.5445" ry="38.5089" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="344" x="266.5445" y="146.3136">UC03- As a receptionist, I want to register an SNS user</text>
+        <path d="M124.183,1866.015 C143.139,1859.84 164.359,1853.28 184,1848 C223.124,1837.483 266.056,1827.566 305.287,1819.125 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="310.548,1817.998,300.9098,1815.9718,305.6589,1819.0453,302.5854,1823.7943,310.548,1817.998" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M124.047,1886 C181.625,1886 270.934,1886 339.516,1886 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="344.833,1886,335.833,1882,339.833,1886,335.833,1890,344.833,1886" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M124.042,1906.9729 C142.991,1913.3371 164.241,1919.9683 184,1925 C229.181,1936.5055 279.595,1946.2677 323.491,1953.7988 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="328.536,1954.6596,320.3375,1949.2021,323.6073,1953.8182,318.9912,1957.088,328.536,1954.6596" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M93.0166,1640.727 C144.645,1634.474 259.557,1620.554 342.485,1610.509 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="347.9,1609.853,338.4842,1606.9645,342.9363,1610.4544,339.4464,1614.9064,347.9,1609.853" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M93.0166,1647.273 C137.375,1652.646 228.448,1663.677 305.814,1673.049 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="310.889,1673.664,302.4356,1668.6103,305.9253,1673.0625,301.4731,1676.5522,310.889,1673.664" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M67.6969,1134.348 C73.0341,1062.074 94.9125,916.18 184,842 C227.034,806.17 288.915,795.88 340.764,794.69 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="346.069,794.6,337.0018,790.7549,341.0697,794.6857,337.1389,798.7537,346.069,794.6" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M81.1898,1134.383 C99.0661,1090.302 132.944,1022.617 184,984 C201.876,970.48 222.206,959.53 243.394,950.67 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="248.216,948.7,238.3714,948.4095,243.589,950.5951,241.4035,955.8127,248.216,948.7" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M98.2078,1134.341 C119.663,1109.127 150.081,1078.915 184,1062 C231.29,1038.418 289.213,1028.318 337.748,1024.269 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="343.015,1023.851,333.7257,1020.5785,338.0308,1024.2481,334.3611,1028.5532,343.015,1023.851" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M106.82,1171.176 C143.962,1165.878 201.496,1157.67 258.224,1149.576 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="263.357,1148.844,253.8818,1146.157,258.4073,1149.5511,255.0131,1154.0766,263.357,1148.844" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M106.82,1182.824 C160.936,1190.544 258.343,1204.441 333.472,1215.159 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="338.842,1215.925,330.4967,1210.6948,333.8921,1215.2193,329.3675,1218.6147,338.842,1215.925" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M106.629,1218.364 C127.981,1237.91 155.58,1259.978 184,1274 C211.887,1287.759 243.1,1298.385 273.835,1306.567 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="278.764,1307.859,271.0731,1301.7067,273.9276,1306.5906,269.0437,1309.4451,278.764,1307.859" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M76.8418,1219.666 C91.9545,1269.797 124.45,1351.398 184,1393 C230.733,1425.648 294.171,1435.138 345.894,1436.47 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="351.18,1436.579,342.2654,1432.3922,346.1811,1436.4747,342.0985,1440.3905,351.18,1436.579" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M70.3892,1219.583 C79.4468,1284.185 106.379,1406.075 184,1469 C219.356,1497.662 266.692,1510.643 310.884,1515.882 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="315.979,1516.454,307.4808,1511.476,311.0101,1515.8968,306.5893,1519.4262,315.979,1516.454" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M81.104,444.32 C98.8163,400.74 132.474,334.59 184,299 C214.014,278.27 250.514,265.56 286.358,257.87 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="291.641,256.77,282.0153,254.6854,286.7456,257.7876,283.6434,262.518,291.641,256.77" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M83.5594,469.85 C105.2854,449.65 144.292,416.63 184,399 C219.903,383.06 260.906,372.18 299.318,364.75 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="304.475,363.78,294.8875,361.5259,299.5625,364.7111,296.3773,369.386,304.475,363.78" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M83.9182,484.78 C128.682,479.24 248.1,464.45 335.818,453.59 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="341.021,452.95,331.5984,450.0839,336.0587,453.5632,332.5795,458.0235,341.021,452.95" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M83.9182,489.17 C124.206,494.05 224.963,506.26 308.658,516.39 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="313.639,517,305.1863,511.9451,308.6754,516.3978,304.2227,519.8869,313.639,517" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M83.6686,505.82 C105.2029,527.55 143.729,562.63 184,581 C222.056,598.36 266.109,609.31 306.708,616.22 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="311.642,617.04,303.4221,611.6148,306.71,616.218,302.1069,619.506,311.642,617.04" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M80.7542,529.55 C98.2668,573.35 131.844,640 184,675 C222.124,700.59 270.502,712.72 314.753,718.08 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="319.85,718.67,311.3685,713.6636,314.883,718.0962,310.4504,721.6108,319.85,718.67" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M104.0112,84.68 C154.035,77.68 244.29,65.04 318.301,54.68 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="323.601,53.94,314.1339,51.2243,318.6491,54.6321,315.2413,59.1473,323.601,53.94" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M104.0112,95.22 C145.915,100.97 216.048,110.6 281.216,119.55 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="286.299,120.24,277.9261,115.054,281.3454,119.5605,276.8389,122.9798,286.299,120.24" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <!--
+@startuml
+left to right direction
+
+:CenterCoordinator: as CC
+(UC24- Evaluate performance of vaccination process) as UC24
+(UC25- Generate Reports) as UC25
+(UC26- Analyze data from other centers) as UC26
+
+CC - -> (UC24)
+CC - -> (UC25)
+CC - -> (UC26)
+
+
+
+:SNSUser: as User
+(UC22- Schedule vaccination) as UC22
+(UC23- Request EU COVID digital certificate) as UC23
+
+User - -> (UC22)
+User - -> (UC23)
+
+
+:Administrator: as Admin
+(UC08- Register SNS Users) as UC08
+(UC09- I want to register a vaccination center to respond to a certain pandemic.) as UC09
+(UC10- Register Employee) as UC10
+(UC11 - I want to get a list of Employees with a given function/role) as UC11
+(UC12- Specify a new vaccine type) as UC12
+(UC13- Specify a new vaccine, and it's administration process) as UC13
+(UC14- Register Centers) as UC14
+(UC15- Register Center Coordinator) as UC15
+
+Admin - -> (UC08)
+Admin - -> (UC09)
+Admin - -> (UC10)
+Admin - -> (UC11)
+Admin - -> (UC12)
+Admin - -> (UC13)
+Admin - -> (UC14)
+Admin - -> (UC15)
+
+
+:Nurse: as Nurse
+(UC16- Schedule vaccine in healthcare center) as UC16
+(UC17- Call next SNS User to receive vaccine) as UC17
+(UC18- Administrate the vaccine) as UC18
+(UC19- Issue/Deliver vaccination certificate) as UC19
+(UC20- Send SNS User to recovery room) as UC20
+(UC21- Register adverse reactions) as UC21
+
+Nurse - -> (UC16)
+Nurse - -> (UC17)
+Nurse - -> (UC18)
+Nurse - -> (UC19)
+Nurse - -> (UC20)
+Nurse - -> (UC21)
+
+:Receptionist: as Receptionist
+(UC02- Register arrival of the SNS Users) as UC02
+(UC03- As a receptionist, I want to register an SNS user) as UC03
+
+Receptionist - -> (UC02)
+Receptionist - -> (UC03)
+@enduml
+
+PlantUML version 2017.11(Wed Apr 19 17:18:59 BST 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_111-b14
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

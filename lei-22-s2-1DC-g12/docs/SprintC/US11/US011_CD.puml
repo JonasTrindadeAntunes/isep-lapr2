@@ -1,0 +1,86 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class Employee
+{
+-name
+-adress
+-phoneNumber
+-emailAdress
+-socialSN
+-postCode
+-city
+
+}
+class Administrator
+
+class Nurse
+
+class Recepcionist
+
+
+class CenterCoordinator
+
+
+class Platform
+{
+-designation
++getRegisterEmployee()
+
+}
+
+
+class ListEmployeeByRoleController
+{
+-m_oApp
+-m_oPlatform
+-m_oCompany
++getListofRoles()
++getListEmployeeByRole(roleChoice)
+}
+class Company
+{
+-designation
++getPlatform()
++getAuthFacade()
+}
+class RegisterEmployee
+{
+-List<Employee> listEmployee
++getListEmployeeByRole(roleChoice))
+
+}
+class App
+{
+    +getCompany()
+    +getCurrentUserSession()
+    +{static} static getInstance()
+
+
+}
+
+class AuthFacade
+{
++getUserRoles()
+
+}
+
+Employee <|-- Nurse
+Employee <|-- CenterCoordinator
+Employee <|-- Recepcionist
+Employee <|-- Administrator
+ListEmployeeByRoleController ..> Company
+ListEmployeeByRoleController ..> App
+ListEmployeeByRoleUI ..> ListEmployeeByRoleController
+ListEmployeeByRoleController ..> Platform
+ListEmployeeByRoleController ..> AuthFacade
+Platform "1" -- "1" RegisterEmployee : has >
+RegisterEmployee "1"--> "*" Employee : knows >
+RegisterEmployee ..> AuthFacade
+Company "1" --> "1" Platform : has >
+
+
+@enduml

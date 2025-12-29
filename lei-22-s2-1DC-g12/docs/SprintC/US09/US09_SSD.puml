@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+'hide footbox
+actor "Administrator" as ADM
+
+participant ":System" as SYS
+
+activate ADM
+ADM -> SYS :Starts registering a new vaccination center
+activate SYS
+SYS --> ADM : show types of vaccination center and ask to select one
+ADM -> SYS : selects the intended type of vaccination center
+SYS --> ADM : request data(i.e., name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines)
+ADM -> SYS : types requested data
+SYS --> ADM : shows the data and requests a confirmation
+ADM -> SYS : confirms
+SYS --> ADM : informs operation success
+
+
+
+deactivate SYS
+deactivate ADM
+
+@enduml

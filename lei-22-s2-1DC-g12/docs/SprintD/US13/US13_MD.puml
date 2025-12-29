@@ -1,0 +1,29 @@
+
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+hide methods
+left to right direction
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class Administrator
+class Company
+class Platform
+class VaccinationCenter
+class Vaccine
+class AdministrationProcess
+class VaccineType
+abstract class Employee
+
+Administrator --|> Employee
+Company "1"--"1" Platform : has >
+Company "1"--"*" Administrator : has >
+Company "1"--"*" VaccinationCenter : manages >
+VaccinationCenter "1"--"*" Vaccine : applies >
+Vaccine "1"--"*" AdministrationProcess : has >
+Vaccine "*"--"1" VaccineType : is of >
+
+@enduml

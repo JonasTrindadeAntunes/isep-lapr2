@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1259px" preserveAspectRatio="none" style="width:2104px;height:1259px;background:#FFFFFF;" version="1.1" viewBox="0 0 2104 1259" width="2104px" zoomAndPan="magnify"><defs><filter height="300%" id="f1t803h1pmuul8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="1055.8594" style="stroke:#A80036;stroke-width:1.0;" width="10" x="44.5" y="99.6094"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="362.4609" style="stroke:#A80036;stroke-width:1.0;" width="10" x="406.5" y="121.9609"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="79.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="406.5" y="514.7734"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="322.8281" style="stroke:#A80036;stroke-width:1.0;" width="10" x="406.5" y="624.5313"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="177.7578" style="stroke:#A80036;stroke-width:1.0;" width="10" x="406.5" y="977.7109"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="301.7578" style="stroke:#A80036;stroke-width:1.0;" width="10" x="764.5" y="152.3125"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="243.4219" style="stroke:#A80036;stroke-width:1.0;" width="10" x="764.5" y="703.9375"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="147.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="764.5" y="1008.0625"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="924.5" y="182.6641"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="993.5" y="243.0156"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1097" y="303.3672"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1213.5" y="363.7188"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1367.5" y="424.0703"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="133.6641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1367.5" y="783.3438"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="117.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1367.5" y="1038.4141"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="49" x2="49" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="411" x2="411" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="769" x2="769" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="929" x2="929" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="998" x2="998" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1102" x2="1102" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1218" x2="1218" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1372" x2="1372" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1622" x2="1622" y1="89.6094" y2="1173.4688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1867" x2="1867" y1="824.6484" y2="1173.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="5" y="86.5332">Administrator</text><ellipse cx="49.5" cy="15" fill="#FEFECE" filter="url(#f1t803h1pmuul8)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M49.5,23 L49.5,50 M36.5,31 L62.5,31 M49.5,50 L36.5,65 M49.5,50 L62.5,65 " fill="none" filter="url(#f1t803h1pmuul8)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="5" y="1187.002">Administrator</text><ellipse cx="49.5" cy="1200.0781" fill="#FEFECE" filter="url(#f1t803h1pmuul8)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M49.5,1208.0781 L49.5,1235.0781 M36.5,1216.0781 L62.5,1216.0781 M49.5,1235.0781 L36.5,1250.0781 M49.5,1235.0781 L62.5,1250.0781 " fill="none" filter="url(#f1t803h1pmuul8)" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="199" x="310" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="317" y="74.5332">:RegisterVaccinationCenterUI</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="199" x="310" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="317" y="1194.002">:RegisterVaccinationCenterUI</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="249" x="643" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="235" x="650" y="74.5332">:RegisterVaccinationCenterController</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="249" x="643" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="235" x="650" y="1194.002">:RegisterVaccinationCenterController</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="43" x="906" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="913" y="74.5332">:App</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="43" x="906" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="913" y="1194.002">:App</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="67" x="963" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="970" y="74.5332">app:App</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="67" x="963" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="970" y="1194.002">app:App</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="112" x="1044" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="1051" y="74.5332">comp:Company</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="112" x="1044" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="1051" y="1194.002">comp:Company</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="93" x="1170" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="1177" y="74.5332">plat:Platform</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="93" x="1170" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="1177" y="1194.002">plat:Platform</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="187" x="1277" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="1284" y="74.5332">:RegisterVaccinationCenter</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="187" x="1277" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="1284" y="1194.002">:RegisterVaccinationCenter</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="284" x="1478" y="35.3906"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25" x="1607.5" y="56.9238">:ltvc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="1489" y="74.5332">List&lt;String&gt; listTypesOfVaccinationCenter</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="284" x="1478" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25" x="1607.5" y="1194.002">:ltvc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="1489" y="1211.6113">List&lt;String&gt; listTypesOfVaccinationCenter</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="178" x="1776" y="1172.4688"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="1783" y="1194.002">center :VaccinationCenter</text><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="1055.8594" style="stroke:#A80036;stroke-width:1.0;" width="10" x="44.5" y="99.6094"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="362.4609" style="stroke:#A80036;stroke-width:1.0;" width="10" x="406.5" y="121.9609"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="79.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="406.5" y="514.7734"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="322.8281" style="stroke:#A80036;stroke-width:1.0;" width="10" x="406.5" y="624.5313"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="177.7578" style="stroke:#A80036;stroke-width:1.0;" width="10" x="406.5" y="977.7109"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="301.7578" style="stroke:#A80036;stroke-width:1.0;" width="10" x="764.5" y="152.3125"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="243.4219" style="stroke:#A80036;stroke-width:1.0;" width="10" x="764.5" y="703.9375"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="147.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="764.5" y="1008.0625"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="924.5" y="182.6641"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="993.5" y="243.0156"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1097" y="303.3672"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1213.5" y="363.7188"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1367.5" y="424.0703"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="133.6641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1367.5" y="783.3438"/><rect fill="#FFFFFF" filter="url(#f1t803h1pmuul8)" height="117.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1367.5" y="1038.4141"/><polygon fill="#A80036" points="394.5,117.9609,404.5,121.9609,394.5,125.9609,398.5,121.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="54.5" x2="400.5" y1="121.9609" y2="121.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="61.5" y="117.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="245" x="72.5" y="117.1045">Starts registering a new vaccination center</text><polygon fill="#A80036" points="752.5,148.3125,762.5,152.3125,752.5,156.3125,756.5,152.3125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="416.5" x2="758.5" y1="152.3125" y2="152.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="423.5" y="147.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="434.5" y="147.4561">getTypesOfVaccinationCenter()</text><polygon fill="#A80036" points="912.5,178.6641,922.5,182.6641,912.5,186.6641,916.5,182.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.5" x2="918.5" y1="182.6641" y2="182.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="781.5" y="177.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="112" x="792.5" y="177.8076">app = getInstance()</text><polygon fill="#A80036" points="981.5,239.0156,991.5,243.0156,981.5,247.0156,985.5,243.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.5" x2="987.5" y1="243.0156" y2="243.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="781.5" y="238.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="792.5" y="238.1592">comp = getCompany()</text><polygon fill="#A80036" points="1085,299.3672,1095,303.3672,1085,307.3672,1089,303.3672" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.5" x2="1091" y1="303.3672" y2="303.3672"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="781.5" y="298.5107">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="792.5" y="298.5107">plat = getPlatform()</text><polygon fill="#A80036" points="1201.5,359.7188,1211.5,363.7188,1201.5,367.7188,1205.5,363.7188" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.5" x2="1207.5" y1="363.7188" y2="363.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="781.5" y="358.8623">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="212" x="792.5" y="358.8623">grv = getRegisterVaccinationCenter()</text><polygon fill="#A80036" points="1355.5,420.0703,1365.5,424.0703,1355.5,428.0703,1359.5,424.0703" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.5" x2="1361.5" y1="424.0703" y2="424.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="781.5" y="419.2139">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="215" x="792.5" y="419.2139">ltvc = getTypesOfVaccinationCenter()</text><polygon fill="#A80036" points="65.5,480.4219,55.5,484.4219,65.5,488.4219,61.5,484.4219" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.5" x2="410.5" y1="484.4219" y2="484.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="71.5" y="479.5654">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="317" x="82.5" y="479.5654">show types of vaccination center and ask to select one</text><polygon fill="#A80036" points="394.5,510.7734,404.5,514.7734,394.5,518.7734,398.5,514.7734" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="54.5" x2="400.5" y1="514.7734" y2="514.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="61.5" y="509.917">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="268" x="72.5" y="509.917">selects the intended type of vaccination center</text><polygon fill="#A80036" points="65.5,590.1797,55.5,594.1797,65.5,598.1797,61.5,594.1797" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.5" x2="410.5" y1="594.1797" y2="594.1797"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="71.5" y="564.7959">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="280" x="89.5" y="540.2686">request data(i.e., name, address, phoneNumber,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="253" x="89.5" y="556.6201">emailAddress, faxNumber, websiteAddress,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="243" x="89.5" y="572.9717">openingHours, closingHours, slotDuration,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="89.5" y="589.3232">maxNumberVaccines)</text><polygon fill="#A80036" points="394.5,620.5313,404.5,624.5313,394.5,628.5313,398.5,624.5313" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="54.5" x2="400.5" y1="624.5313" y2="624.5313"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="61.5" y="619.6748">11</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="122" x="79.5" y="619.6748">types requested data</text><polygon fill="#A80036" points="752.5,699.9375,762.5,703.9375,752.5,707.9375,756.5,703.9375" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="416.5" x2="758.5" y1="703.9375" y2="703.9375"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="423.5" y="674.5537">12</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="311" x="441.5" y="650.0264">newVaccinationCenter(name, address, phoneNumber,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="253" x="441.5" y="666.3779">emailAddress, faxNumber, websiteAddress,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="243" x="441.5" y="682.7295">openingHours, closingHours, slotDuration,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="280" x="441.5" y="699.0811">maxNumberVaccines, typeOfVaccinationCenter)</text><polygon fill="#A80036" points="1355.5,779.3438,1365.5,783.3438,1355.5,787.3438,1359.5,783.3438" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.5" x2="1361.5" y1="783.3438" y2="783.3438"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="781.5" y="753.96">13</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="363" x="799.5" y="729.4326">center = newVaccinationCenter(name, address, phoneNumber,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="253" x="799.5" y="745.7842">emailAddress, faxNumber, websiteAddress,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="243" x="799.5" y="762.1357">openingHours, closingHours, slotDuration,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="280" x="799.5" y="778.4873">maxNumberVaccines, typeOfVaccinationCenter)</text><polygon fill="#A80036" points="1764,809.6953,1774,813.6953,1764,817.6953,1768,813.6953" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1377.5" x2="1770" y1="813.6953" y2="813.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="1384.5" y="808.8389">14</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="1402.5" y="808.8389">create(name, address,...)</text><rect fill="#FEFECE" filter="url(#f1t803h1pmuul8)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="178" x="1776" y="791.3438"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="1783" y="812.877">center :VaccinationCenter</text><path d="M1634,842.9531 L1634,884.9531 L2095,884.9531 L2095,852.9531 L2085,842.9531 L1634,842.9531 " fill="#FBFB77" filter="url(#f1t803h1pmuul8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M2085,842.9531 L2085,852.9531 L2095,852.9531 L2085,842.9531 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="40" x="1640" y="861.4482">center</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="343" x="1684" y="861.4482">might be an instance of CommunityMassVaccinationCenter</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="436" x="1644" y="877.7998">or HealthCareCenter.It depends of the type of center receiving this message</text><polygon fill="#A80036" points="1360.5,913.0078,1370.5,917.0078,1360.5,921.0078,1364.5,917.0078" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.5" x2="1366.5" y1="917.0078" y2="917.0078"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="781.5" y="912.1514">15</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="193" x="799.5" y="912.1514">validateVaccinationCenter(center)</text><polygon fill="#A80036" points="65.5,943.3594,55.5,947.3594,65.5,951.3594,61.5,947.3594" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.5" x2="410.5" y1="947.3594" y2="947.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="71.5" y="942.5029">16</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="252" x="89.5" y="942.5029">shows the data and requests a confirmation</text><polygon fill="#A80036" points="394.5,973.7109,404.5,977.7109,394.5,981.7109,398.5,977.7109" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="54.5" x2="400.5" y1="977.7109" y2="977.7109"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="61.5" y="972.8545">17</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="79.5" y="972.8545">confirms</text><polygon fill="#A80036" points="752.5,1004.0625,762.5,1008.0625,752.5,1012.0625,756.5,1008.0625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="416.5" x2="758.5" y1="1008.0625" y2="1008.0625"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="423.5" y="1003.2061">18</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="441.5" y="1003.2061">registerVaccinationCenter()</text><polygon fill="#A80036" points="1355.5,1034.4141,1365.5,1038.4141,1355.5,1042.4141,1359.5,1038.4141" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.5" x2="1361.5" y1="1038.4141" y2="1038.4141"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="781.5" y="1033.5576">19</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="193" x="799.5" y="1033.5576">registerVaccinationCenter(center)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1377.5" x2="1419.5" y1="1068.7656" y2="1068.7656"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1419.5" x2="1419.5" y1="1068.7656" y2="1081.7656"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1378.5" x2="1419.5" y1="1081.7656" y2="1081.7656"/><polygon fill="#A80036" points="1388.5,1077.7656,1378.5,1081.7656,1388.5,1085.7656,1384.5,1081.7656" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="1384.5" y="1063.9092">20</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="193" x="1402.5" y="1063.9092">validateVaccinationCenter(center)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1377.5" x2="1419.5" y1="1112.1172" y2="1112.1172"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1419.5" x2="1419.5" y1="1112.1172" y2="1125.1172"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1378.5" x2="1419.5" y1="1125.1172" y2="1125.1172"/><polygon fill="#A80036" points="1388.5,1121.1172,1378.5,1125.1172,1388.5,1129.1172,1384.5,1125.1172" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="1384.5" y="1107.2607">21</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="171" x="1402.5" y="1107.2607">addVaccinationCenter(center)</text><polygon fill="#A80036" points="60.5,1151.4688,50.5,1155.4688,60.5,1159.4688,56.5,1155.4688" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="54.5" x2="410.5" y1="1155.4688" y2="1155.4688"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="66.5" y="1150.6123">22</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="84.5" y="1150.6123">informs operation success</text><!--MD5=[fa554003329c4a48032163811e9ecd1b]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+autonumber
+'hide footbox
+actor "Administrator" as ADM
+
+participant ":RegisterVaccinationCenterUI" as UI
+participant ":RegisterVaccinationCenterController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "comp:Company" as COMP
+participant "plat:Platform" as PLAT
+participant ":RegisterVaccinationCenter" as REGVC
+participant ":ltvc\n List<String> listTypesOfVaccinationCenter" as ltvc
+participant "center :VaccinationCenter" as VC
+
+
+activate ADM
+'1
+ADM -> UI :Starts registering a new vaccination center
+
+
+activate UI
+'2
+UI -> CTRL : getTypesOfVaccinationCenter()
+
+
+
+activate CTRL
+'3
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+
+'5
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+
+'6
+CTRL -> PLAT : grv = getRegisterVaccinationCenter()
+activate PLAT
+deactivate PLAT
+
+'7
+CTRL -> REGVC : ltvc = getTypesOfVaccinationCenter()
+activate REGVC
+deactivate REGVC
+deactivate CTRL
+
+'8
+UI - -> ADM : show types of vaccination center and ask to select one
+deactivate UI
+
+'9
+ADM -> UI : selects the intended type of vaccination center
+activate UI
+'10
+UI - -> ADM : request data(i.e., name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines)
+deactivate UI
+
+
+'11
+ADM -> UI : types requested data
+activate UI
+'12
+UI -> CTRL : newVaccinationCenter(name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines, typeOfVaccinationCenter)
+activate CTRL
+
+
+'13
+CTRL -> REGVC : center = newVaccinationCenter(name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines, typeOfVaccinationCenter)
+
+activate REGVC
+'14
+REGVC - -> VC** : create(name, address,...)
+note over VC : **center** might be an instance of CommunityMassVaccinationCenter\n or HealthCareCenter.It depends of the type of center receiving this message
+'15
+CTRL -> REGVC : validateVaccinationCenter(center)
+
+deactivate REGVC
+'16
+UI - -> ADM : shows the data and requests a confirmation
+
+deactivate CTRL
+deactivate UI
+
+'17
+ADM -> UI : confirms
+activate UI
+'18
+UI -> CTRL : registerVaccinationCenter()
+activate CTRL
+'19
+CTRL -> REGVC : registerVaccinationCenter(center)
+activate REGVC
+
+'20
+REGVC -> REGVC : validateVaccinationCenter(center)
+'21
+REGVC -> REGVC : addVaccinationCenter(center)
+'22
+UI - -> ADM : informs operation success
+
+
+deactivate REGVC
+deactivate CTRL
+deactivate UI
+deactivate ADM
+@enduml
+
+@startuml
+
+autonumber
+
+autonumber
+actor "Administrator" as ADM
+
+participant ":RegisterVaccinationCenterUI" as UI
+participant ":RegisterVaccinationCenterController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "comp:Company" as COMP
+participant "plat:Platform" as PLAT
+participant ":RegisterVaccinationCenter" as REGVC
+participant ":ltvc\n List<String> listTypesOfVaccinationCenter" as ltvc
+participant "center :VaccinationCenter" as VC
+
+
+activate ADM
+ADM -> UI :Starts registering a new vaccination center
+
+
+activate UI
+UI -> CTRL : getTypesOfVaccinationCenter()
+
+
+
+activate CTRL
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+
+CTRL -> PLAT : grv = getRegisterVaccinationCenter()
+activate PLAT
+deactivate PLAT
+
+CTRL -> REGVC : ltvc = getTypesOfVaccinationCenter()
+activate REGVC
+deactivate REGVC
+deactivate CTRL
+
+UI - -> ADM : show types of vaccination center and ask to select one
+deactivate UI
+
+ADM -> UI : selects the intended type of vaccination center
+activate UI
+UI - -> ADM : request data(i.e., name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines)
+deactivate UI
+
+
+ADM -> UI : types requested data
+activate UI
+UI -> CTRL : newVaccinationCenter(name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines, typeOfVaccinationCenter)
+activate CTRL
+
+
+CTRL -> REGVC : center = newVaccinationCenter(name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines, typeOfVaccinationCenter)
+
+activate REGVC
+REGVC - -> VC** : create(name, address,...)
+note over VC : **center** might be an instance of CommunityMassVaccinationCenter\n or HealthCareCenter.It depends of the type of center receiving this message
+CTRL -> REGVC : validateVaccinationCenter(center)
+
+deactivate REGVC
+UI - -> ADM : shows the data and requests a confirmation
+
+deactivate CTRL
+deactivate UI
+
+ADM -> UI : confirms
+activate UI
+UI -> CTRL : registerVaccinationCenter()
+activate CTRL
+CTRL -> REGVC : registerVaccinationCenter(center)
+activate REGVC
+
+REGVC -> REGVC : validateVaccinationCenter(center)
+REGVC -> REGVC : addVaccinationCenter(center)
+UI - -> ADM : informs operation success
+
+
+deactivate REGVC
+deactivate CTRL
+deactivate UI
+deactivate ADM
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

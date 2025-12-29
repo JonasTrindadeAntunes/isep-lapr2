@@ -1,0 +1,117 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+autonumber
+'hide footbox
+actor "Administrator" as ADM
+
+participant ":RegisterVaccinationCenterUI" as UI
+participant ":RegisterVaccinationCenterController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "comp:Company" as COMP
+participant "plat:Platform" as PLAT
+participant ":RegisterVaccinationCenter" as REGVC
+participant ":ltvc\n List<String> listTypesOfVaccinationCenter" as ltvc
+participant "center :VaccinationCenter" as VC
+
+
+activate ADM
+'1
+ADM -> UI :Starts registering a new vaccination center
+
+
+activate UI
+'2
+UI -> CTRL : getTypesOfVaccinationCenter()
+
+
+
+activate CTRL
+'3
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+
+'5
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+
+'6
+CTRL -> PLAT : grv = getRegisterVaccinationCenter()
+activate PLAT
+deactivate PLAT
+
+'7
+CTRL -> REGVC : ltvc = getTypesOfVaccinationCenter()
+activate REGVC
+deactivate REGVC
+deactivate CTRL
+
+'8
+UI --> ADM : show types of vaccination center and ask to select one
+deactivate UI
+
+'9
+ADM -> UI : selects the intended type of vaccination center
+activate UI
+'10
+UI --> ADM : request data(i.e., name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines)
+deactivate UI
+
+
+'11
+ADM -> UI : types requested data
+activate UI
+'12
+UI -> CTRL : newVaccinationCenter(name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines, typeOfVaccinationCenter)
+activate CTRL
+
+
+'13
+CTRL -> REGVC : center = newVaccinationCenter(name, address, phoneNumber,\nemailAddress, faxNumber, websiteAddress,\nopeningHours, closingHours, slotDuration,\nmaxNumberVaccines, typeOfVaccinationCenter)
+
+activate REGVC
+'14
+REGVC --> VC** : create(name, address,...)
+note over VC : **center** might be an instance of CommunityMassVaccinationCenter\n or HealthCareCenter.It depends of the type of center receiving this message
+'15
+CTRL -> REGVC : validateVaccinationCenter(center)
+
+deactivate REGVC
+'16
+UI --> ADM : shows the data and requests a confirmation
+
+deactivate CTRL
+deactivate UI
+
+'17
+ADM -> UI : confirms
+activate UI
+'18
+UI -> CTRL : registerVaccinationCenter()
+activate CTRL
+'19
+CTRL -> REGVC : registerVaccinationCenter(center)
+activate REGVC
+
+'20
+REGVC -> REGVC : validateVaccinationCenter(center)
+'21
+REGVC -> REGVC : addVaccinationCenter(center)
+'22
+UI --> ADM : informs operation success
+
+
+deactivate REGVC
+deactivate CTRL
+deactivate UI
+deactivate ADM
+@enduml

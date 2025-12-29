@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+'hide footbox
+actor "Center Coordinator" as CC
+participant ":System" as SYS
+
+activate CC
+CC -> SYS : Starts the export of vaccination statistics
+activate SYS
+SYS --> CC : asks the user to specify the beginning date to \n do the vaccinations statistics
+deactivate SYS
+CC -> SYS : Inserts the beginning date
+activate SYS
+SYS --> CC : asks the user to specify the end date to \n do the vaccinations statistics
+deactivate SYS
+
+CC -> SYS :Inserts the end date
+activate SYS
+SYS --> CC: show list of vaccination statistics and \n and request a confirmation
+deactivate SYS
+
+CC -> SYS: confirms data
+activate SYS
+SYS --> CC : ask the user to introduce the file name to \n where the data should be exported
+
+deactivate SYS
+
+CC -> SYS : introduces the file name
+activate SYS
+SYS --> CC : show name and type of the file \n where data was exported
+SYS --> CC : informs of operation success
+deactivate SYS
+
+
+
+
+@enduml

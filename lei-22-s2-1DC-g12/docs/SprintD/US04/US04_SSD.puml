@@ -1,0 +1,18 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+autonumber
+
+actor Receptionist
+
+activate System
+activate Receptionist
+Receptionist -> System: starts registering the arrival of a SNSUser
+System --> Receptionist: requests data (snsUserNumber)
+Receptionist -> System : inputs data
+Receptionist <-- System: tells the receptionist that a schedule for \nthis sns user exits and was validated,\n asks if he wants to send the user to \n the waiting room
+Receptionist -> System : confirms and sends user to the waiting room
+Receptionist <-- System: informs operation success
+@enduml

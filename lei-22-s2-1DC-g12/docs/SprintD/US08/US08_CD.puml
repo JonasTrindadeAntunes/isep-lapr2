@@ -1,0 +1,134 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class AdministerVaccineUI
+
+class AdministerVaccineController{
+-App m_oApp
++validateUserSession()
++getListOfWaitingRoomUsers()
++getAvaliableVaccines()
++getVaccineAdministrationProcess()
++getAdverReactions()
++getDosages()
++createVaccineAdministration()
++registerVaccineAdministration()
+}
+
+class App{
++getCompany()
++getCurrentUserSession()
++{static} static getInstance()
+-bootstrap()
+}
+
+class Company{
+-designation
++getPlatform()
++getAuthFacade()
+}
+
+class Platform{
+-description
+-RegisterEmployee m_oRegisterEmployee
++getRegisterEmployee()
+}
+
+class AuthFacade
+{
++getCurrentUserSession()
+}
+
+class RegisterEmployee{
+-List<Employee> listEmployee
++getWorkingVaccinationCenter()
+}
+
+class Employee{
+-VaccinationCenter vaccinationCenter
++getWorkingVaccinationCenter()
+}
+
+class VaccinationCenter{
+-WaitingRoom waitingRoom
++getWaitingRoomSNSUsers()
++getVaccineScheduleFromUser()
++getAvaliableVaccines()
++createVaccineAdministration()
++registerVaccineAdministration()
+}
+
+class WaitingRoom{
+-TreeMap<SNSUser,Date> map
++getVaccineScheduleFromUser()
+}
+
+class Vaccine{
+-List<AdministrationProcess> listAdministrationProcess
+-id
+-name
++getListAdministrationProcess()
+}
+
+class VaccineSchedule{
+-vaccinationDate
+-snsUser
+-vaccineType
+-validateEntrance
++getVaccineType()
+}
+
+class SNSUser{
+-name
+-address
+-gender
+-email
+-birthDate
+-snsUserNumber
+-citizenCardNumber
+-scheduledVaccinations
+-adverseReactions
+-vaccineAdministrations
++getAdverseReactions()
++registerVaccineAdministration()
+}
+
+class VaccineAdministration{
+-snsUser
+-vaccineType
+-vaccine
+-lotNumber
+-date
++getSnsUser()
+}
+
+class AdministrationProcess{
+-referenceDose
++getReferenceDose()
+}
+
+
+AdministerVaccineUI ..> AdministerVaccineController
+AdministerVaccineController ..> Company
+AdministerVaccineController ..> Platform
+AdministerVaccineController ..> App
+Company ..> AuthFacade
+App ..> AuthFacade
+Platform "1" --> "1" RegisterEmployee : has >
+RegisterEmployee "1" --> "*" Employee : has >
+Employee "1" --> "1" VaccinationCenter : works in >
+VaccinationCenter "1" --> "1" WaitingRoom : has >
+WaitingRoom "1" --> "*" SNSUser : has >
+VaccinationCenter "1" --> "*" VaccineSchedule
+VaccineSchedule "*" --> "1" Vaccine : for taking >
+Vaccine "1" --> "*" AdministrationProcess : has >
+SNSUser "1" --> "1" VaccineAdministration : gets >
+VaccineAdministration "*" --> "1" Vaccine : of >
+VaccineSchedule "0..1" --> "0..1" VaccineAdministration : fulfilling <
+
+@enduml

@@ -1,0 +1,94 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+'hide methods
+
+class RegisterVaccinationCenterUI
+class RegisterVaccinationCenterController
+{
+    -App m_oApp
+    -Platform m_oPlatform
+    -Company m_oCompany;
+    -VaccinationCenter m_oVaccinationCenter;
+    +boolean newVaccinationCenter(String name, String address,String phoneNumber,String emailAddress, String faxNumber, String websiteAddress,
+    Double openingHours, Double closingHours,Double slotDuration, Integer maxNumberVaccines,int typeOfVaccinationCenter)
+    +registerVaccinationCenter()
+    +getTypesOfVaccinationCenter()
+    +String getVaccinationCenterString()
+}
+
+class Company {
+-designation
+-getPlatform()
+}
+
+
+class Platform
+{
+-description
+-RegisterVaccinationCenter m_oRegisterVaccinationCenter
++getRegisterVaccinationCenter()
+}
+
+
+class App
+{
+    +getCompany()
+    +getCurrentUserSession()
+    +{static} static getInstance()
+
+}
+
+
+abstract class VaccinationCenter
+{
+    -String name
+    -String address
+    -String phoneNumber
+    -String emailAddress
+    -String faxNumber
+    -String websiteAddress
+    -Double openingHours
+    -Double closingHours
+    -Double slotDuration
+    -Integer maxNumberVaccines
+    +VaccinationCenter(name,address,phoneNumber,emailAddress,faxNumber,websiteAddress,openingHours,closingHours,slotDuration,maxNumberVaccines)
+    +hasCode()
+    +equals(Object o)
+    +toString()
+
+}
+
+class CommunityMassVaccinationCenter
+class HealthCareCenter
+
+
+class RegisterVaccinationCenter
+{
+    -List<VaccinationCenter> listVaccinationCenters
+    +newVaccinationCenter(String name, String address,String phoneNumber,String emailAddress, String faxNumber, String websiteAddress,
+                              Double openingHours, Double closingHours,Double slotDuration, Integer maxNumberVaccines,int typeOfVaccinationCenter)
+    +registerVaccinationCenter(VaccinationCenter center)
+    -addVaccinationCenter(VaccinationCenter center)
+    +validateVaccinationCenter(VaccinationCenter center)
+    +getTypesOfVaccinationCenter()
+}
+
+
+RegisterVaccinationCenterUI ..> RegisterVaccinationCenterController
+RegisterVaccinationCenterController ..> App
+RegisterVaccinationCenterController ..> Company
+RegisterVaccinationCenterController ..> Platform
+RegisterVaccinationCenterController ..> VaccinationCenter
+VaccinationCenter <|-- CommunityMassVaccinationCenter
+VaccinationCenter <|-- HealthCareCenter
+Platform "1" -- "1" RegisterVaccinationCenter : has >
+RegisterVaccinationCenter "1" -- "*" VaccinationCenter : has >
+RegisterVaccinationCenter ..>  CommunityMassVaccinationCenter
+RegisterVaccinationCenter ..> HealthCareCenter
+Company "1" -- "1" Platform : has >
+@enduml

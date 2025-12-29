@@ -1,0 +1,187 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ExportVaccinationStatisticsGUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.view.CenterCoordinator.ExportVaccinationStatistics</a>
+</div>
+
+<h1>Coverage Summary for Class: ExportVaccinationStatisticsGUI (app.ui.view.CenterCoordinator.ExportVaccinationStatistics)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ExportVaccinationStatisticsGUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/36)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.view.CenterCoordinator.ExportVaccinationStatistics;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.controller.CenterCoordinator.ExportVaccinationStatisticsController;
+<i class="no-highlight">4</i>&nbsp;import app.ui.view.CenterCoordinator.CenterCoordinatorOptionsMenu;
+<i class="no-highlight">5</i>&nbsp;import javafx.scene.control.Alert;
+<i class="no-highlight">6</i>&nbsp;import javafx.stage.Stage;
+<i class="no-highlight">7</i>&nbsp;
+<i class="no-highlight">8</i>&nbsp;import java.util.Date;
+<i class="no-highlight">9</i>&nbsp;import java.util.List;
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;public class ExportVaccinationStatisticsGUI {
+<i class="no-highlight">12</i>&nbsp;
+<i class="no-highlight">13</i>&nbsp;    private ExportVaccinationStatisticsController controller;
+<i class="no-highlight">14</i>&nbsp;
+<i class="no-highlight">15</i>&nbsp;    private CenterCoordinatorOptionsMenu centerCoordinatorOptionsMenu;
+<i class="no-highlight">16</i>&nbsp;
+<b class="nc"><i class="no-highlight">17</i>&nbsp;    public ExportVaccinationStatisticsGUI(CenterCoordinatorOptionsMenu centerCoordinatorOptionsMenu){</b>
+<b class="nc"><i class="no-highlight">18</i>&nbsp;        this.centerCoordinatorOptionsMenu = centerCoordinatorOptionsMenu;</b>
+<b class="nc"><i class="no-highlight">19</i>&nbsp;        controller = new ExportVaccinationStatisticsController();</b>
+<i class="no-highlight">20</i>&nbsp;    }
+<i class="no-highlight">21</i>&nbsp;
+<i class="no-highlight">22</i>&nbsp;    public void start() {
+<b class="nc"><i class="no-highlight">23</i>&nbsp;        if(!controller.getVaccinationCenter()){</b>
+<b class="nc"><i class="no-highlight">24</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">25</i>&nbsp;            a.setContentText(&quot;The center coordinator doesn&#39;t have a vaccination center assinged!&quot;);</b>
+<b class="nc"><i class="no-highlight">26</i>&nbsp;            a.show();</b>
+<b class="nc"><i class="no-highlight">27</i>&nbsp;            backToCoordinatorMenu();</b>
+<i class="no-highlight">28</i>&nbsp;            return;
+<i class="no-highlight">29</i>&nbsp;        }
+<i class="no-highlight">30</i>&nbsp;        try {
+<b class="nc"><i class="no-highlight">31</i>&nbsp;            ExportVaccinationStatistics_1 exportVaccinationStatistics_1 = (ExportVaccinationStatistics_1) this.centerCoordinatorOptionsMenu.getCenterCoordinatorGUI().getMainApp().replaceSceneContent(&quot;/fxml/ExportVaccinationStatistics_1.fxml&quot;);</b>
+<b class="nc"><i class="no-highlight">32</i>&nbsp;            exportVaccinationStatistics_1.setExportVaccinationStatisticsGUI(this);</b>
+<b class="nc"><i class="no-highlight">33</i>&nbsp;        }catch(Exception e){</b>
+<b class="nc"><i class="no-highlight">34</i>&nbsp;            throw new RuntimeException(e);</b>
+<b class="nc"><i class="no-highlight">35</i>&nbsp;        }</b>
+<i class="no-highlight">36</i>&nbsp;    }
+<i class="no-highlight">37</i>&nbsp;
+<i class="no-highlight">38</i>&nbsp;
+<i class="no-highlight">39</i>&nbsp;    public List&lt;String&gt; getData() {
+<b class="nc"><i class="no-highlight">40</i>&nbsp;        return controller.getData();</b>
+<i class="no-highlight">41</i>&nbsp;    }
+<i class="no-highlight">42</i>&nbsp;
+<i class="no-highlight">43</i>&nbsp;    public void exportFile(String selectedDirectory) {
+<b class="nc"><i class="no-highlight">44</i>&nbsp;        boolean success = controller.exportVaccinationStatistics(selectedDirectory);</b>
+<b class="nc"><i class="no-highlight">45</i>&nbsp;        if(success){</b>
+<b class="nc"><i class="no-highlight">46</i>&nbsp;            Alert a = new Alert(Alert.AlertType.INFORMATION);</b>
+<b class="nc"><i class="no-highlight">47</i>&nbsp;            a.setContentText(&quot;File sucessfully exported!&quot;);</b>
+<b class="nc"><i class="no-highlight">48</i>&nbsp;            a.show();</b>
+<b class="nc"><i class="no-highlight">49</i>&nbsp;        }else{</b>
+<b class="nc"><i class="no-highlight">50</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">51</i>&nbsp;            a.setContentText(&quot;Error exporting file!&quot;);</b>
+<b class="nc"><i class="no-highlight">52</i>&nbsp;            a.show();</b>
+<i class="no-highlight">53</i>&nbsp;        }
+<b class="nc"><i class="no-highlight">54</i>&nbsp;        backToCoordinatorMenu();</b>
+<i class="no-highlight">55</i>&nbsp;        return;
+<i class="no-highlight">56</i>&nbsp;
+<i class="no-highlight">57</i>&nbsp;    }
+<i class="no-highlight">58</i>&nbsp;
+<i class="no-highlight">59</i>&nbsp;    public void backToCoordinatorMenu() {
+<b class="nc"><i class="no-highlight">60</i>&nbsp;        this.centerCoordinatorOptionsMenu.getCenterCoordinatorGUI().runCenterCoordinatorGUI();</b>
+<i class="no-highlight">61</i>&nbsp;    }
+<i class="no-highlight">62</i>&nbsp;
+<i class="no-highlight">63</i>&nbsp;    public Stage getMainStage(){
+<b class="nc"><i class="no-highlight">64</i>&nbsp;        return this.centerCoordinatorOptionsMenu.getCenterCoordinatorGUI().getMainApp().getStage();</b>
+<i class="no-highlight">65</i>&nbsp;    }
+<i class="no-highlight">66</i>&nbsp;
+<i class="no-highlight">67</i>&nbsp;    public void getStatistics(Date start, Date end) {
+<b class="nc"><i class="no-highlight">68</i>&nbsp;        if(!controller.addFullyVaccinatedUsers(start,end)){</b>
+<b class="nc"><i class="no-highlight">69</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">70</i>&nbsp;            a.setContentText(&quot;Error creating data!&quot;);</b>
+<b class="nc"><i class="no-highlight">71</i>&nbsp;            a.show();</b>
+<b class="nc"><i class="no-highlight">72</i>&nbsp;            backToCoordinatorMenu();</b>
+<i class="no-highlight">73</i>&nbsp;            return;
+<i class="no-highlight">74</i>&nbsp;        }
+<i class="no-highlight">75</i>&nbsp;        try {
+<b class="nc"><i class="no-highlight">76</i>&nbsp;            ExportVaccinationStatistics_2 exportVaccinationStatistics_2 = (ExportVaccinationStatistics_2) this.centerCoordinatorOptionsMenu.getCenterCoordinatorGUI().getMainApp().replaceSceneContent(&quot;/fxml/ExportVaccinationStatistics_2.fxml&quot;);</b>
+<b class="nc"><i class="no-highlight">77</i>&nbsp;            exportVaccinationStatistics_2.setExportVaccinationStatisticsGUI(this);</b>
+<b class="nc"><i class="no-highlight">78</i>&nbsp;        }catch(Exception e){</b>
+<b class="nc"><i class="no-highlight">79</i>&nbsp;            throw new RuntimeException(e);</b>
+<b class="nc"><i class="no-highlight">80</i>&nbsp;        }</b>
+<i class="no-highlight">81</i>&nbsp;    }
+<i class="no-highlight">82</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

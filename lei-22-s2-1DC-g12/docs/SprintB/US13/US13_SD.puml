@@ -1,0 +1,80 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Administrator" as ADM
+participant ":specifyNewVaccineUI" as NVAPUI
+participant ":specifyNewVaccineController" as NVAPC
+participant ":VaccineType" as VATP
+participant ":Vaccine" as VAC
+participant ":AdministrationProcess" as ADP
+participant ":List AdministrationProcess" as List
+
+activate ADM
+ADM -> NVAPUI : asks to specify a new vaccine and administration process
+activate NVAPUI
+NVAPUI --> ADM : requests VaccineType data (code)
+deactivate NVAPUI
+ADM -> NVAPUI : gives VaccineType data
+activate NVAPUI
+NVAPUI -> NVAPC : getVaccineType(code)
+activate NVAPC
+NVAPC -> VATP : vt = getVaccineType(code)
+activate VATP
+deactivate VATP
+deactivate NVAPC
+NVAPUI --> ADM : requests Vaccine data(id, name)
+deactivate NVAPUI
+ADM -> NVAPUI : gives Vaccine data
+activate NVAPUI
+NVAPUI -> NVAPC : vac = specifyNewVaccine(vt, name)
+activate NVAPC
+NVAPC -> VAC : specifyNewVaccine(vt, name)
+activate VAC
+deactivate VAC
+NVAPC -> VATP : validateVaccine(vac)
+activate VATP
+deactivate VATP
+NVAPC -> List : createNewLIst()
+activate List
+deactivate List
+loop
+NVAPUI --> ADM :requests AdministrationProcess data(designation, ageGroup, referenceDose, timeInterval)
+deactivate NVAPC
+deactivate NVAPUI
+ADM -> NVAPUI : gives AdministrationProcess data
+activate NVAPUI
+NVAPUI -> NVAPC : admpr = specifyNewAdministrationProcess(designation, ageGroup, ReferenceDose, timeInterval)
+activate NVAPC
+NVAPC -> ADP :specifyNewAdministrationProcess
+activate ADP
+deactivate ADP
+NVAPC -> VAC : validateAdministrationProcess(admpr)
+activate VAC
+deactivate VAC
+NVAPC -> List : addAdministrationProcess(admpr)
+activate List
+deactivate List
+end
+NVAPC --> NVAPUI : result
+deactivate NVAPC
+NVAPUI --> ADM : shows all the data and requests confirmation
+deactivate NVAPC
+deactivate NVAPUI
+ADM -> NVAPUI : confirms the data
+activate NVAPUI
+NVAPUI -> NVAPC : saveVaccineAndAdministrationProcess(vac, list<admpr>)
+activate NVAPC
+NVAPC -> VATP : validateVaccineAndAdministrationProcess(vac, list<admpr>)
+activate VATP
+NVAPC -> VATP : addVaccineAndAdministrationProcess(vac, list<admpr>)
+deactivate VATP
+NVAPC --> NVAPUI : result
+deactivate NVAPC
+NVAPUI --> ADM : informs opertaion success
+deactivate NVAPUI
+deactivate NVAPC
+deactivate ADM
+
+@enduml

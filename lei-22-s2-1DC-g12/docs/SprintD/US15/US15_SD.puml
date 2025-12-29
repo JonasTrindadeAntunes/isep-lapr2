@@ -1,0 +1,199 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "CenterCoordinator" as CC
+participant ":ExportVaccinationStatisticsUI" as UI
+participant "controller\n:ExportVaccinationStatisticsController" as CTRL
+participant ":App" as APP
+participant "app\n:App" as App
+participant "comp\n:Company" as COMP
+participant "plat\n:Platform" as PLAT
+participant "ru\n:RegisterUsers" as RU
+participant "AuthFacade" as AF
+participant "session \n:UserSession" as SESSION
+participant "reg\n :RegisterEmployee" as RE
+participant "email\n :Email" as EMAIL
+participant "emp\n:Employee" as EMP
+participant "vac\n:VaccinationCenter" as VAC
+participant "evs:\n ExportVaccinationStatistics" as EVS
+participant "List<Employee>\n listEmployee"
+participant "List<String>\n listVaccinationStatistics"
+participant "ps\n:PrintStream"
+participant "fo\n:FileOutputStream"
+participant "fileName\nString"
+
+
+
+activate CC
+'1
+CC -> UI : Starts the export of vaccination statistics
+activate UI
+'2
+UI -> CTRL **: controller = ExportVaccinationStatisticsController()
+activate CTRL
+'3
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'5
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+deactivate CTRL
+
+
+
+'6
+UI ->CTRL :checkLogin()
+activate CTRL
+'7
+CTRL -> App : getCurrentUserSession()
+activate App
+'8
+App -> COMP : getUserRoleStore()
+deactivate App
+activate COMP
+'9
+COMP -> RU: getAuthFacade()
+deactivate COMP
+activate RU
+'10
+RU -> AF: getCurrentUserSession()
+deactivate RU
+
+
+activate AF
+'11
+AF -> SESSION: isLoggedInWithRole(Constants.ROLE_CENTER_COORDINATOR)
+activate SESSION
+deactivate AF
+deactivate SESSION
+deactivate CTRL
+
+
+
+'12
+UI -> CTRL:  getVaccinationCenter()
+activate CTRL
+
+'13
+CTRL -> App : email = getCurrentUserSession()
+activate App
+
+'14
+App -> COMP : getUserRoleStore()
+deactivate App
+activate COMP
+'15
+COMP -> RU: getAuthFacade()
+deactivate COMP
+activate RU
+'16
+RU -> AF: getCurrentUserSession()
+deactivate RU
+activate AF
+'17
+AF -> SESSION : getUserId()
+deactivate AF
+activate SESSION
+'18
+SESSION -> EMAIL : getEmail()
+activate EMAIL
+deactivate SESSION
+deactivate EMAIL
+
+'19
+CTRL -> PLAT : emp = getRegisterEmployee()
+activate PLAT
+'20
+PLAT -> RE: getEmployeeByEmail(email)
+activate RE
+deactivate RE
+deactivate PLAT
+'21
+CTRL -> EMP : vac =  getWorkingVaccinationCenter(email)
+activate EMP
+deactivate EMP
+deactivate CTRL
+
+UI --> CC : asks the user to specify the beginning date to \n do the vaccinations statistics
+deactivate UI
+CC -> UI : Inserts the beginning date
+activate UI
+UI --> CC : asks the user to specify the end date to \n do the vaccinations statistics
+deactivate UI
+
+
+
+CC -> UI : Inserts the end date
+activate UI
+'22
+UI -> CTRL:addFullyVaccinatedUsers(beginDate,endDate)
+activate CTRL
+'23
+CTRL-> PLAT : getExportVaccinationStatistics()
+activate PLAT
+'24
+PLAT -> EVS :addFullyVaccinatedSNSUsers(vac,beginDate,endDate)
+activate EVS
+ref over EVS: US15_SD_ExportVaccinationStatistics
+deactivate EVS
+deactivate PLAT
+deactivate CTRL
+
+
+
+'25
+UI->CTRL: getData()
+activate CTRL
+'26
+CTRL-> PLAT : getExportVaccinationStatistics()
+activate PLAT
+'27
+PLAT -> EVS : getData()
+activate EVS
+deactivate PLAT
+deactivate EVS
+deactivate CTRL
+
+
+'28
+UI --> CC : show list of vaccination statistics and \n and request a confirmation
+deactivate UI
+
+'29
+CC -> UI : confirms data
+activate UI
+UI --> CC : ask the user to introduce the file name to \n where the data should be exported
+deactivate UI
+
+CC -> UI: introduces the file name
+activate UI
+'30
+UI -> CTRL : exportVaccinationStatistics(fileName)
+activate CTRL
+'31
+CTRL-> PLAT : getExportVaccinationStatistics()
+activate PLAT
+'32
+PLAT -> EVS : exportVaccinationStatistics(fileName)
+activate EVS
+deactivate EVS
+deactivate PLAT
+deactivate CTRL
+
+
+deactivate CTRL
+'35
+UI --> CC : show name and type of the file \n where data was exported
+'36
+UI --> CC: informs of operation success
+deactivate UI
+
+@enduml

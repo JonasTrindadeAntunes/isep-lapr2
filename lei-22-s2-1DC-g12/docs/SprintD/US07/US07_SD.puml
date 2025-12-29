@@ -1,0 +1,196 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Nurse" as N
+participant "RecordAdverseReactionUI" as UI
+participant "RecordAdverseReactionController" as CTRL
+participant ":App" as APP
+participant "app\n:App" as App
+participant "comp\n:Company" as COMP
+participant "plat\n:Platform" as PLAT
+participant "ru\n:RegisterUsers" as RU
+participant "AuthFacade" as AF
+participant "session \n:UserSession" as SESSION
+participant "reg\n :RegisterEmployee" as RE
+participant "email\n :Email" as EMAIL
+participant "rsu\n:RegisterSNSUser" as RS
+participant "snsUser\n:SNSUser" as sns
+participant "va\n:VaccineAdministration" as VA
+participant "String\n: administration"
+participant "List<String> listVaccineAdministration"
+participant "ar\n:AdverseReaction" as AR
+
+activate N
+'1
+N -> UI : Starts the recording of adverse reactions
+activate UI
+'2
+UI -> CTRL **: controller = RecordAdverseReactionController()
+activate CTRL
+'3
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'5
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+deactivate CTRL
+
+
+
+'6
+UI ->CTRL :checkLogin()
+activate CTRL
+'7
+CTRL -> App : getCurrentUserSession()
+activate App
+'8
+App -> COMP : getUserRoleStore()
+deactivate App
+activate COMP
+'9
+COMP -> RU: getAuthFacade()
+deactivate COMP
+activate RU
+'10
+RU -> AF: getCurrentUserSession()
+deactivate RU
+
+
+activate AF
+'11
+AF -> SESSION: isLoggedInWithRole(Constants.ROLE_CENTER_COORDINATOR)
+activate SESSION
+deactivate AF
+deactivate SESSION
+deactivate CTRL
+
+
+UI-> CTRL: getWorkingVaccinationCenter()
+activate CTRL
+
+CTRL -> App : email = getCurrentUserSession()
+activate App
+
+'14
+App -> COMP : getUserRoleStore()
+deactivate App
+activate COMP
+'15
+COMP -> RU: getAuthFacade()
+deactivate COMP
+activate RU
+'16
+RU -> AF: getCurrentUserSession()
+deactivate RU
+activate AF
+'17
+AF -> SESSION : getUserId()
+deactivate AF
+activate SESSION
+'18
+SESSION -> EMAIL : getEmail()
+activate EMAIL
+deactivate SESSION
+deactivate EMAIL
+
+
+CTRL -> PLAT : getRegisterEmployee()
+activate PLAT
+PLAT -> RE : getWorkingVaccinationCenter(email)
+activate RE
+deactivate RE
+
+deactivate PLAT
+deactivate CTRL
+UI --> N : asks the user to insert the SNSUser number
+deactivate UI
+
+
+N -> UI: Insert SNSUser number
+activate UI
+UI -> CTRL: checkIfExistsSNSUser(snsUserNumber)
+activate CTRL
+
+CTRL -> PLAT : getRegisterSNSUser()
+activate PLAT
+
+PLAT ->RS : getSNSUserBySNSUserNumber(snsUserNumber)
+activate RS
+deactivate PLAT
+deactivate RS
+
+deactivate CTRL
+UI -> CTRL : getSNSUser(snsUserNumber)
+activate CTRL
+CTRL -> PLAT : getRegisterSNSUser()
+activate PLAT
+
+PLAT ->RS : snsUser = getSNSUserBySNSUserNumber(snsUserNumber)
+activate RS
+deactivate PLAT
+deactivate RS
+deactivate CTRL
+
+UI -> CTRL: getVaccineAdministrations()
+activate CTRL
+CTRL -> RS : getVaccineAdministrations()
+activate RS
+deactivate RS
+CTRL -> VA : administration = getVaccine()
+activate VA
+VA -> Vaccine : getName()
+activate Vaccine
+deactivate Vaccine
+deactivate VA
+CTRL -> VA : getDate()
+activate VA
+CTRL -> VA : getLotNumber()
+deactivate VA
+
+UI --> N : show list of vaccines administrated to a \n specific SNSUser and aks to select one
+UI --> N : ask the user to Type a short description about \nthe adverse reaction (with at most 300 characters)
+deactivate UI
+deactivate CTRL
+
+N -> UI: Writes a short description
+activate UI
+UI -> CTRL: recordAdverseReaction(adverseReaction,vaccineAdministration)
+activate CTRL
+CTRL -> RS : va= getVaccineAdministrations().get(vaccineAdministration)
+activate RS
+deactivate RS
+CTRL --> AR **:ar= create(adverseReaction,va)
+
+CTRL-> RS : registerAdverseReaction(ar)
+activate RS
+deactivate RS
+deactivate CTRL
+UI --> N : ask user to confirm the data
+deactivate UI
+N -> UI : confirms data
+activate UI
+UI --> N: Informs of operation success
+deactivate UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

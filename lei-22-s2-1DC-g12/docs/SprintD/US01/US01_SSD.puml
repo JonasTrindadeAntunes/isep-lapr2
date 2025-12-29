@@ -1,0 +1,21 @@
+@startuml
+autonumber
+
+actor "User" as User
+activate User
+User -> System : Schedule vaccination
+activate System
+System --> User : Asks the user to select a vaccination center.
+User -> System : Selects a vaccination center.
+System -> User : Asks the user to select a vaccine type.
+User -> System: Selects a vaccine type.
+System -> User: Asks the user to insert a date.
+User -> System: Selects date.
+System -> User: Shows and asks user to select slot.
+User -> System: Selects a slot.
+System -> User: Shows data and asks user to confim.
+User -> System: Confirms
+System -> User: Do you want to receive an SMS notification?
+User -> System: YES/NO answer
+deactivate System
+@enduml

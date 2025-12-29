@@ -1,0 +1,79 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam classAttributeIconSize 0
+hide methods
+left to right direction
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class Company {
+-designation
+}
+
+class Platform{
+-description
+}
+
+class VaccineSchedule
+{
+vaccinationDate
+SnsUser
+VaccineType
+}
+
+class SNSUser
+{
+name
+address
+gender
+email
+birthDate
+snsUserNumber
+citizenCardNumber
+}
+
+class Slot
+{
+-hour
+}
+class Day
+{
+-date
+-openingHours
+-openingMinutes
+-closingHours
+-closingMinutes
+-slotDuration
+-maxNumberVaccines
+}
+
+class VaccinationCenter
+{
+name
+address
+phoneNumber
+emailAddress
+faxNumber
+websiteAddress
+openingHours
+openingMinutes
+closingHours
+closingMinutes
+slotDuration
+maxNumberVaccines
+}
+
+
+
+Company "1" -- "1" Platform : has >
+Platform "1" -- "*" VaccinationCenter : registered in <
+VaccineSchedule "*" -- "1" SNSUser : created for >
+VaccinationCenter "1" -- "*" Day :has >
+Day "1" --"*" Slot : has >
+Slot "1" -- "*" VaccineSchedule : has >
+Platform "1" -- "1" SMSNotifier : processes >
+
+
+
+@enduml

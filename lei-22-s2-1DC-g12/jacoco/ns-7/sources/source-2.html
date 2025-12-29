@@ -1,0 +1,318 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > CenterPerformanceAnalysis</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.domain.model</a>
+</div>
+
+<h1>Coverage Summary for Class: CenterPerformanceAnalysis (app.domain.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CenterPerformanceAnalysis</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (3/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    36,4%
+  </span>
+  <span class="absValue">
+    (28/77)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.domain.model;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;
+<i class="no-highlight">4</i>&nbsp;
+<i class="no-highlight">5</i>&nbsp;import java.io.Serializable;
+<i class="no-highlight">6</i>&nbsp;import java.text.ParseException;
+<i class="no-highlight">7</i>&nbsp;import java.text.SimpleDateFormat;
+<i class="no-highlight">8</i>&nbsp;import java.util.*;
+<i class="no-highlight">9</i>&nbsp;
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;/**
+<i class="no-highlight">12</i>&nbsp; * The type Center performance analysis.
+<i class="no-highlight">13</i>&nbsp; */
+<i class="no-highlight">14</i>&nbsp;public class CenterPerformanceAnalysis implements Serializable {
+<i class="no-highlight">15</i>&nbsp;
+<i class="no-highlight">16</i>&nbsp;    /**
+<i class="no-highlight">17</i>&nbsp;     * The list of arrivals.
+<i class="no-highlight">18</i>&nbsp;     */
+<b class="fc"><i class="no-highlight">19</i>&nbsp;    private List&lt;Date&gt; listOfArrivals = new ArrayList&lt;&gt;();</b>
+<i class="no-highlight">20</i>&nbsp;    /**
+<i class="no-highlight">21</i>&nbsp;     * The list of departures.
+<i class="no-highlight">22</i>&nbsp;     */
+<b class="fc"><i class="no-highlight">23</i>&nbsp;    private List&lt;Date&gt; listOfDepartures = new ArrayList&lt;&gt;();</b>
+<i class="no-highlight">24</i>&nbsp;
+<i class="no-highlight">25</i>&nbsp;
+<i class="no-highlight">26</i>&nbsp;    /**
+<i class="no-highlight">27</i>&nbsp;     * Instantiates a new Center performance analysis.
+<i class="no-highlight">28</i>&nbsp;     */
+<i class="no-highlight">29</i>&nbsp;    public CenterPerformanceAnalysis()
+<b class="fc"><i class="no-highlight">30</i>&nbsp;    {</b>
+<i class="no-highlight">31</i>&nbsp;
+<i class="no-highlight">32</i>&nbsp;    }
+<i class="no-highlight">33</i>&nbsp;
+<i class="no-highlight">34</i>&nbsp;
+<i class="no-highlight">35</i>&nbsp;    /**
+<i class="no-highlight">36</i>&nbsp;     * Sets lists of arrivals and departures.
+<i class="no-highlight">37</i>&nbsp;     *
+<i class="no-highlight">38</i>&nbsp;     * @param performanceDataListString the performance data list string
+<i class="no-highlight">39</i>&nbsp;     */
+<i class="no-highlight">40</i>&nbsp;    public void setListsOfArrivalsAndDepartures(List&lt;String[]&gt; performanceDataListString)
+<i class="no-highlight">41</i>&nbsp;    {
+<b class="nc"><i class="no-highlight">42</i>&nbsp;        listOfArrivals.clear();</b>
+<b class="nc"><i class="no-highlight">43</i>&nbsp;        listOfDepartures.clear();</b>
+<i class="no-highlight">44</i>&nbsp;
+<b class="nc"><i class="no-highlight">45</i>&nbsp;        for(int i=0 ; i &lt; performanceDataListString.size() ; i++)</b>
+<i class="no-highlight">46</i>&nbsp;        {
+<b class="nc"><i class="no-highlight">47</i>&nbsp;            String[] listElement = performanceDataListString.get(i);</b>
+<i class="no-highlight">48</i>&nbsp;
+<i class="no-highlight">49</i>&nbsp;            try
+<i class="no-highlight">50</i>&nbsp;            {
+<i class="no-highlight">51</i>&nbsp;
+<b class="nc"><i class="no-highlight">52</i>&nbsp;                SimpleDateFormat format1 = new SimpleDateFormat(&quot;MM/dd/yyyy HH:mm&quot;);</b>
+<b class="nc"><i class="no-highlight">53</i>&nbsp;                SimpleDateFormat format2 = new SimpleDateFormat(&quot;dd-MM-yyyy HH:mm&quot;);</b>
+<i class="no-highlight">54</i>&nbsp;
+<b class="nc"><i class="no-highlight">55</i>&nbsp;                Date listElementArrivalTime = format1.parse(listElement[5]);</b>
+<b class="nc"><i class="no-highlight">56</i>&nbsp;                format2.format(listElementArrivalTime);</b>
+<i class="no-highlight">57</i>&nbsp;
+<b class="nc"><i class="no-highlight">58</i>&nbsp;                Date listElementLeavingTime = format1.parse(listElement[7]);</b>
+<b class="nc"><i class="no-highlight">59</i>&nbsp;                format2.format(listElementLeavingTime);</b>
+<i class="no-highlight">60</i>&nbsp;
+<b class="nc"><i class="no-highlight">61</i>&nbsp;                listOfArrivals.add(listElementArrivalTime);</b>
+<b class="nc"><i class="no-highlight">62</i>&nbsp;                listOfDepartures.add(listElementLeavingTime);</b>
+<i class="no-highlight">63</i>&nbsp;
+<b class="nc"><i class="no-highlight">64</i>&nbsp;            } catch (ParseException e)</b>
+<i class="no-highlight">65</i>&nbsp;            {
+<b class="nc"><i class="no-highlight">66</i>&nbsp;                System.out.println(&quot;Date invalid format&quot;);</b>
+<b class="nc"><i class="no-highlight">67</i>&nbsp;                e.getMessage();</b>
+<b class="nc"><i class="no-highlight">68</i>&nbsp;            }</b>
+<i class="no-highlight">69</i>&nbsp;        }
+<i class="no-highlight">70</i>&nbsp;    }
+<i class="no-highlight">71</i>&nbsp;
+<i class="no-highlight">72</i>&nbsp;
+<i class="no-highlight">73</i>&nbsp;    /**
+<i class="no-highlight">74</i>&nbsp;     * Difference between arrivals and departures int [ ].
+<i class="no-highlight">75</i>&nbsp;     *
+<i class="no-highlight">76</i>&nbsp;     * @param day          the day
+<i class="no-highlight">77</i>&nbsp;     * @param timeInterval the time interval
+<i class="no-highlight">78</i>&nbsp;     * @return the int [ ]
+<i class="no-highlight">79</i>&nbsp;     */
+<i class="no-highlight">80</i>&nbsp;    public int[] differenceBetweenArrivalsAndDepartures(Date day , int timeInterval)
+<i class="no-highlight">81</i>&nbsp;    {
+<b class="nc"><i class="no-highlight">82</i>&nbsp;        int[] diff = new int[720 / timeInterval];</b>
+<i class="no-highlight">83</i>&nbsp;
+<b class="nc"><i class="no-highlight">84</i>&nbsp;        int[] arrivals = countArrivalsOrDeparturesInTimeInterval(day,timeInterval,listOfArrivals);</b>
+<b class="nc"><i class="no-highlight">85</i>&nbsp;        int[] departures = countArrivalsOrDeparturesInTimeInterval(day,timeInterval,listOfDepartures);</b>
+<i class="no-highlight">86</i>&nbsp;
+<b class="nc"><i class="no-highlight">87</i>&nbsp;        for(int i = 0 ; i &lt; diff.length; i++)</b>
+<i class="no-highlight">88</i>&nbsp;        {
+<b class="nc"><i class="no-highlight">89</i>&nbsp;            diff[i] = arrivals[i] - departures[i];</b>
+<i class="no-highlight">90</i>&nbsp;        }
+<i class="no-highlight">91</i>&nbsp;
+<b class="nc"><i class="no-highlight">92</i>&nbsp;         return diff;</b>
+<i class="no-highlight">93</i>&nbsp;    }
+<i class="no-highlight">94</i>&nbsp;
+<i class="no-highlight">95</i>&nbsp;    /**
+<i class="no-highlight">96</i>&nbsp;     * Count arrivals or departures in time interval int [ ].
+<i class="no-highlight">97</i>&nbsp;     *
+<i class="no-highlight">98</i>&nbsp;     * @param day          the day
+<i class="no-highlight">99</i>&nbsp;     * @param timeInterval the time interval
+<i class="no-highlight">100</i>&nbsp;     * @param listOfTimes  the list of times
+<i class="no-highlight">101</i>&nbsp;     * @return the int [ ]
+<i class="no-highlight">102</i>&nbsp;     */
+<i class="no-highlight">103</i>&nbsp;//returns the number of arrivals or departures in each timeInterval
+<i class="no-highlight">104</i>&nbsp;    public int[] countArrivalsOrDeparturesInTimeInterval(Date day , int timeInterval,List&lt;Date&gt; listOfTimes ) {
+<i class="no-highlight">105</i>&nbsp;
+<i class="no-highlight">106</i>&nbsp;
+<b class="nc"><i class="no-highlight">107</i>&nbsp;        Calendar startsWork = Calendar.getInstance();</b>
+<b class="nc"><i class="no-highlight">108</i>&nbsp;        startsWork.set(Calendar.HOUR_OF_DAY, 8);</b>
+<b class="nc"><i class="no-highlight">109</i>&nbsp;        startsWork.set(Calendar.MINUTE, 0);</b>
+<i class="no-highlight">110</i>&nbsp;
+<b class="nc"><i class="no-highlight">111</i>&nbsp;        Calendar leavesWork = Calendar.getInstance();</b>
+<b class="nc"><i class="no-highlight">112</i>&nbsp;        leavesWork.set(Calendar.HOUR_OF_DAY, 20);</b>
+<b class="nc"><i class="no-highlight">113</i>&nbsp;        leavesWork.set(Calendar.MINUTE, 0);</b>
+<i class="no-highlight">114</i>&nbsp;
+<b class="nc"><i class="no-highlight">115</i>&nbsp;        Calendar chosenDay = Calendar.getInstance();</b>
+<b class="nc"><i class="no-highlight">116</i>&nbsp;        chosenDay.setTime(day);</b>
+<i class="no-highlight">117</i>&nbsp;
+<i class="no-highlight">118</i>&nbsp;
+<b class="nc"><i class="no-highlight">119</i>&nbsp;        int[] seq = new int[720 / timeInterval];</b>
+<i class="no-highlight">120</i>&nbsp;
+<b class="nc"><i class="no-highlight">121</i>&nbsp;        for (Date dateLine : listOfTimes)</b>
+<i class="no-highlight">122</i>&nbsp;        {
+<b class="nc"><i class="no-highlight">123</i>&nbsp;            Calendar dayLine = Calendar.getInstance();</b>
+<b class="nc"><i class="no-highlight">124</i>&nbsp;            dayLine.setTime(dateLine);</b>
+<i class="no-highlight">125</i>&nbsp;
+<b class="nc"><i class="no-highlight">126</i>&nbsp;            int year = Integer.compare(chosenDay.get(Calendar.YEAR), dayLine.get(Calendar.YEAR));</b>
+<b class="nc"><i class="no-highlight">127</i>&nbsp;            int month = Integer.compare(chosenDay.get(Calendar.MONTH), dayLine.get(Calendar.MONTH));</b>
+<b class="nc"><i class="no-highlight">128</i>&nbsp;            int day_of_month = Integer.compare(chosenDay.get(Calendar.DAY_OF_MONTH), dayLine.get(Calendar.DAY_OF_MONTH));</b>
+<i class="no-highlight">129</i>&nbsp;
+<b class="nc"><i class="no-highlight">130</i>&nbsp;            if (year == 0 &amp;&amp; month == 0 &amp;&amp; day_of_month == 0)</b>
+<i class="no-highlight">131</i>&nbsp;            {
+<b class="nc"><i class="no-highlight">132</i>&nbsp;                int startsWorkInMinutes = startsWork.get(Calendar.HOUR_OF_DAY) * 60 + startsWork.get(Calendar.MINUTE) ;</b>
+<b class="nc"><i class="no-highlight">133</i>&nbsp;                int leavesWorkInMinutes = leavesWork.get(Calendar.HOUR_OF_DAY) * 60 + leavesWork.get(Calendar.MINUTE);</b>
+<b class="nc"><i class="no-highlight">134</i>&nbsp;                int dateLineInMinutes = dayLine.get(Calendar.HOUR_OF_DAY) * 60 + dayLine.get(Calendar.MINUTE);</b>
+<b class="nc"><i class="no-highlight">135</i>&nbsp;                int diff = dateLineInMinutes - startsWorkInMinutes;</b>
+<i class="no-highlight">136</i>&nbsp;
+<b class="nc"><i class="no-highlight">137</i>&nbsp;                if(dateLineInMinutes &gt;= leavesWorkInMinutes)</b>
+<b class="nc"><i class="no-highlight">138</i>&nbsp;                    continue;</b>
+<i class="no-highlight">139</i>&nbsp;                else
+<i class="no-highlight">140</i>&nbsp;                {
+<b class="nc"><i class="no-highlight">141</i>&nbsp;                    double division = diff / timeInterval;</b>
+<b class="nc"><i class="no-highlight">142</i>&nbsp;                    int floor = (int) Math.floor(division);</b>
+<b class="nc"><i class="no-highlight">143</i>&nbsp;                    seq[floor] = seq[floor] + 1;</b>
+<i class="no-highlight">144</i>&nbsp;
+<i class="no-highlight">145</i>&nbsp;                }
+<i class="no-highlight">146</i>&nbsp;            }
+<b class="nc"><i class="no-highlight">147</i>&nbsp;        }</b>
+<i class="no-highlight">148</i>&nbsp;
+<b class="nc"><i class="no-highlight">149</i>&nbsp;        return seq;</b>
+<i class="no-highlight">150</i>&nbsp;    }
+<i class="no-highlight">151</i>&nbsp;
+<i class="no-highlight">152</i>&nbsp;    /**
+<i class="no-highlight">153</i>&nbsp;     * Process all data before showing.
+<i class="no-highlight">154</i>&nbsp;     *
+<i class="no-highlight">155</i>&nbsp;     * @param seq                 the sequence
+<i class="no-highlight">156</i>&nbsp;     * @param bruteForceAlgorithm the brute force algorithm
+<i class="no-highlight">157</i>&nbsp;     * @param timeInterval        the time interval
+<i class="no-highlight">158</i>&nbsp;     */
+<i class="no-highlight">159</i>&nbsp;    public String processAllDataBeforeShowing(int[] seq,int[] bruteForceAlgorithm, int timeInterval)
+<i class="no-highlight">160</i>&nbsp;    {
+<b class="fc"><i class="no-highlight">161</i>&nbsp;        int sum = 0;</b>
+<b class="fc"><i class="no-highlight">162</i>&nbsp;        for(int i=bruteForceAlgorithm[0]; i &lt;= bruteForceAlgorithm[1]; i++)</b>
+<i class="no-highlight">163</i>&nbsp;        {
+<b class="fc"><i class="no-highlight">164</i>&nbsp;            sum = sum + seq[i];</b>
+<i class="no-highlight">165</i>&nbsp;        }
+<i class="no-highlight">166</i>&nbsp;
+<b class="fc"><i class="no-highlight">167</i>&nbsp;        int indexStart = bruteForceAlgorithm[0];</b>
+<b class="fc"><i class="no-highlight">168</i>&nbsp;        int indexEnd = bruteForceAlgorithm[1];</b>
+<i class="no-highlight">169</i>&nbsp;
+<i class="no-highlight">170</i>&nbsp;
+<b class="fc"><i class="no-highlight">171</i>&nbsp;        Calendar startsWork = Calendar.getInstance();</b>
+<b class="fc"><i class="no-highlight">172</i>&nbsp;        startsWork.set(Calendar.HOUR_OF_DAY, 8);</b>
+<b class="fc"><i class="no-highlight">173</i>&nbsp;        startsWork.set(Calendar.MINUTE, 0);</b>
+<i class="no-highlight">174</i>&nbsp;
+<i class="no-highlight">175</i>&nbsp;
+<b class="fc"><i class="no-highlight">176</i>&nbsp;        long timeInSecs = startsWork.getTimeInMillis();</b>
+<b class="fc"><i class="no-highlight">177</i>&nbsp;        Date beginDate = new Date(timeInSecs + (indexStart * timeInterval * 60 * 1000));</b>
+<b class="fc"><i class="no-highlight">178</i>&nbsp;        Date endDate = new Date(timeInSecs + ((indexEnd+1) * timeInterval * 60 * 1000));</b>
+<i class="no-highlight">179</i>&nbsp;
+<b class="fc"><i class="no-highlight">180</i>&nbsp;        Calendar beginD = Calendar.getInstance();</b>
+<b class="fc"><i class="no-highlight">181</i>&nbsp;        beginD.setTime(beginDate);</b>
+<b class="fc"><i class="no-highlight">182</i>&nbsp;        Calendar endD = Calendar.getInstance();</b>
+<b class="fc"><i class="no-highlight">183</i>&nbsp;        endD.setTime(endDate);</b>
+<i class="no-highlight">184</i>&nbsp;
+<b class="fc"><i class="no-highlight">185</i>&nbsp;        return getData(seq, Arrays.copyOfRange(seq,indexStart,indexEnd + 1),sum,beginD, endD);</b>
+<i class="no-highlight">186</i>&nbsp;    }
+<i class="no-highlight">187</i>&nbsp;
+<i class="no-highlight">188</i>&nbsp;    /**
+<i class="no-highlight">189</i>&nbsp;     * Show data.
+<i class="no-highlight">190</i>&nbsp;     *
+<i class="no-highlight">191</i>&nbsp;     * @param seq                 the sequence
+<i class="no-highlight">192</i>&nbsp;     * @param bruteForceAlgorithm the brute force algorithm
+<i class="no-highlight">193</i>&nbsp;     * @param sum                 the sum
+<i class="no-highlight">194</i>&nbsp;     * @param beginDate           the begin date
+<i class="no-highlight">195</i>&nbsp;     * @param endDate             the end date
+<i class="no-highlight">196</i>&nbsp;     * @return
+<i class="no-highlight">197</i>&nbsp;     */
+<i class="no-highlight">198</i>&nbsp;    public String getData(int[] seq, int[] bruteForceAlgorithm, int sum, Calendar beginDate, Calendar endDate)
+<i class="no-highlight">199</i>&nbsp;    {
+<b class="fc"><i class="no-highlight">200</i>&nbsp;        String data = &quot;&quot;;</b>
+<i class="no-highlight">201</i>&nbsp;
+<b class="fc"><i class="no-highlight">202</i>&nbsp;        data+=&quot;Input List&quot; +&quot;\n&quot;;</b>
+<b class="fc"><i class="no-highlight">203</i>&nbsp;        data+=Arrays.toString(seq)+&quot;\n&quot;;</b>
+<b class="fc"><i class="no-highlight">204</i>&nbsp;        data+=&quot;Maximum sum contiguous sublist&quot;+&quot;\n&quot;;</b>
+<b class="fc"><i class="no-highlight">205</i>&nbsp;        data+=Arrays.toString(bruteForceAlgorithm)+&quot;\n&quot;;</b>
+<b class="fc"><i class="no-highlight">206</i>&nbsp;        data+=&quot;Sum of maximum contiguous sublist&quot;+&quot;\n&quot;;</b>
+<b class="fc"><i class="no-highlight">207</i>&nbsp;        data+=sum+&quot;\n&quot;;</b>
+<b class="fc"><i class="no-highlight">208</i>&nbsp;        data+=&quot;Vaccination Center was less effective from &quot; + beginDate.get(Calendar.HOUR_OF_DAY) + &quot; to &quot; + endDate.get(Calendar.HOUR_OF_DAY)+&quot;\n&quot;;</b>
+<b class="fc"><i class="no-highlight">209</i>&nbsp;        return data;</b>
+<i class="no-highlight">210</i>&nbsp;
+<i class="no-highlight">211</i>&nbsp;    }
+<i class="no-highlight">212</i>&nbsp;
+<i class="no-highlight">213</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

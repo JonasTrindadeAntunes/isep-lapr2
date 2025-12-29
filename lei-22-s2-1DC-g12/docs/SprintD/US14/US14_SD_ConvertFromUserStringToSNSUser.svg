@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="834px" preserveAspectRatio="none" style="width:1368px;height:834px;background:#FFFFFF;" version="1.1" viewBox="0 0 1368 834" width="1368px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="697.4531" style="stroke:#181818;stroke-width:1.0;" width="10" x="73.5" y="65.2188"/><rect fill="#FFFFFF" height="667.1016" style="stroke:#181818;stroke-width:1.0;" width="10" x="78.5" y="95.5703"/><rect fill="#FFFFFF" height="267.625" style="stroke:#181818;stroke-width:1.0;" width="10" x="375.5" y="223.8438"/><rect fill="#FFFFFF" height="229.2734" style="stroke:#181818;stroke-width:1.0;" width="10" x="380.5" y="262.1953"/><rect fill="#FFFFFF" height="65.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="385.5" y="365.7656"/><rect fill="#FFFFFF" height="249.8516" style="stroke:#181818;stroke-width:1.0;" width="10" x="375.5" y="521.8203"/><rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="380.5" y="620.875"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="838" y="401.1172"/><rect fill="#FFFFFF" height="30.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="838" y="552.1719"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="934" y="461.4688"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="934" y="732.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="78" x2="78" y1="55.2188" y2="780.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="380" x2="380" y1="55.2188" y2="780.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="768.5" x2="768.5" y1="148.6797" y2="780.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="842.5" x2="842.5" y1="315.3047" y2="780.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="938.5" x2="938.5" y1="55.2188" y2="780.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1035.5" x2="1035.5" y1="55.2188" y2="780.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1114.5" x2="1114.5" y1="55.2188" y2="780.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1212.5" x2="1212.5" y1="55.2188" y2="780.6719"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1321.5" x2="1321.5" y1="55.2188" y2="780.6719"/><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="5" y="22.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="12" y="44.1426">:LoadUsersFromCSV</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="5" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="12" y="801.2051">:LoadUsersFromCSV</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="127" x="317" y="22.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="324" y="44.1426">:RegisterSNSUser</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="127" x="317" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="324" y="801.2051">:RegisterSNSUser</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="52" x="742.5" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="754.5" y="801.2051">date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="749.5" y="818.8145">: Date</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="77" x="804.5" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="829" y="801.2051">user</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="811.5" y="818.8145">: SNSuser</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="95" x="891.5" y="22.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="898.5" y="44.1426">:AuthFacade</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="95" x="891.5" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="898.5" y="801.2051">:AuthFacade</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="996.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1003.5" y="26.5332">userString</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="1009.5" y="44.1426">: String[]</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="996.5" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1003.5" y="801.2051">userString</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="1009.5" y="818.8145">: String[]</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="59" x="1085.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="1095" y="26.5332">format</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="1092.5" y="44.1426">: String</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="59" x="1085.5" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="1095" y="801.2051">format</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="1092.5" y="818.8145">: String</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="1154.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="1195" y="26.5332">luser</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="1161.5" y="44.1426">: List&lt;SNSUser&gt;</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="1154.5" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="1195" y="801.2051">luser</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="1161.5" y="818.8145">: List&lt;SNSUser&gt;</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="1280.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24" x="1309.5" y="26.5332">role</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="1287.5" y="44.1426">:Constants</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="1280.5" y="779.6719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24" x="1309.5" y="801.2051">role</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="1287.5" y="818.8145">:Constants</text><rect fill="#FFFFFF" height="697.4531" style="stroke:#181818;stroke-width:1.0;" width="10" x="73.5" y="65.2188"/><rect fill="#FFFFFF" height="667.1016" style="stroke:#181818;stroke-width:1.0;" width="10" x="78.5" y="95.5703"/><rect fill="#FFFFFF" height="267.625" style="stroke:#181818;stroke-width:1.0;" width="10" x="375.5" y="223.8438"/><rect fill="#FFFFFF" height="229.2734" style="stroke:#181818;stroke-width:1.0;" width="10" x="380.5" y="262.1953"/><rect fill="#FFFFFF" height="65.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="385.5" y="365.7656"/><rect fill="#FFFFFF" height="249.8516" style="stroke:#181818;stroke-width:1.0;" width="10" x="375.5" y="521.8203"/><rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="380.5" y="620.875"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="838" y="401.1172"/><rect fill="#FFFFFF" height="30.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="838" y="552.1719"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="934" y="461.4688"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="934" y="732.6719"/><line style="stroke:#181818;stroke-width:1.0;" x1="83.5" x2="130.5" y1="82.5703" y2="82.5703"/><line style="stroke:#181818;stroke-width:1.0;" x1="130.5" x2="130.5" y1="82.5703" y2="95.5703"/><line style="stroke:#181818;stroke-width:1.0;" x1="89.5" x2="130.5" y1="95.5703" y2="95.5703"/><polygon fill="#181818" points="99.5,91.5703,89.5,95.5703,99.5,99.5703,95.5,95.5703" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="95.5" y="77.7139">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="267" x="106.5" y="77.7139">convertFromUserStringToSNSUser(userString)</text><polygon fill="#181818" points="730.5,126.9219,740.5,130.9219,730.5,134.9219,734.5,130.9219" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="88.5" x2="736.5" y1="130.9219" y2="130.9219"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="95.5" y="126.0654">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="296" x="106.5" y="126.0654">date = SimpleDateFormat(format).parse(userString)</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="52" x="742.5" y="108.5703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="754.5" y="130.1035">date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="749.5" y="147.7129">: Date</text><polygon fill="#181818" points="363.5,219.8438,373.5,223.8438,363.5,227.8438,367.5,223.8438" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="88.5" x2="369.5" y1="223.8438" y2="223.8438"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="95.5" y="202.6357">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="207" x="106.5" y="186.2842">newSNSUser(userString,userString,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="218" x="106.5" y="202.6357">userString,userString,userString,date,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="106.5" y="218.9873">userString,userString)</text><line style="stroke:#181818;stroke-width:1.0;" x1="385.5" x2="432.5" y1="249.1953" y2="249.1953"/><line style="stroke:#181818;stroke-width:1.0;" x1="432.5" x2="432.5" y1="249.1953" y2="262.1953"/><line style="stroke:#181818;stroke-width:1.0;" x1="391.5" x2="432.5" y1="262.1953" y2="262.1953"/><polygon fill="#181818" points="401.5,258.1953,391.5,262.1953,401.5,266.1953,397.5,262.1953" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="397.5" y="244.3389">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="353" x="408.5" y="244.3389">validateSNSUser(userString,userString,userString,userString)</text><polygon fill="#181818" points="792.5,293.5469,802.5,297.5469,792.5,301.5469,796.5,297.5469" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="390.5" x2="798.5" y1="297.5469" y2="297.5469"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="397.5" y="292.6904">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="292" x="408.5" y="292.6904">create(userString,userString,userString,userString)</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="77" x="804.5" y="275.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="829" y="296.7285">user</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="811.5" y="314.3379">: SNSuser</text><line style="stroke:#181818;stroke-width:1.0;" x1="390.5" x2="437.5" y1="352.7656" y2="352.7656"/><line style="stroke:#181818;stroke-width:1.0;" x1="437.5" x2="437.5" y1="352.7656" y2="365.7656"/><line style="stroke:#181818;stroke-width:1.0;" x1="396.5" x2="437.5" y1="365.7656" y2="365.7656"/><polygon fill="#181818" points="406.5,361.7656,396.5,365.7656,406.5,369.7656,402.5,365.7656" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="402.5" y="347.9092">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="122" x="413.5" y="347.9092">existsSNSUser(user)</text><polygon fill="#181818" points="826,397.1172,836,401.1172,826,405.1172,830,401.1172" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="395.5" x2="832" y1="401.1172" y2="401.1172"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="402.5" y="396.2607">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="413.5" y="396.2607">equals(user)</text><polygon fill="#181818" points="922,457.4688,932,461.4688,922,465.4688,926,461.4688" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="390.5" x2="928" y1="461.4688" y2="461.4688"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="397.5" y="456.6123">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="408.5" y="456.6123">existsUser(user)</text><polygon fill="#181818" points="363.5,517.8203,373.5,521.8203,363.5,525.8203,367.5,521.8203" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="88.5" x2="369.5" y1="521.8203" y2="521.8203"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="95.5" y="516.9639">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="108" x="106.5" y="516.9639">addSNSUser(user)</text><polygon fill="#181818" points="826,548.1719,836,552.1719,826,556.1719,830,552.1719" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="385.5" x2="832" y1="552.1719" y2="552.1719"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="392.5" y="547.3154">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="108" x="410.5" y="547.3154">name = getName()</text><polygon fill="#181818" points="831,578.5234,841,582.5234,831,586.5234,835,582.5234" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="385.5" x2="837" y1="582.5234" y2="582.5234"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="392.5" y="577.667">11</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="410.5" y="577.667">email = getEmail()</text><line style="stroke:#181818;stroke-width:1.0;" x1="390.5" x2="432.5" y1="612.875" y2="612.875"/><line style="stroke:#181818;stroke-width:1.0;" x1="432.5" x2="432.5" y1="612.875" y2="625.875"/><line style="stroke:#181818;stroke-width:1.0;" x1="391.5" x2="432.5" y1="625.875" y2="625.875"/><polygon fill="#181818" points="401.5,621.875,391.5,625.875,401.5,629.875,397.5,625.875" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="397.5" y="608.0186">12</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="163" x="415.5" y="608.0186">pwd = passWordGenerator()</text><rect height="41.4453" style="stroke:#000000;stroke-width:1.5;fill:none;" width="149" x="314" y="663.875"/><path d="M314,663.875 L376,663.875 L376,671.875 L366,681.875 L314,681.875 L314,663.875 " fill="#EEEEEE" style="stroke:#000000;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="327" y="679.3701">ref</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="141" x="318" y="698.332">SD_GeneratingPassword</text><polygon fill="#181818" points="922,728.6719,932,732.6719,922,736.6719,926,732.6719" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="385.5" x2="928" y1="732.6719" y2="732.6719"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="392.5" y="727.8154">13</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="228" x="410.5" y="727.8154">addUserWithRole(name,email,pwd,role)</text><!--MD5=[3351ef14aa35711cb228b1006b74241d]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant ":LoadUsersFromCSV" as LFC
+participant ":RegisterSNSUser" as RS
+participant "date\n: Date" as D
+participant "user\n: SNSuser" as USER
+participant ":AuthFacade" as AF
+participant "userString\n: String[]"
+participant "format\n: String"
+participant "luser \n: List<SNSUser>"
+participant "role\n:Constants"
+
+
+activate LFC
+LFC -> LFC ++: convertFromUserStringToSNSUser(userString)
+LFC - -> D ** : date = SimpleDateFormat(format).parse(userString)
+LFC -> RS : newSNSUser(userString,userString,\nuserString,userString,userString,date,\nuserString,userString)
+activate RS
+
+RS -> RS : validateSNSUser(userString,userString,userString,userString)
+activate RS
+RS - -> USER **: create(userString,userString,userString,userString)
+RS -> RS ++ : existsSNSUser(user)
+RS -> USER : equals(user)
+activate USER
+deactivate USER
+deactivate RS
+RS -> AF : existsUser(user)
+activate AF
+
+deactivate RS
+
+deactivate AF
+deactivate RS
+
+LFC -> RS : addSNSUser(user)
+activate RS
+RS -> USER : name = getName()
+activate USER
+RS -> USER : email = getEmail()
+deactivate USER
+RS -> RS ++: pwd = passWordGenerator()
+ref over RS: SD_GeneratingPassword
+deactivate RS
+RS -> AF: addUserWithRole(name,email,pwd,role)
+activate AF
+deactivate AF
+deactivate LFC
+
+deactivate LFC
+
+@enduml
+
+@startuml
+
+autonumber
+
+participant ":LoadUsersFromCSV" as LFC
+participant ":RegisterSNSUser" as RS
+participant "date\n: Date" as D
+participant "user\n: SNSuser" as USER
+participant ":AuthFacade" as AF
+participant "userString\n: String[]"
+participant "format\n: String"
+participant "luser \n: List<SNSUser>"
+participant "role\n:Constants"
+
+
+activate LFC
+LFC -> LFC ++: convertFromUserStringToSNSUser(userString)
+LFC - -> D ** : date = SimpleDateFormat(format).parse(userString)
+LFC -> RS : newSNSUser(userString,userString,\nuserString,userString,userString,date,\nuserString,userString)
+activate RS
+
+RS -> RS : validateSNSUser(userString,userString,userString,userString)
+activate RS
+RS - -> USER **: create(userString,userString,userString,userString)
+RS -> RS ++ : existsSNSUser(user)
+RS -> USER : equals(user)
+activate USER
+deactivate USER
+deactivate RS
+RS -> AF : existsUser(user)
+activate AF
+
+deactivate RS
+
+deactivate AF
+deactivate RS
+
+LFC -> RS : addSNSUser(user)
+activate RS
+RS -> USER : name = getName()
+activate USER
+RS -> USER : email = getEmail()
+deactivate USER
+RS -> RS ++: pwd = passWordGenerator()
+ref over RS: SD_GeneratingPassword
+deactivate RS
+RS -> AF: addUserWithRole(name,email,pwd,role)
+activate AF
+deactivate AF
+deactivate LFC
+
+deactivate LFC
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

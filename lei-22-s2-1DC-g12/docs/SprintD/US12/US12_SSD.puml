@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+
+autonumber
+actor Administrator
+activate Administrator
+Administrator -> System: starts specifying a new vaccine type
+activate System
+System --> Administrator: requests data (code, designation, whold)
+deactivate System
+
+Administrator -> System: types requested data
+activate System
+Administrator <-- System: shows the data and requests the confirmation
+deactivate System
+
+Administrator -> System : confirms the data
+activate System
+Administrator <-- System : informs opperation success
+deactivate System
+@enduml

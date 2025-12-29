@@ -1,0 +1,184 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class ScheduleVaccinationUI
+
+class ScheduleVaccinationController
+{
+- App app
++validateUserSession()
++getVaccinationCenterList()
++getAvailableVaccineTypes(vaccinationCenter)
++getAvailableSlots(vaccinationCenter,date)
++createVaccineSchedule(vaccinationCenter,vaccineType,date,slot)
++scheduleVaccination(vaccineSchedule)
++receiveSMSNotification()
+}
+
+class App
+{
+    +getCompany()
+    +getCurrentUserSession()
+    +{static} static getInstance()
+    -bootstrap()
+}
+
+class Company {
+-designation
++getPlatform()
++getAuthFacade()
+}
+
+class AuthFacade
+{
++getCurrentUserSession()
+}
+
+class Platform
+{
+-SMSNotifier smsNotifier
+-RegisterSNSUser m_oRegisterSNSUser
+-RegisterVaccinationCenter m_oRegisterVaccinationCenter
++getRegisterVaccinationCenter()
++getRegisterSNSUser()
++getSMSNotifier()
+}
+
+class RegisterVaccinationCenter
+{
+-Email m_oEmail
+-List<VaccinationCenter> listVaccinationCenters
++getListVaccinationCenters()
+}
+
+class VaccinationCenter
+{
+-name
+-address
+-phoneNumber
+-emailAddress
+-faxNumber
+-websiteAddress
+-openingHours
+-openingMinutes
+-closingHours
+-closingMinutes
+-slotDuration
+-maxNumberVaccines
+-List<Day> operatingDays
+-WaitingRoom waitingRoom
+-List<Vaccine> listVaccines
+-List<VaccineType> listVaccineTypes
++getListVaccineTypes()
++getAllAvailableSlotsInVaccinationCenter(dateDay)
++getDay(dateDay)
++validateScheduleDate(dateDay)
++createVaccineSchedule(snsUser, vaccineType, day, slot)
++scheduleVaccine(vaccineSchedule)
+
+}
+
+class VaccineType
+{
+-code
+-designation
+-typeOfVaccine
+-List<Vaccine> vaccineList
++TypesOfVaccine
+}
+
+class Day
+{
+-Date day
+-List<Slot> slots
+-maxNumberVaccines
++createVaccineSchedule(snsUser,vaccineType,slot)
++scheduleVaccine(vaccineSchedule)
+}
+
+class Slot
+{
+-Date hour
+-List<VaccineSchedule> scheduledVaccinations
++createVaccineSchedule(day,vaccineType,snsUser)
+-createDate(day)
++scheduleVaccination(vaccineSchedule)
+}
+
+class VaccineSchedule
+{
+-Date vaccinationDate
+-SNSUser snsUser
+-VaccineType vaccineType
+-validateEntrance
+-validateVaccineSchedule()
+-getDate()
+-getSnsUser()
+}
+
+
+class RegisterSNSUser
+{
+-List<SNSUser> listSNSUser
+-AuthFacade authFacade
++getSNSUserByEmail(email)
+
+}
+
+class SNSUser {
+-name
+-address
+-gender
+-email
+-birthDate
+-snsUserNumber
+-citizenCardNumber
++equals(email)
++getEmail()
++addVaccineSchedule(vaccineSchedule)
+}
+
+class Constants
+{
++ROLE_SNS_USER
+}
+
+class SMSNotifier
+{
++fileName = "SMSNotifications.txt";
++addVaccineSchedule(vaccinationCenter,vaccineSchedule)
++buildString(vaccinationCenter,vaccineSchedule)
+}
+
+
+
+
+ScheduleVaccinationUI ..> ScheduleVaccinationController
+ScheduleVaccinationController ..> App
+ScheduleVaccinationController ..> Platform
+ScheduleVaccinationController ..> Company
+ScheduleVaccinationController ..> VaccinationCenter
+ScheduleVaccinationController ..> Slot
+ScheduleVaccinationController ..> VaccineType
+ScheduleVaccinationController ..> Constants
+Company ..> AuthFacade
+App ..> AuthFacade
+Platform "1" --"1" RegisterVaccinationCenter : has >
+RegisterVaccinationCenter "1" -- "*" VaccinationCenter : has >
+VaccinationCenter "1" -- "*" VaccineType : has >
+Platform "1" --> "1" RegisterSNSUser : has >
+RegisterSNSUser "1"--> "*" SNSUser : has >
+VaccinationCenter "1" --> "*" Day: contains >
+Day "1" --> "*" Slot : contains >
+Slot "1" --> "*" VaccineSchedule : contains >
+VaccinationCenter ..> VaccineSchedule
+Platform "1" -- "1" SMSNotifier : has >
+
+
+
+
+
+@enduml

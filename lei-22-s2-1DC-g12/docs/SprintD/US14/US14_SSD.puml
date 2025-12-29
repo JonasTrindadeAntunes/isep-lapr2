@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+autonumber
+'hide footbox
+actor "Administrator" as ADM
+participant ":System" as SYS
+
+activate ADM
+ADM -> SYS : Starts the load of SNS users from CSV file
+activate SYS
+SYS --> ADM : asks to introduce the path to the files
+deactivate SYS
+
+ADM -> SYS : introduce the path to the files
+activate SYS
+SYS --> ADM : show list of files and ask to select one
+deactivate SYS
+
+ADM -> SYS : selects the intended file
+activate SYS
+SYS --> ADM : requests a confirmation to import data from selected CSV file
+deactivate SYS
+
+ADM -> SYS : confirms
+activate SYS
+SYS --> ADM : show list of SNS users in CSV file and requests a confirmation
+deactivate SYS
+
+ADM -> SYS : confirms the data
+activate SYS
+SYS --> ADM : show system Users
+SYS --> ADM : informs operation success
+deactivate SYS
+
+
+
+
+
+@enduml

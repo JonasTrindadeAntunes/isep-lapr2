@@ -1,0 +1,55 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant ":LoadUsersFromCSV" as LFC
+participant ":RegisterSNSUser" as RS
+participant "date\n: Date" as D
+participant "user\n: SNSuser" as USER
+participant ":AuthFacade" as AF
+participant "userString\n: String[]"
+participant "format\n: String"
+participant "luser \n: List<SNSUser>"
+participant "role\n:Constants"
+
+
+activate LFC
+LFC -> LFC ++: convertFromUserStringToSNSUser(userString)
+LFC --> D ** : date = SimpleDateFormat(format).parse(userString)
+LFC -> RS : newSNSUser(userString,userString,\nuserString,userString,userString,date,\nuserString,userString)
+activate RS
+
+RS -> RS : validateSNSUser(userString,userString,userString,userString)
+activate RS
+RS --> USER **: create(userString,userString,userString,userString)
+RS -> RS ++ : existsSNSUser(user)
+RS -> USER : equals(user)
+activate USER
+deactivate USER
+deactivate RS
+RS -> AF : existsUser(user)
+activate AF
+
+deactivate RS
+
+deactivate AF
+deactivate RS
+
+LFC -> RS : addSNSUser(user)
+activate RS
+RS -> USER : name = getName()
+activate USER
+RS -> USER : email = getEmail()
+deactivate USER
+RS -> RS ++: pwd = passWordGenerator()
+ref over RS: SD_GeneratingPassword
+deactivate RS
+RS -> AF: addUserWithRole(name,email,pwd,role)
+activate AF
+deactivate AF
+deactivate LFC
+
+deactivate LFC
+
+@enduml

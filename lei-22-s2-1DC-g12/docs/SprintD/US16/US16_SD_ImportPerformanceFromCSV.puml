@@ -1,0 +1,155 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Center Coordinator" as CC
+participant ":ImportDataUI" as UI
+participant "controller\n:ImportDataController" as Controller
+participant ":App" as App
+participant "app \n:App" as app
+participant "comp \n:Company" as Company
+participant "plat \n:Platform" as Platform
+participant "session \n:UserSession" as Session
+participant "ipfc \n:ImportPerformanceFromCSV" as IPFC
+participant " <<interface>> \n: LoadFromCSV " as ILFC
+participant "inputStream \n:InputStream" as IS
+participant ":RegisterSNSUser" as RSU
+participant ":RegisterVaccineType" as RVT
+participant "folder \n:List<String> listOfFilesNames"
+participant "reader \n:BufferedReader"
+participant "delimiter\n:Constants"
+participant "userNumberString\n:String[]"
+participant "path\n:String"
+participant "vtl: List<String> vaccineTypeList"
+participant "vaccineType: VaccineType" as VT
+participant "vaccine: Vaccine"
+
+
+'1
+activate CC
+CC -> UI: starts importing the data from the legacy system
+activate UI
+
+'2
+UI -> Controller**: controller = new ImportDataController()
+activate Controller
+
+'3
+Controller -> App: app = getInstance()
+activate App
+deactivate App
+
+'4
+Controller -> app: comp = getCompany()
+activate app
+deactivate app
+
+'5
+Controller -> Company: plat = getPlatform()
+activate Company
+deactivate Company
+deactivate Controller
+
+'6
+UI -> Controller: checkLogin()
+activate Controller
+
+'7
+Controller -> app: session = getCurrentUserSession()
+activate app
+deactivate app
+
+'8
+Controller -> Session: answer = isLoggedInWithRole(Constants ROLE_CENTER_COORDINATOR)
+activate Session
+deactivate Session
+deactivate Controller
+
+'9
+UI --> CC: asks for the absolute file path
+deactivate UI
+
+'10
+CC -> UI: inputs the absolute file path
+activate UI
+
+'11
+UI -> Controller: getListOfFiles(path)
+activate Controller
+
+'12
+Controller -> Platform: ipfc = getImportPerformanceFromCSV()
+activate Platform
+deactivate Platform
+
+'13
+Controller -> IPFC: folder = getListOfFiles(path)
+activate IPFC
+
+'14
+IPFC -> ILFC : getListOfFiles(path)
+activate ILFC
+deactivate ILFC
+deactivate IPFC
+
+deactivate Controller
+
+'15
+UI --> CC : show list of files and ask to select one
+deactivate UI
+
+'16
+CC -> UI : selects the intended file
+activate UI
+
+'17
+UI --> CC: requests confirmation of the import
+deactivate UI
+
+'18
+CC -> UI: confirms the import
+activate UI
+
+'19
+UI -> Controller: importPerformanceFromCSV()
+activate Controller
+
+'20
+Controller -> IPFC: importPerformanceFromCSV(path)
+activate IPFC
+
+'21
+IPFC -> ILFC: inputStream = loadFromCSV(path)
+activate ILFC
+deactivate ILFC
+
+'22
+IPFC -> IPFC : convertCSV(inputStream)
+activate IPFC
+
+'23
+IPFC -> RSU: getSNSUserBySNSUserNumber(userNumberString)
+activate RSU
+deactivate RSU
+
+'24
+IPFC -> RVT: getListVaccineType(userNumberString)
+activate RVT
+deactivate RVT
+
+'25
+IPFC -> VT : getDesignation()
+activate VT
+deactivate VT
+deactivate IPFC
+deactivate IPFC
+deactivate Controller
+deactivate IPFC
+
+'26
+UI --> CC: informs operation success
+deactivate UI
+
+
+@enduml

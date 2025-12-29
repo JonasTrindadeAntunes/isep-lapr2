@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant "evs:\n ExportVaccinationStatistics" as EVS
+participant "List<String> listVaccinationStatistics"
+participant "vac\n:VaccinationCenter" as VAC
+participant ":Day" as D
+participant "listOperatingDays\n:Day"
+participant "countTotalVaccinations: int"
+participant "day\n: Date"
+participant "beginDate \n:Date"
+participant "endDate \n:Date"
+
+
+activate EVS
+EVS -> EVS ++: addFullyVaccinatedSNSUsers(vac,beginDate,endDate)
+EVS -> VAC : listOperatingDays = getOperatingDays()
+
+activate VAC
+deactivate VAC
+EVS -> D : countTotalVaccinations = getFullyVaccinated()
+activate D
+deactivate D
+EVS -> D : day = getDay()
+activate D
+deactivate D
+EVS -> EVS : addFullyVaccination(countTotalVaccinations,day)
+activate EVS
+EVS -> EVS: buildString(countTotalVaccinations,day)
+
+
+@enduml

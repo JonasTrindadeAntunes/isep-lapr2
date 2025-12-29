@@ -1,0 +1,117 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class Administrator
+
+class CenterCoordinator
+
+class Receptionist
+
+class Nurse
+
+class Company {
+-designation
++getPlatform()
++getAuthFacade()
+}
+
+
+class Platform
+{
+
+-description
+-RegisterEmployee m_oRegisterEmployee;
++getRegisterEmployee()
++initializeRegisters(AuthFacade authFacade)
+}
+
+
+class Employee
+{
+  -id
+  -name;
+  -address;
+  -phoneNumber;
+  -emailAddress;
+  -citizenCardNumber;
+  -{static}count_num_employees
+  +getEmail()
+  +getName()
+
+}
+
+class RegisterEmployeeUI
+class RegisterEmployeeController
+{
+   -App m_oApp
+   -Platform m_oPlatform
+   -Employee m_oEmployee;
+   +getRoles()
+   +newEmployee(name, address,phoneNumber, emailAddress,citizenCardNumber,roleChoice)
+   +registerEmployee()
+   +getEmployeeString()
+
+}
+
+class App
+{
+    +getCompany()
+    +getCurrentUserSession()
+    +{static} static getInstance()
+
+}
+
+class AuthFacade
+{
++getUserRoles()
++addUserWithRole(name,email,pwd,role)
++existsUser(email)
+
+}
+
+interface PasswordGenerator{
+-passwordGenerator(name,email)
+}
+
+class RegisterEmployee
+{
+-List<Employee> listEmployee
+-AuthFacade authFacade
++newEmployee(name, address,phoneNumber, emailAddress,citizenCardNumber,roleChoice)
++registerEmployee(employee)
+-addEmployee(employee)
++validateEmployee(employee)
++passwordGenerator()
++getRoles()
+
+}
+
+
+
+
+RegisterEmployeeUI ..> RegisterEmployeeController
+RegisterEmployeeController ..> Company
+RegisterEmployeeController ..> Platform
+RegisterEmployeeController ..> App
+RegisterEmployeeController ..> Employee
+App ..> Platform
+Platform ..> AuthFacade
+RegisterEmployee ..> AuthFacade
+Company ..> AuthFacade
+RegisterEmployee -> PasswordGenerator
+Platform "1" --> "1" RegisterEmployee : has >
+RegisterEmployee "1" --> "*" Employee : knows >
+Employee <|-- CenterCoordinator
+Employee <|-- Administrator
+Employee <|-- Nurse
+Employee <|-- Receptionist
+Company "1" --> "1" Platform : has >
+
+
+
+@enduml

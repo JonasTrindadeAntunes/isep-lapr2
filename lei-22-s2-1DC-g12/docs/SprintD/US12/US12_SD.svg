@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1043px" preserveAspectRatio="none" style="width:1579px;height:1043px;background:#FFFFFF;" version="1.1" viewBox="0 0 1579 1043" width="1579px" zoomAndPan="magnify"><defs><filter height="300%" id="fchpu63d9h2wc" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="832.5859" style="stroke:#A80036;stroke-width:1.0;" width="10" x="46.5" y="103.6094"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="34.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="347.5" y="129.9609"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="445.4219" style="stroke:#A80036;stroke-width:1.0;" width="10" x="347.5" y="198.6641"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="257.7578" style="stroke:#A80036;stroke-width:1.0;" width="10" x="347.5" y="678.4375"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="376.7188" style="stroke:#A80036;stroke-width:1.0;" width="10" x="644.5" y="233.0156"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="182.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="644.5" y="712.7891"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="804.5" y="267.3672"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="877.5" y="331.7188"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="970" y="396.0703"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1066" y="460.4219"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="84.9609" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1199.5" y="524.7734"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="147.7031" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1199.5" y="747.1406"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1204.5" y="789.4922"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1204.5" y="866.8438"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="51" x2="51" y1="93.6094" y2="954.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="352.5" x2="352.5" y1="93.6094" y2="954.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="649.5" x2="649.5" y1="93.6094" y2="954.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="809" x2="809" y1="93.6094" y2="954.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="882" x2="882" y1="93.6094" y2="954.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="975" x2="975" y1="93.6094" y2="954.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1071" x2="1071" y1="93.6094" y2="954.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1204" x2="1204" y1="93.6094" y2="954.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1507.5" x2="1507.5" y1="568.0781" y2="954.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="7" y="88.5332">Administrator</text><ellipse cx="51.5" cy="15" fill="#FEFECE" filter="url(#fchpu63d9h2wc)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M51.5,23 L51.5,50 M38.5,31 L64.5,31 M51.5,50 L38.5,65 M51.5,50 L64.5,65 " fill="none" filter="url(#fchpu63d9h2wc)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="7" y="969.7285">Administrator</text><ellipse cx="51.5" cy="984.8047" fill="#FEFECE" filter="url(#fchpu63d9h2wc)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M51.5,992.8047 L51.5,1019.8047 M38.5,1000.8047 L64.5,1000.8047 M51.5,1019.8047 L38.5,1034.8047 M51.5,1019.8047 L64.5,1034.8047 " fill="none" filter="url(#fchpu63d9h2wc)" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="188" x="256.5" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="265.5" y="76.5332">:SpecifyNewVaccineTypeUI</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="188" x="256.5" y="953.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="265.5" y="976.7285">:SpecifyNewVaccineTypeUI</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="238" x="528.5" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="220" x="537.5" y="76.5332">:SpecifyNewVaccineTypeController</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="238" x="528.5" y="953.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="220" x="537.5" y="976.7285">:SpecifyNewVaccineTypeController</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="47" x="784" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="793" y="76.5332">:App</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="47" x="784" y="953.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="793" y="976.7285">:App</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="71" x="845" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="854" y="76.5332">app:App</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="71" x="845" y="953.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="854" y="976.7285">app:App</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="53.2188" style="stroke:#A80036;stroke-width:1.5;" width="86" x="930" y="35.3906"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="956" y="58.9238">comp</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="939" y="76.5332">: Company</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="53.2188" style="stroke:#A80036;stroke-width:1.5;" width="86" x="930" y="953.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="956" y="976.7285">comp</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="939" y="994.3379">: Company</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="53.2188" style="stroke:#A80036;stroke-width:1.5;" width="78" x="1030" y="35.3906"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="1057.5" y="58.9238">plat</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="1039" y="76.5332">: Platform</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="53.2188" style="stroke:#A80036;stroke-width:1.5;" width="78" x="1030" y="953.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="1057.5" y="976.7285">plat</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="1039" y="994.3379">: Platform</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="53.2188" style="stroke:#A80036;stroke-width:1.5;" width="161" x="1122" y="35.3906"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="1192.5" y="58.9238">rgv</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="1131" y="76.5332">: RegisterVaccineType</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="53.2188" style="stroke:#A80036;stroke-width:1.5;" width="161" x="1122" y="953.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="1192.5" y="976.7285">rgv</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="1131" y="994.3379">: RegisterVaccineType</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="119" x="1446.5" y="953.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="1455.5" y="976.7285">vt :VaccineType</text><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="832.5859" style="stroke:#A80036;stroke-width:1.0;" width="10" x="46.5" y="103.6094"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="34.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="347.5" y="129.9609"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="445.4219" style="stroke:#A80036;stroke-width:1.0;" width="10" x="347.5" y="198.6641"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="257.7578" style="stroke:#A80036;stroke-width:1.0;" width="10" x="347.5" y="678.4375"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="376.7188" style="stroke:#A80036;stroke-width:1.0;" width="10" x="644.5" y="233.0156"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="182.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="644.5" y="712.7891"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="804.5" y="267.3672"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="877.5" y="331.7188"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="970" y="396.0703"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1066" y="460.4219"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="84.9609" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1199.5" y="524.7734"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="147.7031" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1199.5" y="747.1406"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1204.5" y="789.4922"/><rect fill="#FFFFFF" filter="url(#fchpu63d9h2wc)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1204.5" y="866.8438"/><polygon fill="#A80036" points="335.5,125.9609,345.5,129.9609,335.5,133.9609,339.5,129.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="56.5" x2="341.5" y1="129.9609" y2="129.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="65.5" y="123.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="209" x="80.5" y="123.1045">starts specifying a new vaccine type</text><polygon fill="#A80036" points="67.5,160.3125,57.5,164.3125,67.5,168.3125,63.5,164.3125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="61.5" x2="351.5" y1="164.3125" y2="164.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="75.5" y="157.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="234" x="90.5" y="157.4561">requests data (code, designation, whold)</text><polygon fill="#A80036" points="335.5,194.6641,345.5,198.6641,335.5,202.6641,339.5,198.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="56.5" x2="341.5" y1="198.6641" y2="198.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="65.5" y="191.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="122" x="80.5" y="191.8076">types requested data</text><polygon fill="#A80036" points="632.5,229.0156,642.5,233.0156,632.5,237.0156,636.5,233.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="357.5" x2="638.5" y1="233.0156" y2="233.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="366.5" y="226.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="249" x="381.5" y="226.1592">newVaccineType(code, designation, whold)</text><polygon fill="#A80036" points="792.5,263.3672,802.5,267.3672,792.5,271.3672,796.5,267.3672" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="654.5" x2="798.5" y1="267.3672" y2="267.3672"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="663.5" y="260.5107">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="112" x="678.5" y="260.5107">app = getInstance()</text><polygon fill="#A80036" points="865.5,327.7188,875.5,331.7188,865.5,335.7188,869.5,331.7188" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="654.5" x2="871.5" y1="331.7188" y2="331.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="663.5" y="324.8623">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="678.5" y="324.8623">comp = getCompany()</text><polygon fill="#A80036" points="958,392.0703,968,396.0703,958,400.0703,962,396.0703" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="654.5" x2="964" y1="396.0703" y2="396.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="663.5" y="389.2139">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="678.5" y="389.2139">plat = getPlatform()</text><polygon fill="#A80036" points="1054,456.4219,1064,460.4219,1054,464.4219,1058,460.4219" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="654.5" x2="1060" y1="460.4219" y2="460.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="663.5" y="453.5654">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="181" x="678.5" y="453.5654">grv = getRegisterVaccineType()</text><polygon fill="#A80036" points="1187.5,520.7734,1197.5,524.7734,1187.5,528.7734,1191.5,524.7734" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="654.5" x2="1193.5" y1="524.7734" y2="524.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="663.5" y="517.917">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="274" x="678.5" y="517.917">vt = newVaccineType(code, designation, whold)</text><polygon fill="#A80036" points="1434.5,555.125,1444.5,559.125,1434.5,563.125,1438.5,559.125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1209.5" x2="1440.5" y1="559.125" y2="559.125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="1218.5" y="552.2686">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="187" x="1240.5" y="552.2686">create(code, designation, whold)</text><rect fill="#FEFECE" filter="url(#fchpu63d9h2wc)" height="35.6094" style="stroke:#A80036;stroke-width:1.5;" width="119" x="1446.5" y="532.7734"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="1455.5" y="556.3066">vt :VaccineType</text><polygon fill="#A80036" points="1192.5,605.7344,1202.5,609.7344,1192.5,613.7344,1196.5,609.7344" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="649.5" x2="1198.5" y1="609.7344" y2="609.7344"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="658.5" y="602.8779">11</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="680.5" y="602.8779">validateVaccineType(vt)</text><polygon fill="#A80036" points="67.5,640.0859,57.5,644.0859,67.5,648.0859,63.5,644.0859" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="61.5" x2="351.5" y1="644.0859" y2="644.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="75.5" y="637.2295">12</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="241" x="97.5" y="637.2295">shows the data and requests confirmation</text><polygon fill="#A80036" points="335.5,674.4375,345.5,678.4375,335.5,682.4375,339.5,678.4375" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="56.5" x2="341.5" y1="678.4375" y2="678.4375"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="65.5" y="671.5811">13</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100" x="87.5" y="671.5811">confirms the data</text><polygon fill="#A80036" points="632.5,708.7891,642.5,712.7891,632.5,716.7891,636.5,712.7891" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="357.5" x2="638.5" y1="712.7891" y2="712.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="366.5" y="705.9326">14</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="388.5" y="705.9326">registerVaccineType()</text><polygon fill="#A80036" points="1187.5,743.1406,1197.5,747.1406,1187.5,751.1406,1191.5,747.1406" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="654.5" x2="1193.5" y1="747.1406" y2="747.1406"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="663.5" y="740.2842">15</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="685.5" y="740.2842">registerVaccineType(vt)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1214.5" x2="1256.5" y1="781.4922" y2="781.4922"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1256.5" x2="1256.5" y1="781.4922" y2="794.4922"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1215.5" x2="1256.5" y1="794.4922" y2="794.4922"/><polygon fill="#A80036" points="1225.5,790.4922,1215.5,794.4922,1225.5,798.4922,1221.5,794.4922" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="1223.5" y="774.6357">16</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="1245.5" y="774.6357">validateVaccineType(vt)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1214.5" x2="1256.5" y1="858.8438" y2="858.8438"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1256.5" x2="1256.5" y1="858.8438" y2="871.8438"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1215.5" x2="1256.5" y1="871.8438" y2="871.8438"/><polygon fill="#A80036" points="1225.5,867.8438,1215.5,871.8438,1225.5,875.8438,1221.5,871.8438" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="1223.5" y="851.9873">17</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="1245.5" y="851.9873">addVaccineType(type)</text><polygon fill="#A80036" points="62.5,932.1953,52.5,936.1953,62.5,940.1953,58.5,936.1953" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="56.5" x2="351.5" y1="936.1953" y2="936.1953"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="70.5" y="929.3389">18</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="92.5" y="929.3389">informs operation success</text><!--MD5=[bbf9aa4cdd12f7330c6f88d9fa1cd0a5]
+@startuml
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+autonumber
+actor Administrator as Ad
+
+participant ":SpecifyNewVaccineTypeUI" as UI
+participant ":SpecifyNewVaccineTypeController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "comp\n: Company" as COMP
+participant "plat\n: Platform" as PLAT
+participant "rgv\n: RegisterVaccineType" as RVT
+participant "vt :VaccineType" as VaccineType
+
+
+
+
+activate Ad
+'1
+Ad -> UI : starts specifying a new vaccine type
+activate UI
+'2
+UI - -> Ad:  requests data (code, designation, whold)
+deactivate UI
+'3
+Ad -> UI:  types requested data
+activate UI
+'4
+UI -> CTRL : newVaccineType(code, designation, whold)
+activate CTRL
+'5
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'6
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'7
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+'8
+CTRL -> PLAT : grv = getRegisterVaccineType()
+activate PLAT
+deactivate PLAT
+'9
+CTRL -> RVT : vt = newVaccineType(code, designation, whold)
+activate RVT
+'10
+RVT - -> VaccineType **: create(code, designation, whold)
+
+'11
+CTRL -> RVT : validateVaccineType(vt)
+
+deactivate RVT
+deactivate CTRL
+'12
+Ad <- - UI: shows the data and requests confirmation
+deactivate UI
+'13
+Ad -> UI :  confirms the data
+activate UI
+'14
+UI -> CTRL : registerVaccineType()
+activate CTRL
+'15
+CTRL -> RVT : registerVaccineType(vt)
+activate RVT
+'16
+RVT -> RVT : validateVaccineType(vt)
+activate RVT
+deactivate RVT
+'17
+RVT -> RVT : addVaccineType(type)
+activate RVT
+deactivate RVT
+deactivate RVT
+deactivate CTRL
+UI - -> Ad : informs operation success
+deactivate RVT
+deactivate UI
+deactivate Ad
+
+
+
+@enduml
+
+@startuml
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+autonumber
+actor Administrator as Ad
+
+participant ":SpecifyNewVaccineTypeUI" as UI
+participant ":SpecifyNewVaccineTypeController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "comp\n: Company" as COMP
+participant "plat\n: Platform" as PLAT
+participant "rgv\n: RegisterVaccineType" as RVT
+participant "vt :VaccineType" as VaccineType
+
+
+
+
+activate Ad
+Ad -> UI : starts specifying a new vaccine type
+activate UI
+UI - -> Ad:  requests data (code, designation, whold)
+deactivate UI
+Ad -> UI:  types requested data
+activate UI
+UI -> CTRL : newVaccineType(code, designation, whold)
+activate CTRL
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+CTRL -> PLAT : grv = getRegisterVaccineType()
+activate PLAT
+deactivate PLAT
+CTRL -> RVT : vt = newVaccineType(code, designation, whold)
+activate RVT
+RVT - -> VaccineType **: create(code, designation, whold)
+
+CTRL -> RVT : validateVaccineType(vt)
+
+deactivate RVT
+deactivate CTRL
+Ad <- - UI: shows the data and requests confirmation
+deactivate UI
+Ad -> UI :  confirms the data
+activate UI
+UI -> CTRL : registerVaccineType()
+activate CTRL
+CTRL -> RVT : registerVaccineType(vt)
+activate RVT
+RVT -> RVT : validateVaccineType(vt)
+activate RVT
+deactivate RVT
+RVT -> RVT : addVaccineType(type)
+activate RVT
+deactivate RVT
+deactivate RVT
+deactivate CTRL
+UI - -> Ad : informs operation success
+deactivate RVT
+deactivate UI
+deactivate Ad
+
+
+
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,181 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Administrator" as ADM
+participant ":LoadUsersFileUI" as UI
+participant "controller\n:LoadUsersFileController" as CTRL
+participant ":App" as APP
+participant "app\n:App" as App
+participant "session \n:UserSession" as SESSION
+participant "comp\n:Company" as COMP
+participant "plat\n:Platform" as PLAT
+participant "glc\n:LoadUsersFromCSV" as LFC
+participant " <<interface>> \n: LoadFromCSV " as ILFC
+note  over ILFC: Any class that needs to import a\n file CSV can use this interface.\n Usage of classes File, Files, Collectors and \nPaths, usage of interface Path
+participant "auth\n:AuthFacade" as AF
+participant "uls \n:List<String[]> usersListString"
+participant "lfn \n : List<String> listOfFilesName"
+participant "inputStream \n:InputStream"
+participant "reader \n:BufferedReader"
+participant "delimiter\n:Constants"
+participant "userString\n:String[]"
+participant "path\n:String"
+participant "path\n:String"
+participant "luDTO \n:List<UserDTO>" as DTO
+
+
+
+
+
+activate ADM
+'1
+
+ADM -> UI : Starts the load of SNS users from CSV file
+activate UI
+'2
+UI -> CTRL **: controller = LoadUsersFileController()
+activate CTRL
+'3
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'5
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+deactivate CTRL
+
+'6
+UI ->CTRL :checkLogin()
+activate CTRL
+'7
+CTRL -> App : session = getCurrentUserSession()
+activate App
+deactivate App
+'8
+CTRL -> SESSION : answer= isLoggedInWithRole(Constants.ROLE_ADMIN)
+activate SESSION
+deactivate SESSION
+deactivate CTRL
+'9
+UI --> ADM : asks to introduce the path to the files
+deactivate UI
+
+
+'10
+ADM -> UI : introduce the path to the files
+activate UI
+'11
+UI -> CTRL : lfn = getListOfFiles(path)
+activate CTRL
+
+'12
+CTRL -> PLAT : glc = getLoadUsersFromCSV()
+activate PLAT
+deactivate PLAT
+'13
+CTRL -> LFC : lfn = getListOfFiles(path)
+
+activate LFC
+'14
+LFC -> ILFC : getListOfFiles(path)
+activate ILFC
+deactivate ILFC
+
+deactivate LFC
+deactivate CTRL
+'15
+UI --> ADM : show list of files and ask to select one
+deactivate UI
+
+
+'16
+ADM -> UI : selects the intended file
+activate UI
+'17
+UI --> ADM :requests a confirmation to import data from selected CSV file
+deactivate UI
+
+
+
+'18
+ADM -> UI : confirms
+activate UI
+'19
+UI -> CTRL : loadUsersFromCSV(fileName)
+activate CTRL
+'20
+CTRL -> LFC : loadUsersFromCSV(fileName)
+
+activate LFC
+'21
+LFC -> ILFC : inputStream = loadFromCSV()
+activate ILFC
+deactivate ILFC
+note right : Usage of classes ClassLoader, \nThread and InputStream
+'22
+LFC -> LFC ++: convertCSV(inputStream)
+note right: Usage of classes InputStreamReader, \n  BufferedReader and StandardCharsets
+
+'23
+LFC -> LFC : convertFromBufferedReaderToStringSNSUser(reader,delimiter)
+activate LFC
+deactivate LFC
+deactivate LFC
+
+
+deactivate CTRL
+deactivate LFC
+
+'24
+UI ->CTRL : showData()
+activate CTRL
+'25
+CTRL -> LFC: showData()
+activate LFC
+deactivate LFC
+deactivate CTRL
+'26
+UI --> ADM : show list of SNS users in CSV file and requests a confirmation
+deactivate UI
+
+
+'27
+ADM -> UI : confirms the data
+activate UI
+'28
+UI ->CTRL : registerListStringUsersInSystem()
+activate CTRL
+'29
+CTRL -> LFC : registerListStringUsersInSystem()
+activate LFC
+'30
+LFC -> LFC ++: convertFromUserStringToSNSUser(userString)
+ref over LFC: SD_ConvertFromUserStringToSNSUser(userString)
+note right: Due to legibility this part is done \n in a different file SD
+deactivate LFC
+deactivate CTRL
+'31
+UI -> CTRL: luDTO = printSystemUsers()
+activate CTRL
+'32
+CTRL -> LFC : printSystemUsers()
+ref over LFC: SD_printSystemUsers
+note right: Due to legibility this part is done \n in a different file SD
+deactivate LFC
+deactivate CTRL
+
+'33
+UI --> ADM : show system Users
+'34
+UI --> ADM : informs operation success
+deactivate UI
+
+
+@enduml

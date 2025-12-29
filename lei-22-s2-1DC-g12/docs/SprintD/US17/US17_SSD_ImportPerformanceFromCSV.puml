@@ -1,0 +1,40 @@
+@startuml
+
+autonumber
+
+actor "Center Coordinator" as CC
+participant "System" as SYS
+
+'1
+activate CC
+CC -> SYS: starts importing the data from the legacy system
+activate SYS
+
+'9
+SYS --> CC: asks for the absolute file path
+deactivate SYS
+
+'10
+CC -> SYS: inputs the absolute file path
+activate SYS
+
+'15
+SYS --> CC : show list of files and ask to select one
+deactivate SYS
+
+'16
+CC -> SYS : selects the intended file
+activate SYS
+
+'17
+SYS --> CC: requests confirmation of the import
+deactivate SYS
+
+'18
+CC -> SYS: confirms the import
+activate SYS
+
+'26
+SYS --> CC: informs operation success
+deactivate SYS
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+
+actor "Recepcionist" as RCP
+activate RCP
+RCP -> System : Starts scheduling Vaccination
+activate System
+System --> RCP : Requests Date, hour and Sns User information
+RCP --> System: Enters required Data
+System --> RCP : Shows the Data and requests confirmation
+RCP -> System : Confirms Data
+deactivate System
+deactivate RCP
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+autonumber
+
+actor "Nurse" as NRS
+activate NRS
+NRS -> System : asks to consult the list of users in the waiting room
+activate System
+System --> NRS :  show list of SNS users in the waiting room and requests a confirmation
+deactivate System
+
+NRS -> System :confirms the data
+activate System
+System --> NRS :informs operation success
+deactivate System
+@enduml

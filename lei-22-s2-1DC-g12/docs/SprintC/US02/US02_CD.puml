@@ -1,0 +1,29 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class RecepcionistUI
+
+class RecepcionistController
+
+class Company
+
+class Platform
+
+class App
+
+class VaccineSchedule
+{
+-getName()
+-getAge()
+}
+
+RecepcionistUI ..> RecepcionistController
+RecepcionistController ..> Company
+Company --> Platform
+RecepcionistController ..> App
+Platform --> VaccineSchedule
+VaccineSchedule "*" --> "1" App : saves to >
+@enduml

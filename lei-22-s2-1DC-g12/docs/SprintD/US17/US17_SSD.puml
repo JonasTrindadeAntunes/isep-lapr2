@@ -1,0 +1,17 @@
+@startuml
+autonumber
+
+actor "Center Coordinator" as CC
+participant System as Sys
+
+activate CC
+CC -> Sys: starts sorting the data from the legacy system
+activate Sys
+Sys --> CC: asks for preferred data to sort (arrival time or leaving time) and its sorting method (bubblesort or quicksort)
+deactivate Sys
+CC -> Sys: chooses the preferred date to sort and sorting method (typeData)
+activate Sys
+Sys --> CC: shows the sorted data, total number of sorted elements and the elapsed time
+deactivate Sys
+
+@enduml

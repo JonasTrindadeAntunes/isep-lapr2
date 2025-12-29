@@ -1,0 +1,26 @@
+@startuml
+autonumber
+
+actor "Receptionist" as RECEP
+
+participant ":System" as SYS
+
+activate RECEP
+
+RECEP -> SYS : Iniciates the process of registering a new SNS user.
+activate SYS
+SYS --> RECEP : Asks for the user's information. (Name, Address, Phone number and Health user number.
+deactivate SYS
+
+RECEP -> SYS : Inputs data
+activate SYS
+SYS --> RECEP: Shows the new user's data and asks to confirm
+deactivate SYS
+
+RECEP -> SYS : Confirms
+activate SYS
+SYS -> RECEP : Success
+deactivate SYS
+
+deactivate RECEP
+@enduml

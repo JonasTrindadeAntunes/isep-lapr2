@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+'hide methods
+
+class Company {
+designation
+}
+
+
+class Platform
+{
+-description
+}
+
+abstract class VaccinationCenter
+{
+    -String name
+    -String address
+    -String phoneNumber
+    -String emailAddress
+    -String faxNumber
+    -String websiteAddress
+    -Double openingHours
+    -Double closingHours
+    -Double slotDuration
+    -Integer maxNumberVaccines
+}
+
+class CommunityMassVaccinationCenter
+class HealthCareCenter
+
+
+VaccinationCenter <|-- CommunityMassVaccinationCenter
+VaccinationCenter <|-- HealthCareCenter
+
+Platform "1" -- "*" VaccinationCenter : register in <
+Company "1" -- "1" Platform : has >
+
+
+@enduml

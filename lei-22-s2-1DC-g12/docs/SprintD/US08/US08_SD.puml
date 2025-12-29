@@ -1,0 +1,105 @@
+@startuml
+
+autonumber
+actor "Nurse" as NUR
+actor AdministerVaccineUI as UI
+
+
+activate NUR
+NUR -> UI : Administer a vaccine
+activate UI
+UI -> Controller : validateUserSession()
+activate Controller
+Controller -> App: app=getInstance()
+activate App
+deactivate App
+Controller -> "app : App": session = getCurrentUserSession()
+activate "app : App"
+deactivate "app : App"
+Controller -> "session : UserSession": answer = isLoggedInWithRole(ROLE_NURSE)
+activate "session : UserSession"
+deactivate "session : UserSession"
+deactivate Controller
+alt answer = true
+UI -> Controller : getListOfWaitingRoomUsers()
+activate Controller
+Controller -> "app : App" : getPlatform()
+activate "app : App"
+deactivate "app : App"
+Controller -> "platform : Platform" : getRegisterEmployee()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> RegisterEmployee: getWorkingVaccinationCenter(email)
+activate RegisterEmployee
+RegisterEmployee -> Employee: getWorkingVaccinationCenter()
+activate Employee
+deactivate Employee
+deactivate RegisterEmployee
+Controller -> VaccinationCenter : getWaitingRoomSNSUsers()
+activate VaccinationCenter
+deactivate VaccinationCenter
+deactivate Controller
+UI --> NUR : Shows a list of users in the waiting room and asks the nurse to select one
+
+deactivate UI
+NUR --> UI: Selects a user
+activate UI
+UI-> Controller: getAvailableVaccines()
+activate Controller
+Controller-> VaccinationCenter : getVaccineScheduleFromUser(snsUser)
+activate VaccinationCenter
+deactivate VaccinationCenter
+Controller -> VaccineSchedule : getVaccineType()
+activate VaccineSchedule
+deactivate VaccineSchedule
+Controller -> VaccinationCenter: getAvailableVaccines(vaccineType)
+activate VaccinationCenter
+deactivate VaccinationCenter
+deactivate Controller
+UI --> NUR :  Displays available vaccines and asks the nurse for the lot number
+deactivate UI
+
+NUR -> UI : Registers brand and the lot number
+activate UI
+UI-> Controller: getVaccineAdministrationProcess(vaccine)
+activate Controller
+Controller -> Vaccine : getVaccineAdministrationProcess()
+activate Vaccine
+deactivate Vaccine
+deactivate Controller
+UI -> Controller: getAdverseReactions()
+activate Controller
+Controller -> SNSUser : getAdverseReactions()
+activate SNSUser
+deactivate SNSUser
+deactivate Controller
+UI --> NUR : Displays user health data, vaccine dosage and previous vaccination (if applicable)
+deactivate UI
+
+
+NUR --> UI: Continue
+
+activate UI
+UI->Controller: createVaccineAdministration(snsUser,vaccine,lotNumber)
+activate Controller
+Controller -> VaccinationCenter: createVaccineAdministration(snsUser,vaccineType,vaccine,lotNumber)
+activate VaccinationCenter
+VaccinationCenter -> VaccineAdministration** : VaccineAdministration(snsUser,vaccineType,vaccine,lotNumber)
+deactivate VaccinationCenter
+deactivate Controller
+UI --> NUR : Shows the data and requests a confirmation
+deactivate UI
+
+NUR -> UI : Confirms data
+activate UI
+UI->Controller: registerVaccineAdministration(snsUser,vaccineAdministration)
+activate Controller
+Controller-> SNSUser: registerVaccineAdministration(vaccineAdministration)
+activate SNSUser
+deactivate SNSUser
+deactivate Controller
+UI --> NUR : Informs operation success
+deactivate UI
+deactivate NUR
+end
+@enduml

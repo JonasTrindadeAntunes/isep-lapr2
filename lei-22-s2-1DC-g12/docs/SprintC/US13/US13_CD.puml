@@ -1,0 +1,82 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class App{
+-Company company
+-AuthFacade authFacade
++getCompany()
++getInstance()
+}
+class Company{
+-String designation
+-AuthFacade authFacade
+-Platform m_oPlatform
++getPlatform()
+}
+class Platform{
+-String description
+-RegisterVaccineType m_oRegisterVaccineType
++getRegisterVaccineType()
+}
+abstract class VaccinationCenter
+class Vaccine{
+-List<AdministrationProcess> listAdministrationProcess
+-String id
+-String name
++Vaccine(id, name)
++newAdministrationProcess(ageGroups, referenceDose, dosesToBeAdministered, timeInterval)
++validateAdministrationProcess(administrationProcess)
++addAdministrationProcess(administrationProcess)
+}
+class AdministrationProcess{
+-List<Integer[]> ageGroups
+-Double referenceDose
+-Integer dosesToBeAdministered
+-List<Integer[]> timeInterval
++AdministrationProcess(List<Integer[]> ageGroups,Double referenceDose,int dosesToBeAdministered,List<Integer[]> timeInterval)
++AdministrationProcess(List<Integer[]> ageGroups,Double referenceDose,int dosesToBeAdministered)
++toString()
+}
+class VaccineType{
+code
+designation
+whold
+}
+
+class SpecifyNewVaccineUI
+class SpecifyNewVaccineController{
+-App app
+-Vaccine vaccine
+-List<AdministrationProcess> list
++SpecifyNewVaccineController()
++newVaccine(id, name)
++newAdministrationProcess(IntegerageGroups, dosesToBeAdministered, dosage, listTimeInterval)
++getVaccineInfo()
++addVaccine()
++getVaccineType()
++setVaccineType()
+}
+
+class RegisterVaccineType{
+-List<Vaccine> listVaccineTypes
++getListVaccineType()
+}
+
+SpecifyNewVaccineUI ..> SpecifyNewVaccineController
+SpecifyNewVaccineController ..> Company
+SpecifyNewVaccineController ..> Platform
+SpecifyNewVaccineController ..> App
+Platform "1"--"1" RegisterVaccineType : has >
+RegisterVaccineType "1"--"*" VaccineType : has >
+Company "1"--"1" Platform : has >
+Company "1"--"*" VaccinationCenter : manages >
+VaccinationCenter "1"--"*" Vaccine : applies >
+Vaccine "1"--"*" AdministrationProcess : has >
+Vaccine "*"--"1" VaccineType : is of >
+
+@enduml

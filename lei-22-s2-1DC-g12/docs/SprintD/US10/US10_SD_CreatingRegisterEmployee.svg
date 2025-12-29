@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="292px" preserveAspectRatio="none" style="width:713px;height:292px;background:#FFFFFF;" version="1.1" viewBox="0 0 713 292" width="713px" zoomAndPan="magnify"><defs><filter height="300%" id="f1xgczb3d7qwco" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1xgczb3d7qwco)" height="162.1797" style="stroke:#A80036;stroke-width:1.0;" width="10" x="21.5" y="51.6094"/><rect fill="#FFFFFF" filter="url(#f1xgczb3d7qwco)" height="83.2188" style="stroke:#A80036;stroke-width:1.0;" width="10" x="201.5" y="83.9609"/><rect fill="#FFFFFF" filter="url(#f1xgczb3d7qwco)" height="36.6094" style="stroke:#A80036;stroke-width:1.0;" width="10" x="377.5" y="177.1797"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="26" x2="26" y1="41.6094" y2="248.0469"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="206.5" x2="206.5" y1="84.9141" y2="248.0469"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="382.5" x2="382.5" y1="178.1328" y2="248.0469"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="492.5" x2="492.5" y1="131.5234" y2="248.0469"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="634.5" x2="634.5" y1="224.7422" y2="248.0469"/><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="39" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25" x="12" y="26.5332">App</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="39" x="5" y="247.0469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25" x="12" y="268.5801">App</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="78" x="165.5" y="247.0469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="172.5" y="268.5801">:Company</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="70" x="345.5" y="247.0469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="352.5" y="268.5801">:Platform</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="123" x="429.5" y="247.0469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="436.5" y="268.5801">auth:AuthFacade</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="133" x="566.5" y="247.0469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="573.5" y="268.5801">:RegisterEmployee</text><rect fill="#FFFFFF" filter="url(#f1xgczb3d7qwco)" height="162.1797" style="stroke:#A80036;stroke-width:1.0;" width="10" x="21.5" y="51.6094"/><rect fill="#FFFFFF" filter="url(#f1xgczb3d7qwco)" height="83.2188" style="stroke:#A80036;stroke-width:1.0;" width="10" x="201.5" y="83.9609"/><rect fill="#FFFFFF" filter="url(#f1xgczb3d7qwco)" height="36.6094" style="stroke:#A80036;stroke-width:1.0;" width="10" x="377.5" y="177.1797"/><polygon fill="#A80036" points="153.5,69.9609,163.5,73.9609,153.5,77.9609,157.5,73.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="31.5" x2="159.5" y1="73.9609" y2="73.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="38.5" y="69.1045">create(designation)</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="78" x="165.5" y="51.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="172.5" y="73.1426">:Company</text><polygon fill="#A80036" points="417.5,116.5703,427.5,120.5703,417.5,124.5703,421.5,120.5703" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="211.5" x2="423.5" y1="120.5703" y2="120.5703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="218.5" y="115.7139">create()</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="123" x="429.5" y="98.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="436.5" y="119.752">auth:AuthFacade</text><polygon fill="#A80036" points="333.5,163.1797,343.5,167.1797,333.5,171.1797,337.5,167.1797" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="206.5" x2="339.5" y1="167.1797" y2="167.1797"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="213.5" y="162.3232">create(designation)</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="70" x="345.5" y="144.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="352.5" y="166.3613">:Platform</text><polygon fill="#A80036" points="554.5,209.7891,564.5,213.7891,554.5,217.7891,558.5,213.7891" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="382.5" x2="560.5" y1="213.7891" y2="213.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="69" x="389.5" y="208.9326">create(auth)</text><rect fill="#FEFECE" filter="url(#f1xgczb3d7qwco)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="133" x="566.5" y="191.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="573.5" y="212.9707">:RegisterEmployee</text><!--MD5=[800aa80c9a3bbaf4d4342caf8a0f4b98]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+participant "App" as APP
+participant ":Company" as COMP
+participant ":Platform" as PLAT
+participant "auth:AuthFacade" as AF
+participant ":RegisterEmployee" as RE
+
+activate APP
+APP - -> COMP** : create(designation)
+activate COMP
+COMP - -> AF ** : create()
+COMP - -> PLAT **: create(designation)
+deactivate COMP
+activate PLAT
+PLAT - -> RE **: create(auth)
+deactivate PLAT
+deactivate APP
+@enduml
+
+@startuml
+
+
+
+participant "App" as APP
+participant ":Company" as COMP
+participant ":Platform" as PLAT
+participant "auth:AuthFacade" as AF
+participant ":RegisterEmployee" as RE
+
+activate APP
+APP - -> COMP** : create(designation)
+activate COMP
+COMP - -> AF ** : create()
+COMP - -> PLAT **: create(designation)
+deactivate COMP
+activate PLAT
+PLAT - -> RE **: create(auth)
+deactivate PLAT
+deactivate APP
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

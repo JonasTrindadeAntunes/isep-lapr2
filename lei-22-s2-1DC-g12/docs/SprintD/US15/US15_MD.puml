@@ -1,0 +1,82 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class CenterCoordinator
+
+
+
+class Company {
+-designation
+}
+
+class Platform{
+-description
+}
+
+class VaccinationCenter
+{
+-name
+-address
+-phoneNumber
+-emailAddress
+-faxNumber
+-websiteAddress
+-openingHours
+-openingMinutes
+-closingHours
+-closingMinutes
+-slotDuration
+-maxNumberVaccines
+-List<Day> operatingDays
+-WaitingRoom waitingRoom
+-List<Vaccine> listVaccines
+-List<VaccineType> listVaccineTypes
+-RecoveryRoom recoveryRoom
+-CenterPerformanceAnalysis centerPerformanceAnalysis
+-CenterCoordinator centerCoordinator
+}
+
+class Employee
+{
+- id;
+-{static}count_num_employees = 0;
+-name;
+-address;
+-phoneNumber;
+-emailAddress;
+-citizenCardNumber;
+-VaccinationCenter vaccinationCenter
+}
+
+class CommunityMassVaccinationCenter
+
+class HealthCareCenter
+
+class Day
+{
+-Date day
+-List<Slot> slots
+-int fullyVaccinated
+-List<VaccineAdministration> vaccineAdministrations
+-int maxNumberVaccines
+}
+
+Company "1" -- "1" Platform : has >
+Employee "*" -- "1" Platform : registers in >
+Employee <|-- CenterCoordinator
+VaccinationCenter <|-- CommunityMassVaccinationCenter
+VaccinationCenter <|-- HealthCareCenter
+CenterCoordinator "1" -- "1" VaccinationCenter : is managed by <
+VaccinationCenter "1" -- "*" Day :has >
+
+
+@enduml

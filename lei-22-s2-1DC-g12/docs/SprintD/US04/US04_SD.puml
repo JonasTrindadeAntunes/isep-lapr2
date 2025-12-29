@@ -1,0 +1,168 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+autonumber
+
+actor "Receptionist" as R
+participant ":RegisterSNSUserArrivalUI" as UI
+participant "controller\n:RegisterSNSUserArrivalController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "session \n:UserSession" as SESSION
+participant "comp\n:Company" as Comp
+participant "plat\n:Platform" as PLAT
+participant "rsu\n:RegisterSNSUser" as RSU
+participant "reg\n :RegisterEmployee" as RE
+participant "email\n :Email" as EMAIL
+participant "emp\n :Employee" as EMP
+participant "vac\n :VaccinationCenter" as VAC
+participant "arrivalUserDay\n:Day" as ARRIVAL
+participant "slot\n: SLOT" as SLOT
+participant "vs\n:VaccineSchedule" as VS
+participant "listOfVaccineScheduleToday\n:List<VaccineSchedule>"
+participant "le\n :List<Employee>"
+participant "lsns\n :List<SNSUser>"
+participant "user\n :SNSUser " as USER
+participant ":WaitingRoom" as WR
+participant "operatingDays\n:List<Day>"
+participant "slots\n:List<Slot>"
+participant "answer\n: boolean"
+
+
+
+
+
+
+
+
+activate R
+R -> UI: starts registering the arrival of a SNSUser
+activate UI
+UI --> CTRL** : controller =  RegisterSNSUserArrivalController()
+activate CTRL
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'5
+CTRL -> Comp : plat = getPlatform()
+activate Comp
+deactivate Comp
+deactivate CTRL
+
+'6
+UI ->CTRL :checkLogin()
+activate CTRL
+'7
+CTRL -> App : session = getCurrentUserSession()
+activate App
+deactivate App
+'8
+CTRL -> SESSION : answer= isLoggedInWithRole(Constants.ROLE_RECEPTIONIST)
+activate SESSION
+deactivate SESSION
+deactivate CTRL
+
+'9
+UI -> CTRL : vac = getWorkingVaccinationCenter()
+activate CTRL
+
+'10
+ref over CTRL: SD_CreatingRegisterEmployee
+CTRL -> PLAT : reg = getRegisterEmployee()
+
+activate PLAT
+deactivate PLAT
+'11
+CTRL -> App : email = getCurrentUserSession()
+activate App
+'12
+App -> SESSION : getUserId()
+activate SESSION
+'13
+SESSION -> EMAIL : getEmail()
+activate EMAIL
+deactivate EMAIL
+deactivate SESSION
+deactivate App
+
+'14
+CTRL -> RE : getWorkingVaccinationCenter(email)
+activate RE
+'15
+RE -> EMP : getWorkingVaccinationCenter(email)
+activate EMP
+deactivate EMP
+deactivate CTRL
+deactivate RE
+
+
+
+UI --> R: requests data (snsUserNumber)
+deactivate UI
+R -> UI : inputs data
+activate UI
+UI -> CTRL : checkIfExistsSNSUser(snsUserNumber)
+activate CTRL
+ref over CTRL: SD_CreatingRegisterSNSUser
+CTRL -> PLAT : rsu = getRegisterSNSUser()
+activate PLAT
+deactivate PLAT
+CTRL -> RSU : user = getSNSUserBySNSUserNumber(snsUserNumber)
+activate RSU
+deactivate RSU
+deactivate CTRL
+UI -> CTRL : validateUserArrival(vac,snsUserNumber)
+activate CTRL
+
+CTRL -> VAC : validateUserArrival(snsUserNumber)
+activate VAC
+VAC -> VAC: arrivalUserDay = getDay(Calendar.getInstance().getTime())
+VAC -> ARRIVAL : listOfVaccineScheduleToday = getAllVaccineSchedules()
+activate ARRIVAL
+ARRIVAL -> SLOT: getScheduledVaccinations()
+activate SLOT
+deactivate ARRIVAL
+
+deactivate SLOT
+
+VAC -> VS : user = getSnsUser()
+activate VS
+
+VS -> USER: getSNSUserNumber()
+deactivate VS
+
+activate USER
+USER -> USER :compareTo(snsUserNumber)
+
+VAC -> VS : answer = isValidateEntrance()
+activate VS
+deactivate VS
+deactivate USER
+VAC -> VS : setValidateEntrance(answer)
+activate VS
+deactivate VS
+deactivate CTRL
+UI --> R : tells the receptionist that a schedule for \nthis sns user exits and was validated,\n asks if he wants to send the user to \n the waiting room
+deactivate VAC
+deactivate UI
+
+R->UI: confirms and sends user to the waiting room
+activate UI
+UI -> CTRL : registerUserArrival(vac,user,date)
+activate CTRL
+
+CTRL -> VAC : registerUserArrival( user, dateOfArrival)
+activate VAC
+VAC -> WR: registerArrival(user,dateOfArrival)
+activate WR
+deactivate WR
+
+UI --> R : informs operation success
+
+@enduml

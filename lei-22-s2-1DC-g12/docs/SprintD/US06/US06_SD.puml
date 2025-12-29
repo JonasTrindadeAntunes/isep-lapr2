@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant ":App" as APP
+participant ":RecordDailyTask" as TASK
+participant ":Calendar" as Cal
+participant "app:App" as app
+participant ":Company" as comp
+participant ":Platform" as plat
+participant ":RegisterVaccinationCenter" as Register
+participant ":Vaccination Center" as VacCen
+
+activate APP
+'1
+APP -> TASK : start(app)
+activate TASK
+'2
+TASK -> TASK : readFile()
+activate TASK
+deactivate TASK
+'3
+TASK -> Cal : date = getInstance().getTime()
+activate Cal
+deactivate Cal
+'4
+TASK -> TASK : writeFile(date)
+activate TASK
+deactivate TASK
+'5
+TASK -> app : getCompany()
+activate app
+deactivate app
+'6
+TASK -> comp :getPlatform()
+activate comp
+deactivate comp
+'7
+TASK -> plat : getRegisterVaccinationCenter()
+activate plat
+deactivate plat
+'8
+TASK -> Register : listVaccinationCenter = getListVaccinationCenters()
+activate Register
+deactivate Register
+loop
+'9
+TASK -> VacCen : name = getName()
+activate VacCen
+deactivate VacCen
+'10
+TASK -> VacCen : numTotalVac = getNumTotalVaccinesDay()
+activate VacCen
+deactivate VacCen
+'11
+TASK -> TASK : writeFile(name,numTotalVac)
+activate TASK
+deactivate TASK
+'12
+TASK -> VacCen : setNumTotalVaccinesDay(0)
+activate VacCen
+deactivate VacCen
+end
+
+@enduml

@@ -1,0 +1,91 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+autonumber
+actor Administrator as Ad
+
+participant ":SpecifyNewVaccineTypeUI" as UI
+participant ":SpecifyNewVaccineTypeController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "comp\n: Company" as COMP
+participant "plat\n: Platform" as PLAT
+participant "rgv\n: RegisterVaccineType" as RVT
+participant "vt :VaccineType" as VaccineType
+
+
+
+
+activate Ad
+'1
+Ad -> UI : starts specifying a new vaccine type
+activate UI
+'2
+UI --> Ad:  requests data (code, designation, whold)
+deactivate UI
+'3
+Ad -> UI:  types requested data
+activate UI
+'4
+UI -> CTRL : newVaccineType(code, designation, whold)
+activate CTRL
+'5
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'6
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'7
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+'8
+CTRL -> PLAT : grv = getRegisterVaccineType()
+activate PLAT
+deactivate PLAT
+'9
+CTRL -> RVT : vt = newVaccineType(code, designation, whold)
+activate RVT
+'10
+RVT --> VaccineType **: create(code, designation, whold)
+
+'11
+CTRL -> RVT : validateVaccineType(vt)
+
+deactivate RVT
+deactivate CTRL
+'12
+Ad <-- UI: shows the data and requests confirmation
+deactivate UI
+'13
+Ad -> UI :  confirms the data
+activate UI
+'14
+UI -> CTRL : registerVaccineType()
+activate CTRL
+'15
+CTRL -> RVT : registerVaccineType(vt)
+activate RVT
+'16
+RVT -> RVT : validateVaccineType(vt)
+activate RVT
+deactivate RVT
+'17
+RVT -> RVT : addVaccineType(type)
+activate RVT
+deactivate RVT
+deactivate RVT
+deactivate CTRL
+UI --> Ad : informs operation success
+deactivate RVT
+deactivate UI
+deactivate Ad
+
+
+
+@enduml

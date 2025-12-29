@@ -1,0 +1,56 @@
+@startuml
+left to right direction
+
+:CenterCoordinator: as CC
+(UC16- Evaluate performance of vaccination process) as UC16
+(UC17- Generate Reports) as UC17
+(UC18- Analyze data from other centers) as UC18
+
+CC --> (UC16)
+CC --> (UC17)
+CC --> (UC18)
+
+:Receptionist: as Recep
+(UC15- Register arrival of the SNS Users) as UC15
+
+Recep --> (UC15)
+
+:SNSUser: as User
+(UC13- Schedule vaccination) as UC13
+(UC14- Request EU COVID digital certificate) as UC14
+
+User --> (UC13)
+User --> (UC14)
+
+
+:Administrator: as Admin
+(UC07- Register Centers) as UC07
+(UC08- Register SNS Users) as UC08
+(UC09- Register Center Coordinators) as UC09
+(UC10- Register Receptionists) as UC10
+(UC11- Register Nurses) as UC11
+(UC12- Add new vaccine type) as UC12
+
+Admin --> (UC07)
+Admin --> (UC08)
+Admin --> (UC09)
+Admin --> (UC10)
+Admin --> (UC11)
+Admin --> (UC12)
+
+:Nurse: as Nurse
+(UC01- Schedule vaccine in healthcare center) as UC01
+(UC02- Call next SNS User to receive vaccine) as UC02
+(UC03- Administrate the vaccine) as UC03
+
+(UC04- Issue/Deliver vaccination certificate) as UC04
+(UC05- Send SNS User to recovery room) as UC05
+(UC06- Register adverse reactions) as UC06
+
+Nurse --> (UC01)
+Nurse --> (UC02)
+Nurse --> (UC03)
+Nurse --> (UC04)
+Nurse --> (UC05)
+Nurse --> (UC06)
+@enduml

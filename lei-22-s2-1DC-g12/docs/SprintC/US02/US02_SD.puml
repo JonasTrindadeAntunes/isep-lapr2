@@ -1,0 +1,155 @@
+@startuml
+autonumber
+actor "Receptionist" as RECEP
+control ScheduleVacinationUI as UI
+control ScheduleVacinationController as Controller
+participant App
+participant "app : App"
+participant "session : UserSession"
+participant "platform : Platform"
+participant RegisterVaccinationCenter
+participant RegisterSNSUser
+participant VaccinationCenter
+participant Day 
+participant Slot
+participant VaccineSchedule
+
+RECEP -> UI: Schedule vaccination
+activate UI
+UI-> Controller : create
+activate Controller
+deactivate Controller
+UI -> Controller : checkLogin()
+activate Controller
+Controller -> App: app=getInstance()
+activate App
+deactivate App
+Controller -> "app : App": session = getCurrentUserSession()
+activate "app : App"
+deactivate "app : App"
+Controller -> "session : UserSession": answer = isLoggedInWithRole(ROLE_RECEPTIONIST)
+activate "session : UserSession"
+deactivate "session : UserSession"
+deactivate Controller
+alt answer = true
+UI -> Controller : getWorkingVaccinationCenter()
+activate Controller
+Controller -> "app : App" : getPlatform()
+activate "app : App"
+deactivate "app : App"
+Controller -> "platform : Platform" : getRegisterEmployee()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> RegisterEmployee: getWorkingVaccinationCenter(userSession)
+deactivate Controller
+
+UI-> RECEP: SNS User Number?
+deactivate UI
+RECEP->UI: Inserts SNS User Number 
+activate UI
+UI -> Controller: answer = checkIfExistsSNSUser(snsUserNumber)
+activate Controller
+Controller -> RegisterEmployee: getSNSUserBySNSUserNumber(snsUserNumber)
+deactivate Controller
+alt answer != null
+UI -> Controller : getSNSUserByNumber(snsUserNumber)
+activate Controller
+Controller -> RegisterEmployee: getSNSUserByNumber(snsUserNumber)
+activate RegisterEmployee
+deactivate RegisterEmployee
+UI->Controller: getAvaliableVaccineTypes(vaccinationCenter)
+Controller -> VaccinationCenter: getVaccineTypes()
+activate RegisterEmployee
+deactivate RegisterEmployee
+deactivate Controller
+UI->RECEP: Asks the receptionist to select a vaccine type.
+deactivate UI
+
+RECEP->UI: Selects a vaccine type 
+activate UI
+UI -> RECEP:  Asks the receptionist to insert a date.
+deactivate UI
+
+RECEP->UI: Selects date
+activate UI
+UI -> Controller: getAvaliableSlots(vaccinationCenter,date)
+activate Controller
+Controller-> VaccinationCenter: getAllAvaliableSlots(date)
+activate VaccinationCenter
+deactivate VaccinationCenter
+deactivate Controller
+UI->RECEP: Select a slot.
+deactivate UI
+
+RECEP->UI: Selects a slot.
+activate UI
+UI->Controller: createVaccineSchedule(vaccinationCenter,vaccineType,date,slot)
+activate Controller
+Controller -> "session : UserSession": email = getUserId()
+activate "session : UserSession"
+deactivate "session : UserSession"
+Controller -> "platform : Platform": register = getSNSUserRegister()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> "RegisterSNSUser" : user = getSNSUserByEmail(email)
+activate "RegisterSNSUser"
+deactivate "RegisterSNSUser"
+Controller -> VaccinationCenter : createVaccineSchedule(vaccinationCenter,user,date,hour,minute,vaccineType)
+activate VaccinationCenter
+VaccinationCenter -> VaccinationCenter : getOperatingDay(date)
+VaccinationCenter -> Day : newVaccineSchedule(user,slot,vaccineType)
+activate Day
+Day -> Slot : newVaccineSchedule(user,hour,minute,vaccineType)
+deactivate Day
+activate Slot
+Slot -> VaccineSchedule** : new VaccineSchedule(user,date,slot,vaccineType) 
+deactivate Slot
+deactivate VaccinationCenter
+deactivate Controller 
+
+
+UI -> RECEP: Shows data and asks user to confim.
+deactivate UI
+RECEP -> UI: Confirms
+activate UI
+UI->Controller: scheduleVaccination(vaccineSchedule)
+activate Controller
+Controller -> VaccinationCenter: scheduleVaccine(vaccineSchedule)
+activate VaccinationCenter
+VaccinationCenter -> Day : scheduleVaccine(vaccineSchedule)
+deactivate VaccinationCenter
+activate Day
+Day -> Slot : scheduleVaccine(vaccineSchedule)
+activate Slot
+deactivate Slot
+deactivate Day
+Controller -> "user : SNSUser" : addVaccineSchedule(vaccineSchedule)
+activate "user : SNSUser"
+deactivate "user : SNSUser"
+
+note over VaccineSchedule, "user : SNSUser" : The schedule will both be saved on the user and vaccination center
+
+deactivate Controller
+UI -> RECEP : Does the user want to receive an SMS notification?
+deactivate UI
+
+RECEP -> UI: Answer
+alt answer = yes
+activate UI
+UI -> Controller: receiveSMSNotification()
+activate Controller
+Controller -> "platform : Platform": getSMSNotifier()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> SMSNotifier: createSMSNotification(vaccinationCenter, vaccineSchedule)
+activate SMSNotifier
+SMSNotifier -> SMSNotifications.txt** : exports SMS data
+deactivate SMSNotifier
+note over SMSNotifier : For this project SMS notification will be exported to a TXT file and will not be implemented
+deactivate Controller
+deactivate UI
+end
+end
+end
+
+@enduml

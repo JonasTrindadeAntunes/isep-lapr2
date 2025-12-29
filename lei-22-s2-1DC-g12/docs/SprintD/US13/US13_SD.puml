@@ -1,0 +1,131 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Administrator" as ADM
+participant ":specifyNewVaccineUI" as NVAPUI
+participant ":specifyNewVaccineController" as NVAPC
+participant "app:App" as APP
+participant ":App" as App
+participant ":Company" as Comp
+participant ":Platform" as Platform
+participant ":RegisterVaccineType" as Register
+participant ":VaccineType" as VATP
+participant ":Vaccine" as VAC
+participant ":AdministrationProcess" as ADP
+
+activate ADM
+ADM -> NVAPUI : asks to specify a new vaccine and administration process
+activate NVAPUI
+
+NVAPUI -> NVAPC : getVaccineType()
+activate NVAPC
+
+NVAPC -> APP : app = getInstance()
+activate APP
+deactivate APP
+
+NVAPC -> App : comp = getCompany()
+activate App
+deactivate App
+
+NVAPC -> Comp : plat = getPlatform()
+activate Comp
+deactivate Comp
+
+NVAPC -> Register : register = getRegisterVaccineType()
+activate Register
+deactivate Register
+
+NVAPC -> Register : getListVaccineType()
+activate Register
+deactivate Register
+
+deactivate NVAPC
+NVAPUI --> ADM : shows list of vaccine types and asks to choose the one where the vaccine is going to be stored
+deactivate NVAPUI
+
+ADM -> NVAPUI : chooses the vaccine type
+activate NVAPUI
+NVAPUI -> NVAPC : setVaccineType(type)
+activate NVAPC
+deactivate NVAPC
+
+NVAPUI --> ADM : requests Vaccine data(id, name)
+deactivate NVAPUI
+
+ADM -> NVAPUI : gives Vaccine data
+activate NVAPUI
+NVAPUI -> NVAPC : newVaccine(id, name)
+activate NVAPC
+
+NVAPC -> VATP : vac = newVaccine(id, name)
+activate VATP
+VATP -> VAC : Vaccine(id, name)
+activate VAC
+deactivate VAC
+deactivate VATP
+
+NVAPC -> VATP : validateVaccine(vac)
+activate VATP
+VATP -> VATP : getVaccine(vac.getId())
+activate VATP
+deactivate VATP
+deactivate VATP
+
+loop
+NVAPUI --> ADM :requests AdministrationProcess data(ageGroups,dosage,dosesToBeAdministered,listTimeInterval)
+deactivate NVAPC
+deactivate NVAPUI
+ADM -> NVAPUI : gives AdministrationProcess data
+
+activate NVAPUI
+NVAPUI -> NVAPC : newAdministrationProcess(ageGroups,dosage,dosesToBeAdministered,listTimeInterval)
+activate NVAPC
+NVAPC -> VAC : admpr = newAdministrationProcess(ageGroups,dosage,dosesToBeAdministered,listTimeInterval)
+activate VAC
+VAC -> ADP : AdministrationProcess(ageGroups, referenceDose, dosesToBeAdministered, timeInterval)
+activate ADP
+deactivate ADP
+deactivate VAC
+
+NVAPC -> VAC : validateAdministrationProcess(admpr)
+activate VAC
+deactivate VAC
+
+NVAPC -> VAC : addAdministrationProcess(admpr)
+activate VAC
+deactivate VAC
+end
+
+NVAPC -> VAC : getVaccineInfo()
+activate VAC
+deactivate VAC
+NVAPC --> NVAPUI : result
+deactivate NVAPC
+
+NVAPUI --> ADM : shows all the data and requests confirmation
+deactivate NVAPC
+deactivate NVAPUI
+ADM -> NVAPUI : confirms the data
+
+activate NVAPUI
+NVAPUI -> NVAPC : addVaccine()
+activate NVAPC
+NVAPC -> VATP : validateVaccine(vac)
+activate VATP
+NVAPC -> VATP : addVaccine(vac)
+VATP -> VATP : getVaccine(vac.getId())
+activate VATP
+deactivate VATP
+deactivate VATP
+
+NVAPC --> NVAPUI : result
+deactivate NVAPC
+NVAPUI --> ADM : informs opertaion success
+deactivate NVAPUI
+deactivate NVAPC
+deactivate ADM
+
+@enduml

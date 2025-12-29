@@ -1,0 +1,145 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > CenterCoordinatorUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.console.RoleUI</a>
+</div>
+
+<h1>Coverage Summary for Class: CenterCoordinatorUI (app.ui.console.RoleUI)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CenterCoordinatorUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/11)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.console.RoleUI;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;
+<i class="no-highlight">4</i>&nbsp;import app.ui.console.CenterCoordinator.CenterPerformanceAnalysisUI;
+<i class="no-highlight">5</i>&nbsp;import app.ui.console.CenterCoordinator.ExportVaccinationStatisticsUI;
+<i class="no-highlight">6</i>&nbsp;import app.ui.console.CenterCoordinator.ImportDataUI;
+<i class="no-highlight">7</i>&nbsp;import app.ui.console.CenterCoordinator.SortDataUI;
+<i class="no-highlight">8</i>&nbsp;import app.ui.console.MenuItem;
+<i class="no-highlight">9</i>&nbsp;import app.ui.console.utils.Utils;
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;import java.util.ArrayList;
+<i class="no-highlight">12</i>&nbsp;import java.util.List;
+<i class="no-highlight">13</i>&nbsp;
+<i class="no-highlight">14</i>&nbsp;public class CenterCoordinatorUI implements Runnable{
+<i class="no-highlight">15</i>&nbsp;    public CenterCoordinatorUI()
+<b class="nc"><i class="no-highlight">16</i>&nbsp;    {</b>
+<i class="no-highlight">17</i>&nbsp;    }
+<i class="no-highlight">18</i>&nbsp;
+<i class="no-highlight">19</i>&nbsp;    public void run()
+<i class="no-highlight">20</i>&nbsp;    {
+<b class="nc"><i class="no-highlight">21</i>&nbsp;        List&lt;MenuItem&gt; options = new ArrayList&lt;MenuItem&gt;();</b>
+<b class="nc"><i class="no-highlight">22</i>&nbsp;        options.add(new MenuItem(&quot;Import data from a legacy system&quot;, new ImportDataUI()));</b>
+<b class="nc"><i class="no-highlight">23</i>&nbsp;        options.add(new MenuItem(&quot;Sorting Algorithms for performance&quot;, new SortDataUI()));</b>
+<b class="nc"><i class="no-highlight">24</i>&nbsp;        options.add(new MenuItem(&quot;Analyse the Center Performance&quot;, new CenterPerformanceAnalysisUI()));</b>
+<b class="nc"><i class="no-highlight">25</i>&nbsp;        options.add(new MenuItem(&quot;Export Vaccination Statistics&quot;, new ExportVaccinationStatisticsUI()));</b>
+<i class="no-highlight">26</i>&nbsp;
+<b class="nc"><i class="no-highlight">27</i>&nbsp;        int option = 0;</b>
+<i class="no-highlight">28</i>&nbsp;        do
+<i class="no-highlight">29</i>&nbsp;        {
+<b class="nc"><i class="no-highlight">30</i>&nbsp;            option = Utils.showAndSelectIndex(options, &quot;\n\n&quot; + &quot;Center Coordinator Menu:&quot;);</b>
+<i class="no-highlight">31</i>&nbsp;
+<b class="nc"><i class="no-highlight">32</i>&nbsp;            if ( (option &gt;= 0) &amp;&amp; (option &lt; options.size()))</b>
+<i class="no-highlight">33</i>&nbsp;            {
+<b class="nc"><i class="no-highlight">34</i>&nbsp;                options.get(option).run();</b>
+<i class="no-highlight">35</i>&nbsp;            }
+<i class="no-highlight">36</i>&nbsp;
+<i class="no-highlight">37</i>&nbsp;        }
+<b class="nc"><i class="no-highlight">38</i>&nbsp;        while (option != -1 );</b>
+<i class="no-highlight">39</i>&nbsp;    }
+<i class="no-highlight">40</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class AuthFacade
+
+class Administrator
+class Company{
+-designation
+-authFacade
+-m_oPlatform
++getDesignation()
++getAuthFacade()
++getPlatform()
+}
+
+class VaccineType{
+-code
+-designation
+-whold
++hashCode()
++equals()
++toString()
+}
+
+class SpecifyNewVaccineTypeUI
+class SpecifyNewVaccineTypeController{
++newVaccineType(code, designation, whold)
++registerVaccineType()
++getVaccineTypeString()
++getListVaccineType()
+}
+class Platform
+{
+-description
+}
+
+class RegisterVaccineType
+{
+-List<VaccineType> listVaccineTypes
++newVaccineType(String code, String designation, String whoID)
++registerVaccineType(VaccineType vac)
+-addVaccineType(VaccineType vac)
++validateVaccineType(VaccineType vac)
++getListVaccineType()
+}
+
+SpecifyNewVaccineTypeUI ..> SpecifyNewVaccineTypeController
+SpecifyNewVaccineTypeController ..> Platform
+SpecifyNewVaccineTypeController ..> Company
+SpecifyNewVaccineTypeController ..> VaccineType
+Company --> Administrator : has >
+Company "1"-->"1" Platform : has >
+Company ..> AuthFacade
+
+
+
+Platform "1"-->"1" RegisterVaccineType : has >
+RegisterVaccineType "1"-->"*" VaccineType : has >
+
+@enduml

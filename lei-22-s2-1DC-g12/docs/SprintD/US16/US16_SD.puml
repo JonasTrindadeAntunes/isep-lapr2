@@ -1,0 +1,161 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Center Coordinator" as CC
+participant ":CenterPerformanceAnalysisUI" as UI
+participant "controller\n:CenterPerformanceAnalysisController" as CTRL
+participant ":App" as APP
+participant "app :App" as App
+participant "session :UserSession" as SESSION
+participant "comp :Company" as COMP
+participant "plat :Platform" as PLAT
+participant "ImportPerformanceFromCSV" as Importer
+participant "CenterPerformanceAnalysis" as CPAnalysis
+participant "Algorithm" as ALG
+participant "RegisterEmployee" as RE
+participant "Email" as EMAIL
+participant "Employee" as EMP
+participant "List<Employee> \n listEmployee"
+participant "List<Date> \n listOfArrivals"
+participant "List<Date> listOfDepartures"
+'1
+activate CC
+CC -> UI: starts analysing the performance of a Center
+activate UI
+
+'2
+UI -> CTRL **: controller = ExportVaccinationStatisticsController()
+activate CTRL
+'3
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'5
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+deactivate COMP
+deactivate CTRL
+
+'6
+UI ->CTRL :checkLogin()
+activate CTRL
+'7
+CTRL -> App : SESSION = getCurrentUserSession()
+activate App
+deactivate App
+'8
+CTRL -> SESSION : answer= isLoggedInWithRole(Constants.ROLE_CENTER_COORDINATOR)
+activate SESSION
+deactivate SESSION
+deactivate CTRL
+
+
+
+'9
+UI -> CTRL:  getVaccinationCenter()
+activate CTRL
+
+'10
+
+
+
+
+'11
+CTRL -> App : email = getCurrentUserSession()
+activate App
+'12
+App -> SESSION : getUserId()
+activate SESSION
+
+
+
+'13
+SESSION -> EMAIL : getEmail()
+activate EMAIL
+deactivate EMAIL
+deactivate SESSION
+deactivate App
+
+CTRL -> PLAT : emp = getRegisterEmployee()
+activate PLAT
+PLAT -> RE: getEmployeeByEmail(email)
+activate RE
+deactivate RE
+deactivate PLAT
+
+'14
+CTRL -> EMP : vac =  getWorkingVaccinationCenter(email)
+activate EMP
+deactivate EMP
+deactivate CTRL
+UI --> CC: Shows and asks to insert time interval
+deactivate UI
+CC -> UI: Inserts time interval
+activate UI
+
+UI --> CC: Shows and asks if wants to add more intervals
+deactivate UI
+alt answer = NO
+
+CC-> UI: YES/NO Answer
+'UI-> Controller
+activate UI
+UI--> CC: Asks to insert date
+deactivate UI
+CC-> UI: Inserts date
+activate UI
+UI -> CTRL: glp=getListPerformance(date,timeIntervals.get(count))
+activate CTRL
+CTRL -> PLAT: getImportPerformanceFromCSV()
+activate PLAT
+deactivate PLAT
+CTRL -> Importer: getPerformanceDataListString()
+activate Importer
+deactivate Importer
+CTRL -> PLAT: getCenterPerformanceAnalysis()
+activate PLAT
+deactivate PLAT
+CTRL -> CPAnalysis: setListsOfArrivalsAndDepartures(performanceDataListString)
+activate CPAnalysis
+deactivate CPAnalysis
+CTRL -> CPAnalysis: differenceBetweenArrivalsAndDepartures(d,timeInterval)
+activate CPAnalysis
+deactivate CPAnalysis
+CTRL -> ALG: bruteForceAlgorithm(seq)
+activate ALG
+deactivate ALG
+CTRL -> ALG: calculate(seq)
+activate ALG
+deactivate ALG
+
+CTRL -> CPAnalysis: processAllDataBeforeShowing(seq,bruteForceAlgorithm,timeInterval)
+deactivate CTRL
+
+activate CPAnalysis
+end
+deactivate CPAnalysis
+
+
+UI--> CC: Shows Maximum sum contiguous sublist, Sum of maximum contiguous sublist, effectiveness of Vaccination Center and asks if wants different date and time interval
+deactivate UI
+alt answer = NO
+CC -> UI: YES/NO Answer
+activate UI
+UI --> CC: Asks if the user wants to see the complexity analysis for predefine list of time intervals
+alt answer=yes
+CC -> UI: YES/NO Answer
+UI -> CTRL: complexityAnalysis(date)
+activate CTRL
+UI --> CC: Shows the complexity analysis for predefine list of time intervals and asks to confirm data
+CC -> UI: Confirms data
+UI --> CC: Informs operation successful
+deactivate UI
+end
+end
+@enduml

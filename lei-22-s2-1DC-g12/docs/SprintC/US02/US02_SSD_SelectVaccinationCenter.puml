@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Receptionist" as NRS
+activate NRS
+NRS -> System : Selecting the vaccination center where s(he) works
+activate System
+System --> NRS :  show list of vaccination centers and ask to select one
+deactivate System
+NRS -> System : selects the intended vaccination center
+activate System
+deactivate System
+@enduml

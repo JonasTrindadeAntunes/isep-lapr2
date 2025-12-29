@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="2323px" preserveAspectRatio="none" style="width:3617px;height:2323px;" version="1.1" viewBox="0 0 3617 2323" width="3617px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1onbfnlpjyt47" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="508.8672" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="119.6094"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="297.8125" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="658.8281"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="986.9922"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="121.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="1047.6953"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="422.7734" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="1199.1016"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="282.4609" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="1652.2266"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="176.7578" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="1965.0391"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="149.9609"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="181.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="210.3125"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="151.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="447.0703"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="689.1797"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="151.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="775.2344"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="60.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="1078.0469"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="345.8125" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="1229.4531"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="181.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="1682.5781"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="121.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="2020.7422"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="979" y="240.6641"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1078" y="301.0156"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1078" y="477.4219"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1206" y="361.3672"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1206" y="1259.8047"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1361" y="537.7734"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1361" y="1320.1563"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1361" y="2051.0938"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1698" y="1380.5078"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1838.5" y="1108.3984"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="134.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1838.5" y="1440.8594"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1838.5" y="1712.9297"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2142.5" y="1514.5625"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="60.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2142.5" y="1743.2813"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2493.5" y="1544.9141"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2493.5" y="1773.6328"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="3034" y="805.5859"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="3034" y="896.2891"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="3167.5" y="1833.9844"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="3280" y="2111.4453"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="1814.0391" style="stroke: #000000; stroke-width: 2.0;" width="3595" x="13" y="406.7188"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="1478.875" style="stroke: #000000; stroke-width: 2.0;" width="3575" x="23" y="734.8828"/>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="2835.5" y="1553.2656"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="2842.5" y="1574.7988">VaccineSchedule</text>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="226.3672" style="stroke: #000000; stroke-width: 2.0;" width="3252.5" x="335.5" y="1980.3906"/>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="137" x="3437" y="2119.7969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="123" x="3444" y="2141.3301">SMSNotifications.txt</text>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="75" x2="75" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="416.5" x2="416.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="839.5" x2="839.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="983.5" x2="983.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1082.5" x2="1082.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1210.5" x2="1210.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1365.5" x2="1365.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1535.5" x2="1535.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1702.5" x2="1702.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1843.5" x2="1843.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2147" x2="2147" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2498.5" x2="2498.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2898.5" x2="2898.5" y1="1586.5703" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="3038.5" x2="3038.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="3172.5" x2="3172.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="3284.5" x2="3284.5" y1="87.6094" y2="2237.7578"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="3507" x2="3507" y1="2153.1016" y2="2237.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="33" y="84.5332">Receptionist</text>
+        <ellipse cx="75" cy="13" fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M75,21 L75,48 M62,29 L88,29 M75,48 L62,63 M75,48 L88,63 " fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="33" y="2251.291">Receptionist</text>
+        <ellipse cx="75" cy="2264.3672" fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M75,2272.3672 L75,2299.3672 M62,2280.3672 L88,2280.3672 M75,2299.3672 L62,2314.3672 M75,2299.3672 L88,2314.3672 " fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="137" x="345.5" y="84.5332">ScheduleVacinationUI</text>
+        <ellipse cx="417" cy="54" fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" rx="12" ry="12" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <polygon fill="#A80036" points="413,42,419,37,417,42,419,47,413,42" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="137" x="345.5" y="2251.291">ScheduleVacinationUI</text>
+        <ellipse cx="417" cy="2270.3672" fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" rx="12" ry="12" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <polygon fill="#A80036" points="413,2258.3672,419,2253.3672,417,2258.3672,419,2263.3672,413,2258.3672" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="187" x="743.5" y="84.5332">ScheduleVacinationController</text>
+        <ellipse cx="840" cy="54" fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" rx="12" ry="12" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <polygon fill="#A80036" points="836,42,842,37,840,42,842,47,836,42" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="187" x="743.5" y="2251.291">ScheduleVacinationController</text>
+        <ellipse cx="840" cy="2270.3672" fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" rx="12" ry="12" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <polygon fill="#A80036" points="836,2258.3672,842,2253.3672,840,2258.3672,842,2263.3672,836,2258.3672" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="39" x="962.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="969.5" y="72.5332">App</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="39" x="962.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="969.5" y="2258.291">App</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="75" x="1043.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="1050.5" y="72.5332">app : App</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="75" x="1043.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="1050.5" y="2258.291">app : App</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="153" x="1132.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1139.5" y="72.5332">session : UserSession</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="153" x="1132.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1139.5" y="2258.291">session : UserSession</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="1299.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="115" x="1306.5" y="72.5332">platform : Platform</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="1299.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="115" x="1306.5" y="2258.291">platform : Platform</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="183" x="1442.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="169" x="1449.5" y="72.5332">RegisterVaccinationCenter</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="183" x="1442.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="169" x="1449.5" y="2258.291">RegisterVaccinationCenter</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="1639.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="1646.5" y="72.5332">RegisterSNSUser</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="1639.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="1646.5" y="2258.291">RegisterSNSUser</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="130" x="1776.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="116" x="1783.5" y="72.5332">VaccinationCenter</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="130" x="1776.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="116" x="1783.5" y="2258.291">VaccinationCenter</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="39" x="2126" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="2133" y="72.5332">Day</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="39" x="2126" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="2133" y="2258.291">Day</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="38" x="2477.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="24" x="2484.5" y="72.5332">Slot</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="38" x="2477.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="24" x="2484.5" y="2258.291">Slot</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="2835.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="2842.5" y="2258.291">VaccineSchedule</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="2972.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="115" x="2979.5" y="72.5332">RegisterEmployee</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="2972.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="115" x="2979.5" y="2258.291">RegisterEmployee</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="110" x="3115.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="3122.5" y="72.5332">user : SNSUser</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="110" x="3115.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="3122.5" y="2258.291">user : SNSUser</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="87" x="3239.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="73" x="3246.5" y="72.5332">SMSNotifier</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="87" x="3239.5" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="73" x="3246.5" y="2258.291">SMSNotifier</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="137" x="3437" y="2236.7578"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="123" x="3444" y="2258.291">SMSNotifications.txt</text>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="508.8672" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="119.6094"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="297.8125" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="658.8281"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="986.9922"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="121.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="1047.6953"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="422.7734" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="1199.1016"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="282.4609" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="1652.2266"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="176.7578" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="412" y="1965.0391"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="149.9609"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="181.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="210.3125"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="151.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="447.0703"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="689.1797"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="151.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="775.2344"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="60.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="1078.0469"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="345.8125" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="1229.4531"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="181.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="1682.5781"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="121.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="2020.7422"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="979" y="240.6641"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1078" y="301.0156"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1078" y="477.4219"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1206" y="361.3672"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1206" y="1259.8047"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1361" y="537.7734"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1361" y="1320.1563"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1361" y="2051.0938"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1698" y="1380.5078"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1838.5" y="1108.3984"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="134.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1838.5" y="1440.8594"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1838.5" y="1712.9297"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2142.5" y="1514.5625"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="60.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2142.5" y="1743.2813"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2493.5" y="1544.9141"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2493.5" y="1773.6328"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="3034" y="805.5859"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="3034" y="896.2891"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="3167.5" y="1833.9844"/>
+        <rect fill="#FFFFFF" filter="url(#f1onbfnlpjyt47)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="3280" y="2111.4453"/>
+        <polygon fill="#A80036" points="400,115.6094,410,119.6094,400,123.6094,404,119.6094" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="406" y1="119.6094" y2="119.6094"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="82" y="115.1045">1</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="93" y="115.1045">Schedule vaccination</text>
+        <polygon fill="#A80036" points="823,145.9609,833,149.9609,823,153.9609,827,149.9609" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="149.9609" y2="149.9609"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="429" y="145.4561">2</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="440" y="145.4561">create</text>
+        <polygon fill="#A80036" points="823,206.3125,833,210.3125,823,214.3125,827,210.3125" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="210.3125" y2="210.3125"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="429" y="205.8076">3</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="74" x="440" y="205.8076">checkLogin()</text>
+        <polygon fill="#A80036" points="967,236.6641,977,240.6641,967,244.6641,971,240.6641" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="973" y1="240.6641" y2="240.6641"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="852" y="236.1592">4</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="863" y="236.1592">app=getInstance()</text>
+        <polygon fill="#A80036" points="1066,297.0156,1076,301.0156,1066,305.0156,1070,301.0156" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1072" y1="301.0156" y2="301.0156"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="852" y="296.5107">5</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="203" x="863" y="296.5107">session = getCurrentUserSession()</text>
+        <polygon fill="#A80036" points="1194,357.3672,1204,361.3672,1194,365.3672,1198,361.3672" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1200" y1="361.3672" y2="361.3672"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="852" y="356.8623">6</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="315" x="863" y="356.8623">answer = isLoggedInWithRole(ROLE_RECEPTIONIST)</text>
+        <rect fill="none" height="1814.0391" style="stroke: #000000; stroke-width: 2.0;" width="3595" x="13" y="406.7188"/>
+        <polygon fill="#EEEEEE" points="13,406.7188,74,406.7188,74,414.7188,64,424.7188,13,424.7188,13,406.7188" style="stroke: #000000; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16" x="28" y="421.2139">alt</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="89" y="420.1377">[answer = true]</text>
+        <polygon fill="#A80036" points="823,443.0703,833,447.0703,823,451.0703,827,447.0703" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="447.0703" y2="447.0703"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="429" y="442.5654">7</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="440" y="442.5654">getWorkingVaccinationCenter()</text>
+        <polygon fill="#A80036" points="1066,473.4219,1076,477.4219,1066,481.4219,1070,477.4219" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1072" y1="477.4219" y2="477.4219"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="852" y="472.917">8</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="74" x="863" y="472.917">getPlatform()</text>
+        <polygon fill="#A80036" points="1349,533.7734,1359,537.7734,1349,541.7734,1353,537.7734" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1355" y1="537.7734" y2="537.7734"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="852" y="533.2686">9</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="132" x="863" y="533.2686">getRegisterEmployee()</text>
+        <polygon fill="#A80036" points="3027,594.125,3037,598.125,3027,602.125,3031,598.125" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="840" x2="3033" y1="598.125" y2="598.125"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="847" y="593.6201">10</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="252" x="865" y="593.6201">getWorkingVaccinationCenter(userSession)</text>
+        <polygon fill="#A80036" points="86,624.4766,76,628.4766,86,632.4766,82,628.4766" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="416" y1="628.4766" y2="628.4766"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="92" y="623.9717">11</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="114" x="110" y="623.9717">SNS User Number?</text>
+        <polygon fill="#A80036" points="400,654.8281,410,658.8281,400,662.8281,404,658.8281" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="406" y1="658.8281" y2="658.8281"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="82" y="654.3232">12</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="150" x="100" y="654.3232">Inserts SNS User Number</text>
+        <polygon fill="#A80036" points="823,685.1797,833,689.1797,823,693.1797,827,689.1797" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="689.1797" y2="689.1797"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="429" y="684.6748">13</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="290" x="447" y="684.6748">answer = checkIfExistsSNSUser(snsUserNumber)</text>
+        <polygon fill="#A80036" points="3027,715.5313,3037,719.5313,3027,723.5313,3031,719.5313" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="840" x2="3033" y1="719.5313" y2="719.5313"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="847" y="715.0264">14</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="288" x="865" y="715.0264">getSNSUserBySNSUserNumber(snsUserNumber)</text>
+        <rect fill="none" height="1478.875" style="stroke: #000000; stroke-width: 2.0;" width="3575" x="23" y="734.8828"/>
+        <polygon fill="#EEEEEE" points="23,734.8828,84,734.8828,84,742.8828,74,752.8828,23,752.8828,23,734.8828" style="stroke: #000000; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16" x="38" y="749.3779">alt</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="99" y="748.3018">[answer != null]</text>
+        <polygon fill="#A80036" points="823,771.2344,833,775.2344,823,779.2344,827,775.2344" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="775.2344" y2="775.2344"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="429" y="770.7295">15</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="234" x="447" y="770.7295">getSNSUserByNumber(snsUserNumber)</text>
+        <polygon fill="#A80036" points="3022,801.5859,3032,805.5859,3022,809.5859,3026,805.5859" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="3028" y1="805.5859" y2="805.5859"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="801.0811">16</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="234" x="870" y="801.0811">getSNSUserByNumber(snsUserNumber)</text>
+        <polygon fill="#A80036" points="823,861.9375,833,865.9375,823,869.9375,827,865.9375" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="865.9375" y2="865.9375"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="429" y="861.4326">17</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="261" x="447" y="861.4326">getAvaliableVaccineTypes(vaccinationCenter)</text>
+        <polygon fill="#A80036" points="1831.5,892.2891,1841.5,896.2891,1831.5,900.2891,1835.5,896.2891" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1837.5" y1="896.2891" y2="896.2891"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="891.7842">18</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="108" x="870" y="891.7842">getVaccineTypes()</text>
+        <polygon fill="#A80036" points="86,952.6406,76,956.6406,86,960.6406,82,956.6406" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="416" y1="956.6406" y2="956.6406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="92" y="952.1357">19</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="268" x="110" y="952.1357">Asks the receptionist to select a vaccine type.</text>
+        <polygon fill="#A80036" points="400,982.9922,410,986.9922,400,990.9922,404,986.9922" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="406" y1="986.9922" y2="986.9922"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="82" y="982.4873">20</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="100" y="982.4873">Selects a vaccine type</text>
+        <polygon fill="#A80036" points="86,1013.3438,76,1017.3438,86,1021.3438,82,1017.3438" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="416" y1="1017.3438" y2="1017.3438"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="92" y="1012.8389">21</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="218" x="110" y="1012.8389">Asks the receptionist to insert a date.</text>
+        <polygon fill="#A80036" points="400,1043.6953,410,1047.6953,400,1051.6953,404,1047.6953" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="406" y1="1047.6953" y2="1047.6953"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="82" y="1043.1904">22</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="73" x="100" y="1043.1904">Selects date</text>
+        <polygon fill="#A80036" points="823,1074.0469,833,1078.0469,823,1082.0469,827,1078.0469" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="1078.0469" y2="1078.0469"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="429" y="1073.542">23</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="238" x="447" y="1073.542">getAvaliableSlots(vaccinationCenter,date)</text>
+        <polygon fill="#A80036" points="1826.5,1104.3984,1836.5,1108.3984,1826.5,1112.3984,1830.5,1108.3984" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1832.5" y1="1108.3984" y2="1108.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="1103.8936">24</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="147" x="870" y="1103.8936">getAllAvaliableSlots(date)</text>
+        <polygon fill="#A80036" points="86,1164.75,76,1168.75,86,1172.75,82,1168.75" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="416" y1="1168.75" y2="1168.75"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="92" y="1164.2451">25</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="77" x="110" y="1164.2451">Select a slot.</text>
+        <polygon fill="#A80036" points="400,1195.1016,410,1199.1016,400,1203.1016,404,1199.1016" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="406" y1="1199.1016" y2="1199.1016"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="82" y="1194.5967">26</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="100" y="1194.5967">Selects a slot.</text>
+        <polygon fill="#A80036" points="823,1225.4531,833,1229.4531,823,1233.4531,827,1229.4531" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="1229.4531" y2="1229.4531"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="429" y="1224.9482">27</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="376" x="447" y="1224.9482">createVaccineSchedule(vaccinationCenter,vaccineType,date,slot)</text>
+        <polygon fill="#A80036" points="1194,1255.8047,1204,1259.8047,1194,1263.8047,1198,1259.8047" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1200" y1="1259.8047" y2="1259.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="1255.2998">28</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="110" x="870" y="1255.2998">email = getUserId()</text>
+        <polygon fill="#A80036" points="1349,1316.1563,1359,1320.1563,1349,1324.1563,1353,1320.1563" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1355" y1="1320.1563" y2="1320.1563"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="1315.6514">29</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="187" x="870" y="1315.6514">register = getSNSUserRegister()</text>
+        <polygon fill="#A80036" points="1686,1376.5078,1696,1380.5078,1686,1384.5078,1690,1380.5078" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1692" y1="1380.5078" y2="1380.5078"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="1376.0029">30</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="201" x="870" y="1376.0029">user = getSNSUserByEmail(email)</text>
+        <polygon fill="#A80036" points="1826.5,1436.8594,1836.5,1440.8594,1826.5,1444.8594,1830.5,1440.8594" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1832.5" y1="1440.8594" y2="1440.8594"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="1436.3545">31</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="452" x="870" y="1436.3545">createVaccineSchedule(vaccinationCenter,user,date,hour,minute,vaccineType)</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1848.5" x2="1890.5" y1="1471.5625" y2="1471.5625"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1890.5" x2="1890.5" y1="1471.5625" y2="1484.5625"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1849.5" x2="1890.5" y1="1484.5625" y2="1484.5625"/>
+        <polygon fill="#A80036" points="1859.5,1480.5625,1849.5,1484.5625,1859.5,1488.5625,1855.5,1484.5625" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1855.5" y="1466.7061">32</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="1873.5" y="1466.7061">getOperatingDay(date)</text>
+        <polygon fill="#A80036" points="2130.5,1510.5625,2140.5,1514.5625,2130.5,1518.5625,2134.5,1514.5625" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1848.5" x2="2136.5" y1="1514.5625" y2="1514.5625"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1855.5" y="1510.0576">33</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="257" x="1873.5" y="1510.0576">newVaccineSchedule(user,slot,vaccineType)</text>
+        <polygon fill="#A80036" points="2481.5,1540.9141,2491.5,1544.9141,2481.5,1548.9141,2485.5,1544.9141" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2147.5" x2="2487.5" y1="1544.9141" y2="1544.9141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2154.5" y="1540.4092">34</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="304" x="2172.5" y="1540.4092">newVaccineSchedule(user,hour,minute,vaccineType)</text>
+        <polygon fill="#A80036" points="2823.5,1571.2656,2833.5,1575.2656,2823.5,1579.2656,2827.5,1575.2656" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2498.5" x2="2829.5" y1="1575.2656" y2="1575.2656"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2505.5" y="1570.7607">35</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="290" x="2523.5" y="1570.7607">new VaccineSchedule(user,date,slot,vaccineType)</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="2835.5" y="1553.2656"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="2842.5" y="1574.7988">VaccineSchedule</text>
+        <polygon fill="#A80036" points="86,1617.875,76,1621.875,86,1625.875,82,1621.875" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="416" y1="1621.875" y2="1621.875"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="92" y="1617.3701">36</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="215" x="110" y="1617.3701">Shows data and asks user to confim.</text>
+        <polygon fill="#A80036" points="400,1648.2266,410,1652.2266,400,1656.2266,404,1652.2266" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="406" y1="1652.2266" y2="1652.2266"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="82" y="1647.7217">37</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="51" x="100" y="1647.7217">Confirms</text>
+        <polygon fill="#A80036" points="823,1678.5781,833,1682.5781,823,1686.5781,827,1682.5781" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="1682.5781" y2="1682.5781"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="429" y="1678.0732">38</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="225" x="447" y="1678.0732">scheduleVaccination(vaccineSchedule)</text>
+        <polygon fill="#A80036" points="1826.5,1708.9297,1836.5,1712.9297,1826.5,1716.9297,1830.5,1712.9297" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1832.5" y1="1712.9297" y2="1712.9297"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="1708.4248">39</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="204" x="870" y="1708.4248">scheduleVaccine(vaccineSchedule)</text>
+        <polygon fill="#A80036" points="2130.5,1739.2813,2140.5,1743.2813,2130.5,1747.2813,2134.5,1743.2813" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1843.5" x2="2136.5" y1="1743.2813" y2="1743.2813"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1850.5" y="1738.7764">40</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="204" x="1868.5" y="1738.7764">scheduleVaccine(vaccineSchedule)</text>
+        <polygon fill="#A80036" points="2481.5,1769.6328,2491.5,1773.6328,2481.5,1777.6328,2485.5,1773.6328" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2152.5" x2="2487.5" y1="1773.6328" y2="1773.6328"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2159.5" y="1769.1279">41</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="204" x="2177.5" y="1769.1279">scheduleVaccine(vaccineSchedule)</text>
+        <polygon fill="#A80036" points="3155.5,1829.9844,3165.5,1833.9844,3155.5,1837.9844,3159.5,1833.9844" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="3161.5" y1="1833.9844" y2="1833.9844"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="1829.4795">42</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="227" x="870" y="1829.4795">addVaccineSchedule(vaccineSchedule)</text>
+        <polygon fill="#FBFB77" filter="url(#f1onbfnlpjyt47)" points="2830,1877.3359,2830,1903.3359,3236,1903.3359,3236,1887.3359,3226,1877.3359,2830,1877.3359" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="3226" x2="3226" y1="1877.3359" y2="1887.3359"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="3236" x2="3226" y1="1887.3359" y2="1887.3359"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="385" x="2836" y="1895.8311">The schedule will both be saved on the user and vaccination center</text>
+        <polygon fill="#A80036" points="86,1930.6875,76,1934.6875,86,1938.6875,82,1934.6875" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="416" y1="1934.6875" y2="1934.6875"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="92" y="1930.1826">43</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="295" x="110" y="1930.1826">Does the user want to receive an SMS notification?</text>
+        <polygon fill="#A80036" points="400,1961.0391,410,1965.0391,400,1969.0391,404,1965.0391" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="406" y1="1965.0391" y2="1965.0391"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="82" y="1960.5342">44</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="43" x="100" y="1960.5342">Answer</text>
+        <rect fill="none" height="226.3672" style="stroke: #000000; stroke-width: 2.0;" width="3252.5" x="335.5" y="1980.3906"/>
+        <polygon fill="#EEEEEE" points="335.5,1980.3906,396.5,1980.3906,396.5,1988.3906,386.5,1998.3906,335.5,1998.3906,335.5,1980.3906" style="stroke: #000000; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16" x="350.5" y="1994.8857">alt</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="82" x="411.5" y="1993.8096">[answer = yes]</text>
+        <polygon fill="#A80036" points="823,2016.7422,833,2020.7422,823,2024.7422,827,2020.7422" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="422" x2="829" y1="2020.7422" y2="2020.7422"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="429" y="2016.2373">45</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="141" x="447" y="2016.2373">receiveSMSNotification()</text>
+        <polygon fill="#A80036" points="1349,2047.0938,1359,2051.0938,1349,2055.0938,1353,2051.0938" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1355" y1="2051.0938" y2="2051.0938"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="2046.5889">46</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="95" x="870" y="2046.5889">getSMSNotifier()</text>
+        <polygon fill="#A80036" points="3268,2107.4453,3278,2111.4453,3268,2115.4453,3272,2111.4453" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="3274" y1="2111.4453" y2="2111.4453"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="2106.9404">47</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="344" x="870" y="2106.9404">createSMSNotification(vaccinationCenter, vaccineSchedule)</text>
+        <polygon fill="#A80036" points="3425,2137.7969,3435,2141.7969,3425,2145.7969,3429,2141.7969" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="3285" x2="3431" y1="2141.7969" y2="2141.7969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="3292" y="2137.292">48</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="105" x="3310" y="2137.292">exports SMS data</text>
+        <rect fill="#FEFECE" filter="url(#f1onbfnlpjyt47)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="137" x="3437" y="2119.7969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="123" x="3444" y="2141.3301">SMSNotifications.txt</text>
+        <polygon fill="#FBFB77" filter="url(#f1onbfnlpjyt47)" points="3014,2171.4063,3014,2197.4063,3551,2197.4063,3551,2181.4063,3541,2171.4063,3014,2171.4063" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="3541" x2="3541" y1="2171.4063" y2="2181.4063"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="3551" x2="3541" y1="2181.4063" y2="2181.4063"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="516" x="3020" y="2189.9014">For this project SMS notification will be exported to a TXT file and will not be implemented</text>
+        <!--
+@startuml
+autonumber
+actor "Receptionist" as RECEP
+control ScheduleVacinationUI as UI
+control ScheduleVacinationController as Controller
+participant App
+participant "app : App"
+participant "session : UserSession"
+participant "platform : Platform"
+participant RegisterVaccinationCenter
+participant RegisterSNSUser
+participant VaccinationCenter
+participant Day 
+participant Slot
+participant VaccineSchedule
+
+RECEP -> UI: Schedule vaccination
+activate UI
+UI-> Controller : create
+activate Controller
+deactivate Controller
+UI -> Controller : checkLogin()
+activate Controller
+Controller -> App: app=getInstance()
+activate App
+deactivate App
+Controller -> "app : App": session = getCurrentUserSession()
+activate "app : App"
+deactivate "app : App"
+Controller -> "session : UserSession": answer = isLoggedInWithRole(ROLE_RECEPTIONIST)
+activate "session : UserSession"
+deactivate "session : UserSession"
+deactivate Controller
+alt answer = true
+UI -> Controller : getWorkingVaccinationCenter()
+activate Controller
+Controller -> "app : App" : getPlatform()
+activate "app : App"
+deactivate "app : App"
+Controller -> "platform : Platform" : getRegisterEmployee()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> RegisterEmployee: getWorkingVaccinationCenter(userSession)
+deactivate Controller
+
+UI-> RECEP: SNS User Number?
+deactivate UI
+RECEP->UI: Inserts SNS User Number 
+activate UI
+UI -> Controller: answer = checkIfExistsSNSUser(snsUserNumber)
+activate Controller
+Controller -> RegisterEmployee: getSNSUserBySNSUserNumber(snsUserNumber)
+deactivate Controller
+alt answer != null
+UI -> Controller : getSNSUserByNumber(snsUserNumber)
+activate Controller
+Controller -> RegisterEmployee: getSNSUserByNumber(snsUserNumber)
+activate RegisterEmployee
+deactivate RegisterEmployee
+UI->Controller: getAvaliableVaccineTypes(vaccinationCenter)
+Controller -> VaccinationCenter: getVaccineTypes()
+activate RegisterEmployee
+deactivate RegisterEmployee
+deactivate Controller
+UI->RECEP: Asks the receptionist to select a vaccine type.
+deactivate UI
+
+RECEP->UI: Selects a vaccine type 
+activate UI
+UI -> RECEP:  Asks the receptionist to insert a date.
+deactivate UI
+
+RECEP->UI: Selects date
+activate UI
+UI -> Controller: getAvaliableSlots(vaccinationCenter,date)
+activate Controller
+Controller-> VaccinationCenter: getAllAvaliableSlots(date)
+activate VaccinationCenter
+deactivate VaccinationCenter
+deactivate Controller
+UI->RECEP: Select a slot.
+deactivate UI
+
+RECEP->UI: Selects a slot.
+activate UI
+UI->Controller: createVaccineSchedule(vaccinationCenter,vaccineType,date,slot)
+activate Controller
+Controller -> "session : UserSession": email = getUserId()
+activate "session : UserSession"
+deactivate "session : UserSession"
+Controller -> "platform : Platform": register = getSNSUserRegister()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> "RegisterSNSUser" : user = getSNSUserByEmail(email)
+activate "RegisterSNSUser"
+deactivate "RegisterSNSUser"
+Controller -> VaccinationCenter : createVaccineSchedule(vaccinationCenter,user,date,hour,minute,vaccineType)
+activate VaccinationCenter
+VaccinationCenter -> VaccinationCenter : getOperatingDay(date)
+VaccinationCenter -> Day : newVaccineSchedule(user,slot,vaccineType)
+activate Day
+Day -> Slot : newVaccineSchedule(user,hour,minute,vaccineType)
+deactivate Day
+activate Slot
+Slot -> VaccineSchedule** : new VaccineSchedule(user,date,slot,vaccineType) 
+deactivate Slot
+deactivate VaccinationCenter
+deactivate Controller 
+
+
+UI -> RECEP: Shows data and asks user to confim.
+deactivate UI
+RECEP -> UI: Confirms
+activate UI
+UI->Controller: scheduleVaccination(vaccineSchedule)
+activate Controller
+Controller -> VaccinationCenter: scheduleVaccine(vaccineSchedule)
+activate VaccinationCenter
+VaccinationCenter -> Day : scheduleVaccine(vaccineSchedule)
+deactivate VaccinationCenter
+activate Day
+Day -> Slot : scheduleVaccine(vaccineSchedule)
+activate Slot
+deactivate Slot
+deactivate Day
+Controller -> "user : SNSUser" : addVaccineSchedule(vaccineSchedule)
+activate "user : SNSUser"
+deactivate "user : SNSUser"
+
+note over VaccineSchedule, "user : SNSUser" : The schedule will both be saved on the user and vaccination center
+
+deactivate Controller
+UI -> RECEP : Does the user want to receive an SMS notification?
+deactivate UI
+
+RECEP -> UI: Answer
+alt answer = yes
+activate UI
+UI -> Controller: receiveSMSNotification()
+activate Controller
+Controller -> "platform : Platform": getSMSNotifier()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> SMSNotifier: createSMSNotification(vaccinationCenter, vaccineSchedule)
+activate SMSNotifier
+SMSNotifier -> SMSNotifications.txt** : exports SMS data
+deactivate SMSNotifier
+note over SMSNotifier : For this project SMS notification will be exported to a TXT file and will not be implemented
+deactivate Controller
+deactivate UI
+end
+end
+end
+
+@enduml
+
+PlantUML version 2017.11(Wed Apr 19 17:18:59 BST 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_111-b14
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

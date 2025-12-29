@@ -1,0 +1,183 @@
+@startuml Domain Model
+skinparam classAttributeIconSize 0
+hide methods
+left to right direction
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class Administrator
+
+class CenterCoordinator
+
+class Receptionist
+
+class Nurse
+note right
+Nurse sends SNSUSer to RecoveryRoom and checks WaitingRoom for next SNSUser
+end note
+
+class SNSUser {
+name
+address
+gender
+email
+birthDate
+snsUserNumber
+citizenCardNumber
+}
+
+class Day{
+date
+openingHours
+openingMinutes
+closingHours
+closingMinutes
+slotDuration
+maxNumberVaccines
+}
+class Slot
+{
+hour
+}
+
+class Report
+
+class ReportType
+
+class Company {
+designation
+}
+note right
+In this particular case, Company will represent DGS
+end note
+
+class VaccinationCenter{
+name
+address
+phoneNumber
+emailAddress
+faxNumber
+websiteAddress
+openingHours
+openingMinutes
+closingHours
+closingMinutes
+slotDuration
+maxNumberVaccines
+}
+
+class Vaccine
+
+class VaccineAdministration
+
+class CommunityMassVaccinationCenter
+
+class HealthCareCenter
+
+class VaccineType{
+code
+designation
+whold
+}
+
+class VaccineSchedule{
+vaccinationDate
+SnsUser
+VaccineType
+}
+note left
+Registers SNSUser arrival by Receptionist
+end note
+
+class AdministrationProcess{
+
+ageGroups
+referenceDose
+dosesToBeAdministered
+timeInterval
+}
+
+class Notification
+
+class SMSNotification
+
+class EmailNotification
+
+class RecoveryRoom
+
+class AdverseReaction
+{
+Date
+}
+
+class UserHealthHistory
+
+class WaitingRoom
+
+class VaccinationCertificate
+
+class DigitalCertificate
+
+class Platform
+note right
+Registers Nurse, SNSUser, Receptionist, Administrator, CenterCoordinator, VaccinationCenter, VaccineType
+end note
+
+class Analysis
+
+class Employee
+
+class SMSNotifier
+
+Platform "1" -- "*" SNSUser : registers in <
+Employee <|-- CenterCoordinator
+Employee <|-- Administrator
+Employee <|-- Nurse
+Employee <|-- Receptionist
+Employee "*" -- "1" Platform : registers in >
+CenterCoordinator "1"-- "*" Analysis : analyses >
+Analysis "*" -- "1" Report : gets analised by >
+Report "*" -- "1" ReportType : is of >
+Company "1" -- "1" Platform : has >
+Platform "1" -- "*" VaccinationCenter : register in <
+Company "1" -- "*" Administrator : has >
+VaccinationCenter "1" -- "*" Vaccine : applies >
+VaccinationCenter <|-- CommunityMassVaccinationCenter
+VaccinationCenter <|-- HealthCareCenter
+VaccinationCenter "1"-- "*" VaccineAdministration : has >
+HealthCareCenter "1" -- "*" VaccineType : can administer >
+CommunityMassVaccinationCenter "*" -- "1" VaccineType : can administer >
+Vaccine "1" -- "*" VaccineAdministration : of <
+Vaccine "*" --- "1" VaccineType : is of >
+Vaccine "1" - "*" AdministrationProcess : has >
+VaccineAdministration "0..1" -- "0..1" VaccineSchedule : fulfilling >
+Notification <|-- SMSNotification
+Notification <|-- EmailNotification
+VaccineSchedule "*" -- "1" SNSUser : created for >
+VaccineSchedule "1" ----- "0..1" Notification : emits >
+VaccineAdministration "*" -- "1" SNSUser : administrated on >
+VaccineAdministration "1" -- "*" AdverseReaction : has >
+VaccineAdministration "*" -- "1" Nurse : is done by >
+VaccineAdministration "*" --- "1" WaitingRoom : Nurse checks list >
+SNSUser "*"-- "1" UserHealthHistory : has >
+UserHealthHistory "1" --- "*" AdverseReaction : has >
+WaitingRoom "1" --- "*" SNSUser : has >
+RecoveryRoom "1" --- "*" SNSUser : has >
+RecoveryRoom "1" ---- "*" Notification : sends user a >
+VaccineSchedule "*" -- "1" Vaccine : for taking >
+Receptionist "1" --- "*" VaccineSchedule : confirms >
+DigitalCertificate "1" -- "1" SNSUser : requests <
+DigitalCertificate "1" -- "*" VaccineAdministration : has <
+VaccineAdministration "*" -- "1" RecoveryRoom : user gets sent to >
+DigitalCertificate "*" -- "1" VaccineType : has >
+Platform "1" -- "*" VaccineType : register in <
+VaccinationCertificate <|-- DigitalCertificate
+Report "*" -- "1" VaccinationCenter : reports <
+CenterCoordinator "1" -- "1" VaccinationCenter : manages >
+VaccinationCenter "1" -- "*" Day :has >
+Day "1" --"*" Slot : has >
+Slot "1" -- "*" VaccineSchedule : has >
+Platform "1" ----- "1" SMSNotifier : processes >
+
+@enduml

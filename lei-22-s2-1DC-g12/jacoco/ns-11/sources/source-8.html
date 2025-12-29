@@ -1,0 +1,213 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > SpecifyNewVaccineUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.console.Admin</a>
+</div>
+
+<h1>Coverage Summary for Class: SpecifyNewVaccineUI (app.ui.console.Admin)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SpecifyNewVaccineUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/54)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.console.Admin;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.controller.Admin.SpecifyNewVaccineController;
+<i class="no-highlight">4</i>&nbsp;import app.domain.shared.MessageBundle;
+<i class="no-highlight">5</i>&nbsp;import app.ui.console.utils.Utils;
+<i class="no-highlight">6</i>&nbsp;
+<i class="no-highlight">7</i>&nbsp;import java.util.ArrayList;
+<i class="no-highlight">8</i>&nbsp;import java.util.List;
+<i class="no-highlight">9</i>&nbsp;
+<i class="no-highlight">10</i>&nbsp;/**
+<i class="no-highlight">11</i>&nbsp; * The type Specify new vaccine ui.
+<i class="no-highlight">12</i>&nbsp; */
+<i class="no-highlight">13</i>&nbsp;public class SpecifyNewVaccineUI implements Runnable{
+<i class="no-highlight">14</i>&nbsp;
+<i class="no-highlight">15</i>&nbsp;    private SpecifyNewVaccineController controller;
+<i class="no-highlight">16</i>&nbsp;
+<i class="no-highlight">17</i>&nbsp;    /**
+<i class="no-highlight">18</i>&nbsp;     * Instantiates a new Specify new vaccine ui.
+<i class="no-highlight">19</i>&nbsp;     */
+<b class="nc"><i class="no-highlight">20</i>&nbsp;    public SpecifyNewVaccineUI(){ this.controller = new SpecifyNewVaccineController();}</b>
+<i class="no-highlight">21</i>&nbsp;
+<i class="no-highlight">22</i>&nbsp;    public void run(){
+<i class="no-highlight">23</i>&nbsp;
+<b class="nc"><i class="no-highlight">24</i>&nbsp;        System.out.println(MessageBundle.getString(&quot;specifyvaccine&quot;));</b>
+<i class="no-highlight">25</i>&nbsp;
+<b class="nc"><i class="no-highlight">26</i>&nbsp;        Object type = Utils.showAndSelectOne(controller.getVaccineType(), MessageBundle.getString(&quot;choosevaccinetype&quot;));</b>
+<i class="no-highlight">27</i>&nbsp;
+<b class="nc"><i class="no-highlight">28</i>&nbsp;        controller.setVaccineType(type);</b>
+<i class="no-highlight">29</i>&nbsp;
+<b class="nc"><i class="no-highlight">30</i>&nbsp;        String id = Utils.readLineFromConsole(MessageBundle.getString(&quot;id&quot;));</b>
+<b class="nc"><i class="no-highlight">31</i>&nbsp;        String name = Utils.readLineFromConsole(MessageBundle.getString(&quot;name&quot;));</b>
+<i class="no-highlight">32</i>&nbsp;
+<b class="nc"><i class="no-highlight">33</i>&nbsp;        if(!controller.newVaccine(id,name)){</b>
+<b class="nc"><i class="no-highlight">34</i>&nbsp;            System.out.println(MessageBundle.getString(&quot;invaliddata&quot;));</b>
+<i class="no-highlight">35</i>&nbsp;            return;
+<i class="no-highlight">36</i>&nbsp;        }
+<i class="no-highlight">37</i>&nbsp;
+<b class="nc"><i class="no-highlight">38</i>&nbsp;        boolean finishedAdministrationProcesses = false;</b>
+<i class="no-highlight">39</i>&nbsp;
+<b class="nc"><i class="no-highlight">40</i>&nbsp;        while(!finishedAdministrationProcesses) {</b>
+<b class="nc"><i class="no-highlight">41</i>&nbsp;            System.out.println(MessageBundle.getString(&quot;specifyvaccineadministrationprocess&quot;));</b>
+<b class="nc"><i class="no-highlight">42</i>&nbsp;            boolean done = false;</b>
+<b class="nc"><i class="no-highlight">43</i>&nbsp;            List&lt;Integer[]&gt; ageGroups = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i class="no-highlight">44</i>&nbsp;            while (!done) {</b>
+<b class="nc"><i class="no-highlight">45</i>&nbsp;                int lowerAgeLimit = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;loweragelimit&quot;));</b>
+<b class="nc"><i class="no-highlight">46</i>&nbsp;                int upperAgeLimit = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;upperAgeLimit&quot;));</b>
+<b class="nc"><i class="no-highlight">47</i>&nbsp;                if (lowerAgeLimit &gt; upperAgeLimit) {</b>
+<b class="nc"><i class="no-highlight">48</i>&nbsp;                    System.out.println(MessageBundle.getString(&quot;loweragelimitcannotbebiggerthenupperlimit&quot;));</b>
+<i class="no-highlight">49</i>&nbsp;                } else {
+<b class="nc"><i class="no-highlight">50</i>&nbsp;                    Integer[] arr = new Integer[2];</b>
+<b class="nc"><i class="no-highlight">51</i>&nbsp;                    arr[0] = lowerAgeLimit;</b>
+<b class="nc"><i class="no-highlight">52</i>&nbsp;                    arr[1] = upperAgeLimit;</b>
+<b class="nc"><i class="no-highlight">53</i>&nbsp;                    ageGroups.add(arr);</b>
+<b class="nc"><i class="no-highlight">54</i>&nbsp;                    done = !Utils.confirm(MessageBundle.getString(&quot;doyouwanttospecifymoreagegroups&quot;) + &quot;(S/N)&quot;);</b>
+<i class="no-highlight">55</i>&nbsp;                }
+<b class="nc"><i class="no-highlight">56</i>&nbsp;            }</b>
+<i class="no-highlight">57</i>&nbsp;
+<b class="nc"><i class="no-highlight">58</i>&nbsp;            int dosesToBeAdministered = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;insertnumberofdoses&quot;));</b>
+<i class="no-highlight">59</i>&nbsp;
+<b class="nc"><i class="no-highlight">60</i>&nbsp;            double dosage = Utils.readDoubleFromConsole(MessageBundle.getString(&quot;insertdosage&quot;) + &quot;(in ml)&quot;);</b>
+<i class="no-highlight">61</i>&nbsp;
+<b class="nc"><i class="no-highlight">62</i>&nbsp;            boolean differentTimeIntervals = false;</b>
+<i class="no-highlight">63</i>&nbsp;
+<b class="nc"><i class="no-highlight">64</i>&nbsp;            if (dosesToBeAdministered &gt; 2) {</b>
+<b class="nc"><i class="no-highlight">65</i>&nbsp;                differentTimeIntervals = Utils.confirm(MessageBundle.getString(&quot;arethereanydifferencesintimeinterval&quot;) + &quot;(S-yes,N-no)&quot; +</b>
+<b class="nc"><i class="no-highlight">66</i>&nbsp;                        &quot;\n&quot; +  MessageBundle.getString(&quot;datedifferenceexample&quot;));</b>
+<i class="no-highlight">67</i>&nbsp;            }
+<i class="no-highlight">68</i>&nbsp;
+<b class="nc"><i class="no-highlight">69</i>&nbsp;            List&lt;Integer[]&gt; listTimeInterval = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i class="no-highlight">70</i>&nbsp;            if (differentTimeIntervals) { //if there are any special time intervals in between doses</b>
+<b class="nc"><i class="no-highlight">71</i>&nbsp;                for (int i = 1; i &lt; dosesToBeAdministered; i++) {</b>
+<b class="nc"><i class="no-highlight">72</i>&nbsp;                    int doseTimeInterval = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;afterdosen&quot;) + i + MessageBundle.getString(&quot;timeperiodbeforedosen&quot;) + (i+1) + &quot;.&quot;);</b>
+<b class="nc"><i class="no-highlight">73</i>&nbsp;                    Integer[] arr = new Integer[2];</b>
+<b class="nc"><i class="no-highlight">74</i>&nbsp;                    arr[0] = (i+1);</b>
+<b class="nc"><i class="no-highlight">75</i>&nbsp;                    arr[1] = doseTimeInterval;</b>
+<b class="nc"><i class="no-highlight">76</i>&nbsp;                    listTimeInterval.add(arr);</b>
+<i class="no-highlight">77</i>&nbsp;                }
+<b class="nc"><i class="no-highlight">78</i>&nbsp;            } else if (!differentTimeIntervals &amp;&amp; dosesToBeAdministered == 2) { //if all time intervals are the same or there is only 2 doses to be administered</b>
+<b class="nc"><i class="no-highlight">79</i>&nbsp;                int timeInterval = Utils.readIntegerFromConsole(MessageBundle.getString(&quot;timeintervalinbetweendoses&quot;));</b>
+<b class="nc"><i class="no-highlight">80</i>&nbsp;                for (int i = 0; i &lt; dosesToBeAdministered; i++) {</b>
+<b class="nc"><i class="no-highlight">81</i>&nbsp;                    Integer[] arr = new Integer[2];</b>
+<b class="nc"><i class="no-highlight">82</i>&nbsp;                    arr[0] = i + 1;</b>
+<b class="nc"><i class="no-highlight">83</i>&nbsp;                    arr[1] = timeInterval;</b>
+<b class="nc"><i class="no-highlight">84</i>&nbsp;                    listTimeInterval.add(arr);</b>
+<i class="no-highlight">85</i>&nbsp;                }
+<i class="no-highlight">86</i>&nbsp;            } //if there is only 1 dose no time interval is requested
+<i class="no-highlight">87</i>&nbsp;
+<b class="nc"><i class="no-highlight">88</i>&nbsp;            if(!controller.newAdministrationProcess(ageGroups, dosesToBeAdministered, dosage, listTimeInterval)){</b>
+<b class="nc"><i class="no-highlight">89</i>&nbsp;                System.out.println(MessageBundle.getString(&quot;invaliddata&quot;));</b>
+<i class="no-highlight">90</i>&nbsp;            }
+<i class="no-highlight">91</i>&nbsp;
+<b class="nc"><i class="no-highlight">92</i>&nbsp;            finishedAdministrationProcesses = !Utils.confirm(MessageBundle.getString(&quot;moreadministrationprocesses&quot;));</b>
+<b class="nc"><i class="no-highlight">93</i>&nbsp;        }</b>
+<i class="no-highlight">94</i>&nbsp;
+<i class="no-highlight">95</i>&nbsp;
+<b class="nc"><i class="no-highlight">96</i>&nbsp;        System.out.println(controller.getVaccineInfo());</b>
+<i class="no-highlight">97</i>&nbsp;
+<b class="nc"><i class="no-highlight">98</i>&nbsp;        if(Utils.confirm(MessageBundle.getString(&quot;confirmdata&quot;) + &quot;(S/N)&quot; )){</b>
+<b class="nc"><i class="no-highlight">99</i>&nbsp;            if(controller.addVaccine()){</b>
+<b class="nc"><i class="no-highlight">100</i>&nbsp;                System.out.println(MessageBundle.getString(&quot;registrationsucessful&quot;));</b>
+<i class="no-highlight">101</i>&nbsp;            }else{
+<b class="nc"><i class="no-highlight">102</i>&nbsp;                System.out.println(MessageBundle.getString(&quot;registrationunsuccessful&quot;));</b>
+<i class="no-highlight">103</i>&nbsp;            }
+<i class="no-highlight">104</i>&nbsp;        }
+<i class="no-highlight">105</i>&nbsp;    }
+<i class="no-highlight">106</i>&nbsp;
+<i class="no-highlight">107</i>&nbsp;
+<i class="no-highlight">108</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

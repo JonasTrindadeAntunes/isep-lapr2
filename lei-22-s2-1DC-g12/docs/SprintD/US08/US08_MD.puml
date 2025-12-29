@@ -1,0 +1,99 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+
+class Nurse
+
+class Employee{
+-id
+-name;
+-address;
+-phoneNumber;
+-emailAddress;
+-citizenCardNumber;
+-{static}count_num_employees
+}
+
+class Platform{
+-description
+}
+
+class Company{
+-designation
+}
+
+class Employee
+
+class VaccinationCenter{
+-name
+-address
+-phoneNumber
+-emailAddress
+-faxNumber
+-websiteAddress
+-openingHours
+-openingMinutes
+-closingHours
+-closingMinutes
+-slotDuration
+-maxNumberVaccines
+-numTotalVaccinesDay
+-operatingDays
+-waitingRoom
+-listVaccines
+-listVaccineTypes
+-recoveryRoom
+-centerPerformanceAnalysis
+-centerCoordinator
+}
+
+class WaitingRoom{
+-TreeMap<SNSUser,Date> map
+}
+
+class VaccineSchedule{
+-vaccinationDate
+-snsUser
+-vaccineType
+-validateEntrance
+}
+
+class Vaccine{
+-id
+-name
+-List<AdministrationProcess> listAdministrationProcess;
+}
+
+class SNSUser{
+-name
+-address
+-gender
+-email
+-birthDate
+-snsUserNumber
+-citizenCardNumber
+-scheduledVaccinations
+-adverseReactions
+-vaccineAdministrations
+}
+
+Employee <|-- Nurse
+Company "1" -- "1" Platform : has >
+Platform "1" -- "*" Employee : registers in <
+Nurse "*" -- "1" VaccinationCenter : works in >
+VaccinationCenter "1" -- "*" Vaccine : applies >
+VaccineSchedule "*" -- "1" Vaccine : for taking >
+VaccineSchedule "*" -- "1" SNSUser : created for >
+SNSUser "*" -- "1" Platform : registers in >
+VaccinationCenter "*" -- "1" Platform : registers in >
+VaccinationCenter "1" -- "1" WaitingRoom : has >
+WaitingRoom "1" -- "1" SNSUser : has >
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Center Coordinator" as CC
+participant ":System" as SYS
+
+activate CC
+CC -> SYS: starts analysing the performance of a Center
+activate SYS
+SYS --> CC: Shows and asks to insert time interval
+CC -> SYS: Inserts time interval
+SYS --> CC: Shows and asks if wants to add more intervals
+CC -> SYS: YES/NO Answer
+SYS --> CC: Asks to insert date
+CC -> SYS: inserts date
+SYS --> CC: Shows Maximum sum contiguous sublist, Sum of maximum contiguous sublist, effectiveness of Vaccination Center and asks if wants different date and time interval
+CC -> SYS: YES/NO Answer
+SYS --> CC: Shows the complexity analysis for predefine list of time intervals and asks to confirm data
+CC -> SYS: Confirms data
+SYS --> CC: Informs operation successful
+
+
+@enduml

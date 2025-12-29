@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+participant "App" as APP
+participant ":Company" as COMP
+participant ":Platform" as PLAT
+participant "auth:AuthFacade" as AF
+participant ":RegisterEmployee" as RE
+
+activate APP
+APP --> COMP** : create(designation)
+activate COMP
+COMP --> AF ** : create()
+COMP --> PLAT **: create(designation)
+deactivate COMP
+activate PLAT
+PLAT --> RE **: create(auth)
+deactivate PLAT
+deactivate APP
+@enduml

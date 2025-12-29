@@ -1,0 +1,168 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > CenterPerformanceAnalysisGUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.view.CenterCoordinator.CenterPerformanceAnalysis</a>
+</div>
+
+<h1>Coverage Summary for Class: CenterPerformanceAnalysisGUI (app.ui.view.CenterCoordinator.CenterPerformanceAnalysis)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CenterPerformanceAnalysisGUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/29)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.view.CenterCoordinator.CenterPerformanceAnalysis;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.controller.CenterCoordinator.CenterPerformanceAnalysisController;
+<i class="no-highlight">4</i>&nbsp;import app.ui.view.CenterCoordinator.CenterCoordinatorOptionsMenu;
+<i class="no-highlight">5</i>&nbsp;import javafx.scene.control.Alert;
+<i class="no-highlight">6</i>&nbsp;
+<i class="no-highlight">7</i>&nbsp;import java.util.Date;
+<i class="no-highlight">8</i>&nbsp;
+<i class="no-highlight">9</i>&nbsp;public class CenterPerformanceAnalysisGUI {
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;    private CenterCoordinatorOptionsMenu centerCoordinatorOptionsMenu;
+<i class="no-highlight">12</i>&nbsp;    private CenterPerformanceAnalysisController controller;
+<i class="no-highlight">13</i>&nbsp;    private Date day;
+<i class="no-highlight">14</i>&nbsp;
+<b class="nc"><i class="no-highlight">15</i>&nbsp;    public CenterPerformanceAnalysisGUI(CenterCoordinatorOptionsMenu centerCoordinatorOptionsMenu){</b>
+<b class="nc"><i class="no-highlight">16</i>&nbsp;        this.centerCoordinatorOptionsMenu = centerCoordinatorOptionsMenu;</b>
+<b class="nc"><i class="no-highlight">17</i>&nbsp;        controller = new CenterPerformanceAnalysisController();</b>
+<i class="no-highlight">18</i>&nbsp;    }
+<i class="no-highlight">19</i>&nbsp;
+<i class="no-highlight">20</i>&nbsp;    public void start(){
+<b class="nc"><i class="no-highlight">21</i>&nbsp;        if(!controller.getVaccinationCenter()){</b>
+<b class="nc"><i class="no-highlight">22</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">23</i>&nbsp;            a.setContentText(&quot;The center coordinator doesn&#39;t have a vaccination center assinged!&quot;);</b>
+<b class="nc"><i class="no-highlight">24</i>&nbsp;            a.show();</b>
+<b class="nc"><i class="no-highlight">25</i>&nbsp;            backToCoordinatorMenu();</b>
+<i class="no-highlight">26</i>&nbsp;            return;
+<i class="no-highlight">27</i>&nbsp;        }
+<i class="no-highlight">28</i>&nbsp;        try{
+<b class="nc"><i class="no-highlight">29</i>&nbsp;            CenterPerformanceAnalysis_1 centerPerformanceAnalysis_1 = (CenterPerformanceAnalysis_1) this.centerCoordinatorOptionsMenu.getCenterCoordinatorGUI().getMainApp().replaceSceneContent(&quot;/fxml/CenterPerformanceAnalysis_1.fxml&quot;);</b>
+<b class="nc"><i class="no-highlight">30</i>&nbsp;            centerPerformanceAnalysis_1.setCenterPerformanceAnalysisGUI(this);</b>
+<b class="nc"><i class="no-highlight">31</i>&nbsp;        }catch(Exception e){</b>
+<b class="nc"><i class="no-highlight">32</i>&nbsp;            throw new RuntimeException(e);</b>
+<b class="nc"><i class="no-highlight">33</i>&nbsp;        }</b>
+<i class="no-highlight">34</i>&nbsp;    }
+<i class="no-highlight">35</i>&nbsp;
+<i class="no-highlight">36</i>&nbsp;    public void showData(Date day, int interval){
+<b class="nc"><i class="no-highlight">37</i>&nbsp;        if(interval &lt; 1  || interval &gt; 720){</b>
+<b class="nc"><i class="no-highlight">38</i>&nbsp;            Alert a = new Alert(Alert.AlertType.ERROR);</b>
+<b class="nc"><i class="no-highlight">39</i>&nbsp;            a.setContentText(&quot;The time interval must be between 1 and 720 minutes!&quot;);</b>
+<b class="nc"><i class="no-highlight">40</i>&nbsp;            a.show();</b>
+<b class="nc"><i class="no-highlight">41</i>&nbsp;            backToCoordinatorMenu();</b>
+<i class="no-highlight">42</i>&nbsp;            return;
+<i class="no-highlight">43</i>&nbsp;        }
+<b class="nc"><i class="no-highlight">44</i>&nbsp;        this.day = day;</b>
+<i class="no-highlight">45</i>&nbsp;        try{
+<b class="nc"><i class="no-highlight">46</i>&nbsp;            CenterPerformanceAnalysis_2 centerPerformanceAnalysis_2 = (CenterPerformanceAnalysis_2) this.centerCoordinatorOptionsMenu.getCenterCoordinatorGUI().getMainApp().replaceSceneContent(&quot;/fxml/CenterPerformanceAnalysis_2.fxml&quot;);</b>
+<b class="nc"><i class="no-highlight">47</i>&nbsp;            centerPerformanceAnalysis_2.setCenterPerformanceAnalysisGUI(this);</b>
+<b class="nc"><i class="no-highlight">48</i>&nbsp;            centerPerformanceAnalysis_2.setText(controller.getListPerformance(day,interval));</b>
+<b class="nc"><i class="no-highlight">49</i>&nbsp;        }catch(Exception e){</b>
+<b class="nc"><i class="no-highlight">50</i>&nbsp;            throw new RuntimeException(e);</b>
+<b class="nc"><i class="no-highlight">51</i>&nbsp;        }</b>
+<i class="no-highlight">52</i>&nbsp;    }
+<i class="no-highlight">53</i>&nbsp;
+<i class="no-highlight">54</i>&nbsp;    public void backToCoordinatorMenu() {
+<b class="nc"><i class="no-highlight">55</i>&nbsp;        this.centerCoordinatorOptionsMenu.getCenterCoordinatorGUI().runCenterCoordinatorGUI();</b>
+<i class="no-highlight">56</i>&nbsp;    }
+<i class="no-highlight">57</i>&nbsp;
+<i class="no-highlight">58</i>&nbsp;    public String getComplexityAnalysis() {
+<b class="nc"><i class="no-highlight">59</i>&nbsp;        if(day == null)</b>
+<b class="nc"><i class="no-highlight">60</i>&nbsp;            return &quot;No day selected.&quot;;</b>
+<b class="nc"><i class="no-highlight">61</i>&nbsp;        return this.controller.complexityAnalysis(day);</b>
+<i class="no-highlight">62</i>&nbsp;    }
+<i class="no-highlight">63</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

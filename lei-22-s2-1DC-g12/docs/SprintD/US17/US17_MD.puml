@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+class CenterCoordinator
+
+class VaccinationCenter{
+name
+address
+phoneNumber
+emailAddress
+faxNumber
+websiteAddress
+openingHours
+openingMinutes
+closingHours
+closingMinutes
+slotDuration
+maxNumberVaccines
+}
+
+CenterCoordinator "1" -- "1" VaccinationCenter : manages >
+Employee <|-- CenterCoordinator
+Employee "*" -- "1" Platform : registers in >
+Platform "1" -- "*" VaccineType : register in <
+Platform "1" -- "*" SNSUser : registers in <
+
+@enduml

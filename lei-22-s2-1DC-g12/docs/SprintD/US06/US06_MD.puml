@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+
+class VaccinationCenter
+{
+-name
+- address
+- phoneNumber
+- emailAddress
+ -faxNumber
+ -websiteAddress
+ -openingHours
+ -openingMinutes
+ -closingHours
+ -closingMinutes
+ -slotDuration
+ -maxNumberVaccines
+ -numTotalVaccinesDay
+ -List<Day> operatingDays
+ -WaitingRoom waitingRoom
+ -List<Vaccine> listVaccines
+ -List<VaccineType> listVaccineTypes
+}
+
+class Platform
+
+Platform "1" -- "*" VaccinationCenter : registers in <
+
+
+@enduml

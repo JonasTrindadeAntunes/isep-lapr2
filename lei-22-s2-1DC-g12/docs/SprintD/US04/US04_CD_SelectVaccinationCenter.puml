@@ -1,0 +1,69 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class SelectVaccinationCenterUI
+class SelectVaccinationCenterController
+{
+-App m_oApp
+ -Platform m_oPlatform
++getListVaccinationCenter()
++setWorkingVaccinationCenter(vaccinationCenter)
+
+}
+
+class Company{
+-designation
++getPlatform()
+
+}
+class Platform{
+-description
+-RegisterEmployee m_oRegisterEmployee
+-RegisterVaccinationCenter m_oRegisterVaccinationCenter
++getRegisterEmployee()
++getRegisterVaccinationCenter()
+
+}
+
+class App{
++getCompany()
+    +getCurrentUserSession()
+    +{static} static getInstance()
+    -bootstrap()
+}
+
+class RegisterVaccinationCenter{
+-List<VaccinationCenter> listVaccinationCenters
++getListVaccinationCenters()
+}
+
+class RegisterEmployee{
+-List<Employee> listEmployee
++getEmployeeByEmail(email)
+}
+
+class Employee{
+-VaccinationCenter vaccinationCenter
++setWorkingVaccinationCenter(vaccinationCenter)
+}
+
+class VaccinationCenter
+
+SelectVaccinationCenterUI ..> SelectVaccinationCenterController
+SelectVaccinationCenterController ..> Platform
+SelectVaccinationCenterController ..> App
+SelectVaccinationCenterController ..> Company
+Company "1" --> "1" Platform : has >
+Platform "1" --> "1" RegisterEmployee : has >
+Platform "1" --> "1" RegisterVaccinationCenter : has >
+RegisterEmployee "1" --> "*" Employee : knows >
+RegisterVaccinationCenter "1" -- "*" VaccinationCenter : knows >
+
+@enduml

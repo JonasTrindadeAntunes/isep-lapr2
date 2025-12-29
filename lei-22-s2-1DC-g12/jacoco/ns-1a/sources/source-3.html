@@ -1,0 +1,160 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > CenterPerformanceAnalysis_2</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.view.CenterCoordinator.CenterPerformanceAnalysis</a>
+</div>
+
+<h1>Coverage Summary for Class: CenterPerformanceAnalysis_2 (app.ui.view.CenterCoordinator.CenterPerformanceAnalysis)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CenterPerformanceAnalysis_2</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/19)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.view.CenterCoordinator.CenterPerformanceAnalysis;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import javafx.event.ActionEvent;
+<i class="no-highlight">4</i>&nbsp;import javafx.fxml.Initializable;
+<i class="no-highlight">5</i>&nbsp;import javafx.scene.control.Alert;
+<i class="no-highlight">6</i>&nbsp;import javafx.scene.control.ButtonBar;
+<i class="no-highlight">7</i>&nbsp;import javafx.scene.control.ButtonType;
+<i class="no-highlight">8</i>&nbsp;import javafx.scene.control.Label;
+<i class="no-highlight">9</i>&nbsp;
+<i class="no-highlight">10</i>&nbsp;import java.net.URL;
+<i class="no-highlight">11</i>&nbsp;import java.util.ResourceBundle;
+<i class="no-highlight">12</i>&nbsp;
+<b class="nc"><i class="no-highlight">13</i>&nbsp;public class CenterPerformanceAnalysis_2 implements Initializable {</b>
+<i class="no-highlight">14</i>&nbsp;
+<i class="no-highlight">15</i>&nbsp;
+<i class="no-highlight">16</i>&nbsp;    public Label dataLabel;
+<i class="no-highlight">17</i>&nbsp;    private CenterPerformanceAnalysisGUI centerPerformanceAnalysisGUI;
+<b class="nc"><i class="no-highlight">18</i>&nbsp;    private boolean cont = false;</b>
+<i class="no-highlight">19</i>&nbsp;
+<i class="no-highlight">20</i>&nbsp;
+<i class="no-highlight">21</i>&nbsp;    public void setCenterPerformanceAnalysisGUI(CenterPerformanceAnalysisGUI centerPerformanceAnalysisGUI) {
+<b class="nc"><i class="no-highlight">22</i>&nbsp;        this.centerPerformanceAnalysisGUI = centerPerformanceAnalysisGUI;</b>
+<i class="no-highlight">23</i>&nbsp;    }
+<i class="no-highlight">24</i>&nbsp;
+<i class="no-highlight">25</i>&nbsp;    public void setText(String text) {
+<b class="nc"><i class="no-highlight">26</i>&nbsp;        dataLabel.setText(text);</b>
+<i class="no-highlight">27</i>&nbsp;    }
+<i class="no-highlight">28</i>&nbsp;
+<i class="no-highlight">29</i>&nbsp;    public void continueButtonAction(ActionEvent actionEvent) {
+<b class="nc"><i class="no-highlight">30</i>&nbsp;        if(cont == true) {</b>
+<b class="nc"><i class="no-highlight">31</i>&nbsp;            centerPerformanceAnalysisGUI.backToCoordinatorMenu();</b>
+<i class="no-highlight">32</i>&nbsp;            return;
+<i class="no-highlight">33</i>&nbsp;        }
+<b class="nc"><i class="no-highlight">34</i>&nbsp;        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);</b>
+<b class="nc"><i class="no-highlight">35</i>&nbsp;        alert.setTitle(&quot;Complexity analysis&quot;);</b>
+<b class="nc"><i class="no-highlight">36</i>&nbsp;        alert.setContentText(&quot;Do you want to see the complexity analysis for predetermined list of time intervals ( m = 24,36,72,144,720) ?&quot;);</b>
+<b class="nc"><i class="no-highlight">37</i>&nbsp;        ButtonType okButton = new ButtonType(&quot;Yes&quot;, ButtonBar.ButtonData.YES);</b>
+<b class="nc"><i class="no-highlight">38</i>&nbsp;        ButtonType noButton = new ButtonType(&quot;No&quot;, ButtonBar.ButtonData.NO);</b>
+<b class="nc"><i class="no-highlight">39</i>&nbsp;        alert.getButtonTypes().setAll(okButton, noButton);</b>
+<b class="nc"><i class="no-highlight">40</i>&nbsp;        alert.showAndWait().ifPresent(type -&gt; {</b>
+<b class="nc"><i class="no-highlight">41</i>&nbsp;            if (type == okButton) {</b>
+<b class="nc"><i class="no-highlight">42</i>&nbsp;                cont = true;</b>
+<b class="nc"><i class="no-highlight">43</i>&nbsp;                this.setText(centerPerformanceAnalysisGUI.getComplexityAnalysis());</b>
+<b class="nc"><i class="no-highlight">44</i>&nbsp;            } else if (type == noButton) {</b>
+<b class="nc"><i class="no-highlight">45</i>&nbsp;                centerPerformanceAnalysisGUI.backToCoordinatorMenu();</b>
+<i class="no-highlight">46</i>&nbsp;            }
+<i class="no-highlight">47</i>&nbsp;        });
+<i class="no-highlight">48</i>&nbsp;
+<i class="no-highlight">49</i>&nbsp;    }
+<i class="no-highlight">50</i>&nbsp;
+<i class="no-highlight">51</i>&nbsp;    @Override
+<i class="no-highlight">52</i>&nbsp;    public void initialize(URL location, ResourceBundle resources) {
+<i class="no-highlight">53</i>&nbsp;
+<b class="nc"><i class="no-highlight">54</i>&nbsp;    }</b>
+<i class="no-highlight">55</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

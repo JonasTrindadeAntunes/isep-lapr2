@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+
+actor "Administrator" as ADM
+participant ":System" as SYS
+
+activate ADM
+ADM -> SYS : asks to specify a new vaccine and administration process
+activate SYS
+SYS --> ADM : requests VaccineType data (code)
+deactivate SYS
+ADM -> SYS : gives VaccineType data
+activate SYS
+SYS --> ADM : requests Vaccine data (id, name)
+deactivate SYS
+ADM -> SYS : gives Vaccine data
+activate SYS
+loop
+SYS --> ADM : requests AdministrationProcess data (designation, ageGroup, referenceDose, timeInterval)
+deactivate SYS
+ADM -> SYS : gives AdministrationProcess data
+activate SYS
+end
+SYS --> ADM : shows all the data and requests confirmation
+deactivate SYS
+ADM -> SYS : confirms the data
+activate SYS
+SYS --> ADM : informs opertaion success
+deactivate SYS
+deactivate ADM
+@enduml

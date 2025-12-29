@@ -1,0 +1,67 @@
+@startuml
+
+
+skinparam classAttributeIconSize 0
+hide methods
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+left to right direction
+class Administrator
+
+
+
+class Company {
+-designation
+}
+
+class Platform{
+-description
+}
+
+class Email{
+-email
+
+}
+
+class Password{
+-password
+}
+
+class User{
+-id
+-password
+-name
+-roles
+}
+
+class UserRole{
+-id
+-description
+}
+
+class SNSUser {
+-name
+-address
+-gender
+-email
+-birthDate
+-snsUserNumber
+-citizenCardNumber
+}
+
+
+
+Company "1" -- "*" User :comprehends >
+
+Company "1" -- "1" Platform : has >
+User "1" -- "1..*" UserRole : plays >
+Company "1" -- "*" Administrator : has >
+User "1" -- "1" Email : has >
+User "1" -- "1" Password : has >
+SNSUser "1" -- "1" Password : has >
+Platform "1" --"*" SNSUser :registered in <
+User "1" -- "1" Administrator: can be of type >
+User "1" -- "1..*" SNSUser : < can be
+@enduml

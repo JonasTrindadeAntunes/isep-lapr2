@@ -1,0 +1,97 @@
+@startuml
+autonumber
+'hide footbox
+actor "Administrator" as ADM
+
+
+
+participant ":RegisterEmployeeUI" as UI
+participant ":RegisterEmployeeController" as CTRL
+participant ":App" as APP
+participant "app:App" as App
+participant "comp:Company" as COMP
+participant "plat:Platform" as PLAT
+participant "gre\n:RegisterEmployee" as RE
+participant "emp: Employee" as EMP
+participant "auth\n:AuthFacade" as AF
+participant ":UserRoleStore" as URS
+participant ":UserRoleMapper" as URM
+participant "lRolesDTO\n: List<UserRoleDTO>" as lDTO
+participant "sRoles\n: Set<UserRole>" as SR
+participant "lor\n List<String> listOfRoles" as lor
+
+activate ADM
+'1
+ADM -> UI : Starts by asking list of roles
+'2
+activate UI
+'2
+UI -> CTRL : lor = getRoles()
+activate CTRL
+'3
+CTRL -> APP : app = getInstance()
+activate APP
+deactivate APP
+'4
+CTRL -> App : comp = getCompany()
+activate App
+deactivate App
+'5
+CTRL -> COMP : plat = getPlatform()
+activate COMP
+
+deactivate COMP
+
+'6
+CTRL -> RE : lor = getRoles()
+activate RE
+RE -> AF : lRolesDTO = getUserRoles()
+deactivate RE
+activate AF
+'7
+AF -> URS : sRoles = getAll()
+activate URS
+deactivate URS
+'8
+AF -> URM :  toDTO(sRoles)
+activate URM
+deactivate URM
+deactivate AF
+deactivate CTRL
+'9
+UI --> ADM : shows list of roles and ask to select role
+deactivate UI
+
+'10
+ADM -> UI :selects role
+activate UI
+'11
+UI -> CTRL : getListEmployeeByRole(choice)
+
+activate CTRL
+'12
+CTRL -> PLAT : gre = getRegisterEmployee()
+activate PLAT
+deactivate PLAT
+
+CTRL-> RE : getListEmployeeByRole(choice)
+activate RE
+UI --> ADM : shows list of employees with selected role
+deactivate RE
+deactivate UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

@@ -1,0 +1,172 @@
+@startuml
+
+
+skinparam classAttributeIconSize 0
+
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+
+
+class LoadUsersFileUI{}
+
+class LoadUsersFileController{
+    -App m_oApp
+   -Platform m_oPlatform
+   + checkLogin()
+   +getListOfFiles(path)
+   +loadUsersFromCSV(fileName)
+   +registerListStringUsersInSystem()
+   +showData()
+   +printSystemUsers()
+}
+
+class App
+{
+    +getCompany()
+    +getCurrentUserSession()
+    +{static} static getInstance()
+    -bootstrap()
+}
+
+class Company {
+-designation
++getPlatform()
++getAuthFacade()
+}
+
+
+class Platform
+{
+-description
+-RegisterSNSUser m_oRegisterSNSUser
+-LoadUsersFromCSV LoadUsersFromCSV
++getLoadUsersFromCSV()
++initializeRegisters(AuthFacade authFacade)
+
+}
+
+
+class LoadUsersFromCSV{
+-List<String[]> usersListString
+-AuthFacade authFacade;
+-RegisterSNSUser m_oRegisterSNSUser
++LoadUsersFromCSV(authFacade,m_oRegisterSNSUser)
++getListOfFiles(path)
++loadUsersFromCSV(fileName)
+-convertCSV(inputStream)
+-convertFromBufferedReaderToStringSNSUser(reader,delimiter)
++registerListStringUsersInSystem()
+-convertFromUserStringToSNSUser(userString)
++showData()
++printSystemUsers()
+
+}
+
+class RegisterSNSUser{
+-List<SNSUser> listSNSUser
+-AuthFacade authFacade
++RegisterSNSUser( authFacade)
++newSNSUser(name, address, gender, phoneNumber, email, date, snsUserNumber, citizenCardNumber)
+-validateSNSUser(email, phoneNumber, snsUserNumber, citizenCardNumber)
+-existsSNSUser(user)
++addSNSUser(SNSUser user)
++passwordGenerator()
+
+}
+
+
+class AuthFacade
+{
++getUserRoles()
++addUserWithRole(name,email,pwd,role)
++existsUser(email)
++getCurrentUserSession()
++getUsers()
+
+}
+
+interface LoadFromCSV{
++{static}getListOfFiles(path)
++{static}loadFromCSV(fileName)
+}
+
+class SNSUser {
+-name
+-address
+-gender
+-email
+-birthDate
+-snsUserNumber
+-citizenCardNumber
++equals()
++getEmail()
++getName()
++getPhoneNumber()
++getSnsUserNumber()
++getCitizenCardNumber()
+}
+
+interface PasswordGenerator{
++{static}passwordGenerator(email)
+}
+
+
+class UserMapper{
+-UserRoleMapper mapper
++toDto(user)
++toDto(List<User> users)
++toDto(Set<User> users)
+}
+
+class UserDTO{
+-id
+-name
+-List<UserRoleDTO> roles
++getID()
++getName()
++getRoles()
+}
+
+class Constants
+{
++ROLE_SNS_USER
++DELIMITER_COMMA
++DELIMITER_SEMICOLON
+}
+
+Interface SentEmail{
++{static}SentEmail(userEmail,emailMessage,emailSubject)
+}
+
+LoadUsersFileUI ..> LoadUsersFileController
+LoadUsersFileController ..> Company
+LoadUsersFileController ..> Platform
+LoadUsersFileController ..> App
+LoadUsersFileController ..> Constants
+Company ..> AuthFacade
+Company "1" --> "1" Platform : has >
+Platform "1"--> "1" LoadUsersFromCSV : has >
+LoadUsersFromCSV "1" --> "1" RegisterSNSUser : loads users into >
+LoadUsersFromCSV..> AuthFacade
+RegisterSNSUser ..> AuthFacade
+App ..> AuthFacade
+Platform ..> AuthFacade
+LoadUsersFromCSV --> LoadFromCSV
+Platform ..> RegisterSNSUser
+RegisterSNSUser "1"--> "*" SNSUser : has >
+RegisterSNSUser --> PasswordGenerator
+AuthFacade ..> UserMapper
+UserMapper..> UserDTO
+LoadUsersFileUI ..> UserDTO
+LoadUsersFileController ..> UserDTO
+LoadUsersFromCSV ..> UserDTO
+LoadUsersFromCSV ..> UserMapper
+LoadUsersFromCSV ..> Constants
+PasswordGenerator ..> AuthFacade
+RegisterSNSUser ..> Constants
+PasswordGenerator --> SentEmail
+
+@enduml

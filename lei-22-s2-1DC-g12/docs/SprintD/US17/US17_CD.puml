@@ -1,0 +1,130 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+class AuthFacade{
++getCurrentUserSession()
+}
+class ImportDataUI
+class ImportDataController{
++ importPerformanceFromCSV()
++ getListOfFiles(String path)
++ checkLogin()
+}
+
+class ImportPerformanceFromCSV{
+- List<String[]> performanceDataListString
+- RegisterUsers registerUsers
+- RegisterVaccineType m_oRegisterVaccineType
++ getListOfFiles(String path)
++ importPerformanceFromCSV(String filename)
++ convertCSV(InputStream inputStream)
++ getPerformanceDataListString()
+}
+
+class SortDataUI{}
+
+class SortDataController{
++ checkLogin()
++ selectTypeOfDataToSort()
++ sortByArrivalTime()
++ sortByLeavingTime()
+- showData()
+}
+
+class Company{
+- designation
++ getPlatform()
++ getAuthFacade()
+}
+
+class Platform{
+- description
+- ImportDataFromCSV ImportDataFromCSV
++ getLoadUsersFromCSV()
++ getRegisterEmployee()
++ getImportPerformanceFromCSV()
+}
+class Algorithms{
++ quickSort(int sortElementOfArray, List<String[]> arr, int begin, int end)
++ partition(int sortElementOfArray, List<String[]> arr, int begin, int end)
++ bubbleSortDates(int sortElementOfArray, List<String[]> performanceDataListString)
+}
+
+class VaccinationCenter{
+name
+address
+phoneNumber
+emailAddress
+faxNumber
+websiteAddress
+openingHours
+openingMinutes
+closingHours
+closingMinutes
+slotDuration
+maxNumberVaccines
++ setManageVaccinationCenter
+}
+
+class App{
++ getCompany()
++ getUserSession()
+- bootstrap()
+}
+class Employee
+class VaccineType
+class SNSUser{
+- name
+- address
+- gender
+- email
+- birthDate
+- snsUserNumber
+- citizenCardNumber
++ getSnsUserNumber()
+}
+
+class VaccineType{
++ getVaccineList()
++ getDesignation()
+}
+
+
+class RegisterSNSUser{
++ getSNSUserBySNSUserNumber()
+}
+interface LoadFromCSV{
++ {static}getListOfFiles(path)
++ {static}loadFromCSV(fileName)
+}
+
+
+ImportDataUI ...> ImportDataController
+ImportPerformanceFromCSV <... ImportDataController
+ImportPerformanceFromCSV ...> Platform
+SortDataUI ...> SortDataController
+SortDataController ..> ImportPerformanceFromCSV
+SortDataController ..> Platform
+SortDataController ..> App
+ImportDataController ...> Company
+Algorithms <.. App
+Platform "1" --- "*" SNSUser : registers in <
+Platform "1" --- "*" VaccineType : register in <
+Employee "*" --- "1" Platform : registers in >
+Company "1" --- "1" Platform : has >
+Platform "1" --- "*" VaccinationCenter : register in <
+CenterCoordinator "1" - "1" VaccinationCenter : manages >
+Employee <|-- CenterCoordinator
+Company ..> AuthFacade
+App ..> AuthFacade
+Platform ..> AuthFacade
+RegisterSNSUser ...> ImportPerformanceFromCSV
+LoadFromCSV ...> ImportPerformanceFromCSV
+RegisterSNSUser <.. SNSUser
+
+@enduml

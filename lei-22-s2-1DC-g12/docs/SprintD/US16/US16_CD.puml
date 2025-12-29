@@ -1,0 +1,108 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class CenterPerformanceAnalysisUI
+{
+
+}
+class CenterPerformanceAnalysisController
+{
+-App m_oApp
+-Platform m_oPlatform
+-VaccinationCenter vaccinationCenter
++checkLogin()
++getVaccinationCenter()
++getListPerformance(day,timeInterval)
++processAllDataBeforeShowing(seq,bruteForceAlgorithm,timeInterval)
++complexityAnalysis(day)
+}
+
+class CenterPerformanceAnalysis
+{
+-List<Date> listOfArrivals
+-List<Date> listOfDepartures
++setListsOfArrivalsAndDepartures(performanceDataListString)
++differenceBetweenArrivalsAndDepartures(day,timeInterval)
++processAllDataBeforeShowing(seq,bruteForceAlgorithm,timeInterval)
+}
+
+class Company {
+-designation
+-Platform m_oPlatform
++getPlatform()
++getAuthFacade()
+}
+
+class Platform
+{
+-RegisterEmployee m_oRegisterEmployee
+-ImportPerformanceFromCSV m_oImportPerformanceFromCSV
++getRegisterEmployee()
++getImportPerformanceFromCSV()
+}
+
+class RegisterEmployee
+{
+-List<Employee> listEmployee
++getEmployeeByEmail(email)
+}
+
+class Employee
+{
+-VaccinationCenter vaccinationCenter
++getWorkingVaccinationCenter()
+}
+
+class App
+{
++getCompany()
++getCurrentUserSession()
++{static} static getInstance()
+
+}
+
+class AuthFacade
+{
++getCurrentUserSession()
+}
+
+class Algorithm
+{
++bruteForceAlgorithm(seq)
+}
+
+class ImportPerformanceFromCSV
+{
+-List<String[]> performanceDataListString
++getPerformanceDataListString()
+}
+
+class VaccinationCenter
+{
++getCenterPerformanceAnalysis()
+}
+
+
+CenterPerformanceAnalysisUI ..> CenterPerformanceAnalysisController
+CenterPerformanceAnalysisController ..> Company
+CenterPerformanceAnalysisController ..> Platform
+CenterPerformanceAnalysisController ..> App
+App ..> AuthFacade
+Company ..> AuthFacade
+Platform ..> AuthFacade
+Platform ..> RegisterEmployee
+RegisterEmployee ..> Employee
+CenterPerformanceAnalysisController ..> Algorithm
+CenterPerformanceAnalysisController ..> VaccinationCenter
+VaccinationCenter ..> CenterPerformanceAnalysis
+
+Platform ..> ImportPerformanceFromCSV
+Company ..> Platform
+
+@enduml

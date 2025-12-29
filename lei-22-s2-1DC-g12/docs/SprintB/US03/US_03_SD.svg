@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1282px" preserveAspectRatio="none" style="width:2452px;height:1282px;" version="1.1" viewBox="0 0 2452 1282" width="2452px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fwppn5w0tgssh" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="267.1094" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="666" y="119.6094"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="461.5156" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="666" y="417.0703"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="255.1094" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="666" y="908.9375"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="181.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1097" y="149.9609"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="393.8125" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1097" y="447.4219"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="194.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1097" y="939.2891"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1241" y="180.3125"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1340" y="240.6641"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1340" y="477.7734"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1468" y="301.0156"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1630" y="538.125"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1781" y="598.4766"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1781" y="1103.6953"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1937" y="684.1797"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1937" y="1043.3438"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2092" y="744.5313"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="36.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2232" y="804.8828"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="164.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2232" y="969.6406"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="833.0313" style="stroke: #000000; stroke-width: 2.0;" width="2430" x="13" y="346.3672"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="528.5703" style="stroke: #000000; stroke-width: 2.0;" width="2410" x="23" y="643.8281"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="75" x2="75" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="670.5" x2="670.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1101.5" x2="1101.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1245.5" x2="1245.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1344.5" x2="1344.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1472.5" x2="1472.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1634.5" x2="1634.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1785.5" x2="1785.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1941.5" x2="1941.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2096.5" x2="2096.5" y1="87.6094" y2="1196.3984"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2236.5" x2="2236.5" y1="87.6094" y2="1196.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="33" y="84.5332">Receptionist</text>
+        <ellipse cx="75" cy="13" fill="#FEFECE" filter="url(#fwppn5w0tgssh)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M75,21 L75,48 M62,29 L88,29 M75,48 L62,63 M75,48 L88,63 " fill="#FEFECE" filter="url(#fwppn5w0tgssh)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="33" y="1209.9316">Receptionist</text>
+        <ellipse cx="75" cy="1223.0078" fill="#FEFECE" filter="url(#fwppn5w0tgssh)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M75,1231.0078 L75,1258.0078 M62,1239.0078 L88,1239.0078 M75,1258.0078 L62,1273.0078 M75,1258.0078 L88,1273.0078 " fill="#FEFECE" filter="url(#fwppn5w0tgssh)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="121" x="607.5" y="84.5332">RegisterSNSUserUI</text>
+        <ellipse cx="671" cy="54" fill="#FEFECE" filter="url(#fwppn5w0tgssh)" rx="12" ry="12" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <polygon fill="#A80036" points="667,42,673,37,671,42,673,47,667,42" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="121" x="607.5" y="1209.9316">RegisterSNSUserUI</text>
+        <ellipse cx="671" cy="1229.0078" fill="#FEFECE" filter="url(#fwppn5w0tgssh)" rx="12" ry="12" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <polygon fill="#A80036" points="667,1217.0078,673,1212.0078,671,1217.0078,673,1222.0078,667,1217.0078" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="171" x="1013.5" y="84.5332">RegisterSNSUserController</text>
+        <ellipse cx="1102" cy="54" fill="#FEFECE" filter="url(#fwppn5w0tgssh)" rx="12" ry="12" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <polygon fill="#A80036" points="1098,42,1104,37,1102,42,1104,47,1098,42" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="171" x="1013.5" y="1209.9316">RegisterSNSUserController</text>
+        <ellipse cx="1102" cy="1229.0078" fill="#FEFECE" filter="url(#fwppn5w0tgssh)" rx="12" ry="12" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <polygon fill="#A80036" points="1098,1217.0078,1104,1212.0078,1102,1217.0078,1104,1222.0078,1098,1217.0078" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="39" x="1224.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="1231.5" y="72.5332">App</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="39" x="1224.5" y="1195.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="1231.5" y="1216.9316">App</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="75" x="1305.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="1312.5" y="72.5332">app : App</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="75" x="1305.5" y="1195.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="1312.5" y="1216.9316">app : App</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="153" x="1394.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1401.5" y="72.5332">session : UserSession</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="153" x="1394.5" y="1195.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1401.5" y="1216.9316">session : UserSession</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="143" x="1561.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="129" x="1568.5" y="72.5332">company : Company</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="143" x="1561.5" y="1195.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="129" x="1568.5" y="1216.9316">company : Company</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="1718.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="117" x="1725.5" y="72.5332">auth : AuthFacade</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="1718.5" y="1195.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="117" x="1725.5" y="1216.9316">auth : AuthFacade</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="153" x="1863.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1870.5" y="72.5332">company : Company()</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="153" x="1863.5" y="1195.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1870.5" y="1216.9316">company : Company()</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="2030.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="115" x="2037.5" y="72.5332">platform : Platform</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="2030.5" y="1195.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="115" x="2037.5" y="1216.9316">platform : Platform</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="2173.5" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="2180.5" y="72.5332">RegisterSNSUser</text>
+        <rect fill="#FEFECE" filter="url(#fwppn5w0tgssh)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="2173.5" y="1195.3984"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="2180.5" y="1216.9316">RegisterSNSUser</text>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="267.1094" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="666" y="119.6094"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="461.5156" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="666" y="417.0703"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="255.1094" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="666" y="908.9375"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="181.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1097" y="149.9609"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="393.8125" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1097" y="447.4219"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="194.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1097" y="939.2891"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1241" y="180.3125"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1340" y="240.6641"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1340" y="477.7734"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1468" y="301.0156"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1630" y="538.125"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1781" y="598.4766"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1781" y="1103.6953"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1937" y="684.1797"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1937" y="1043.3438"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2092" y="744.5313"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="36.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2232" y="804.8828"/>
+        <rect fill="#FFFFFF" filter="url(#fwppn5w0tgssh)" height="164.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="2232" y="969.6406"/>
+        <polygon fill="#A80036" points="654,115.6094,664,119.6094,654,123.6094,658,119.6094" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="660" y1="119.6094" y2="119.6094"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="82" y="115.1045">1</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="124" x="93" y="115.1045">register new sns user</text>
+        <polygon fill="#A80036" points="1085,145.9609,1095,149.9609,1085,153.9609,1089,149.9609" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="676" x2="1091" y1="149.9609" y2="149.9609"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="683" y="145.4561">2</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="694" y="145.4561">create</text>
+        <polygon fill="#A80036" points="1229,176.3125,1239,180.3125,1229,184.3125,1233,180.3125" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="1235" y1="180.3125" y2="180.3125"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1114" y="175.8076">3</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="1125" y="175.8076">app=getInstance()</text>
+        <polygon fill="#A80036" points="1328,236.6641,1338,240.6641,1328,244.6641,1332,240.6641" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="1334" y1="240.6641" y2="240.6641"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1114" y="236.1592">4</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="203" x="1125" y="236.1592">session = getCurrentUserSession()</text>
+        <polygon fill="#A80036" points="1456,297.0156,1466,301.0156,1456,305.0156,1460,301.0156" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="1462" y1="301.0156" y2="301.0156"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1114" y="296.5107">5</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="315" x="1125" y="296.5107">answer = isLoggedInWithRole(ROLE_RECEPTIONIST)</text>
+        <rect fill="none" height="833.0313" style="stroke: #000000; stroke-width: 2.0;" width="2430" x="13" y="346.3672"/>
+        <polygon fill="#EEEEEE" points="13,346.3672,74,346.3672,74,354.3672,64,364.3672,13,364.3672,13,346.3672" style="stroke: #000000; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16" x="28" y="360.8623">alt</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="89" y="359.7861">[answer = true]</text>
+        <polygon fill="#A80036" points="86,382.7188,76,386.7188,86,390.7188,82,386.7188" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="670" y1="386.7188" y2="386.7188"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="92" y="382.2139">6</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="556" x="103" y="382.2139">Asks for the user's information. (Email, Name, Address, Phone number and Health user number)</text>
+        <polygon fill="#A80036" points="654,413.0703,664,417.0703,654,421.0703,658,417.0703" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="660" y1="417.0703" y2="417.0703"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="82" y="412.5654">7</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="93" y="412.5654">inserts info</text>
+        <polygon fill="#A80036" points="1085,443.4219,1095,447.4219,1085,451.4219,1089,447.4219" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="676" x2="1091" y1="447.4219" y2="447.4219"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="683" y="442.917">8</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="391" x="694" y="442.917">newSnsUser(email, name,address,phonenumber.healthusernumber)</text>
+        <polygon fill="#A80036" points="1328,473.7734,1338,477.7734,1328,481.7734,1332,477.7734" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="1334" y1="477.7734" y2="477.7734"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1114" y="473.2686">9</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="1125" y="473.2686">getCompany()</text>
+        <polygon fill="#A80036" points="1618,534.125,1628,538.125,1618,542.125,1622,538.125" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="1624" y1="538.125" y2="538.125"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1114" y="533.6201">10</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="1132" y="533.6201">getAuthFacade()</text>
+        <polygon fill="#A80036" points="1769,594.4766,1779,598.4766,1769,602.4766,1773,598.4766" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="1775" y1="598.4766" y2="598.4766"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1114" y="593.9717">11</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="158" x="1132" y="593.9717">answer = existsUser(email)</text>
+        <rect fill="none" height="528.5703" style="stroke: #000000; stroke-width: 2.0;" width="2410" x="23" y="643.8281"/>
+        <polygon fill="#EEEEEE" points="23,643.8281,84,643.8281,84,651.8281,74,661.8281,23,661.8281,23,643.8281" style="stroke: #000000; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16" x="38" y="658.3232">alt</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="89" x="99" y="657.2471">[answer = false]</text>
+        <polygon fill="#A80036" points="1925,680.1797,1935,684.1797,1925,688.1797,1929,684.1797" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="1931" y1="684.1797" y2="684.1797"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1114" y="679.6748">12</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="1132" y="679.6748">getPlaform()</text>
+        <polygon fill="#A80036" points="2080,740.5313,2090,744.5313,2080,748.5313,2084,744.5313" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="2086" y1="744.5313" y2="744.5313"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1114" y="740.0264">13</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="1132" y="740.0264">getRegisterSNSUser()</text>
+        <polygon fill="#A80036" points="2220,800.8828,2230,804.8828,2220,808.8828,2224,804.8828" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="2226" y1="804.8828" y2="804.8828"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1114" y="800.3779">14</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="405" x="1132" y="800.3779">user = newUser(email,name,address,phonenumber,healthusernumber)</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2242" x2="2284" y1="840.5859" y2="840.5859"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2284" x2="2284" y1="840.5859" y2="853.5859"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2237" x2="2284" y1="853.5859" y2="853.5859"/>
+        <polygon fill="#A80036" points="2247,849.5859,2237,853.5859,2247,857.5859,2243,853.5859" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2249" y="835.7295">15</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="2267" y="835.7295">validateUser(user)</text>
+        <polygon fill="#A80036" points="86,874.5859,76,878.5859,86,882.5859,82,878.5859" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="670" y1="878.5859" y2="878.5859"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="92" y="874.0811">16</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="273" x="110" y="874.0811">Shows the new user's data and asks to confirm</text>
+        <polygon fill="#A80036" points="654,904.9375,664,908.9375,654,912.9375,658,908.9375" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="75" x2="660" y1="908.9375" y2="908.9375"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="82" y="904.4326">17</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="100" y="904.4326">confirms</text>
+        <polygon fill="#A80036" points="1085,935.2891,1095,939.2891,1085,943.2891,1089,939.2891" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="676" x2="1091" y1="939.2891" y2="939.2891"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="683" y="934.7842">18</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="56" x="701" y="934.7842">addUser()</text>
+        <polygon fill="#A80036" points="2220,965.6406,2230,969.6406,2220,973.6406,2224,969.6406" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1107" x2="2226" y1="969.6406" y2="969.6406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1114" y="965.1357">19</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="138" x="1132" y="965.1357">addUser(user,company)</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2242" x2="2284" y1="1000.3438" y2="1000.3438"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2284" x2="2284" y1="1000.3438" y2="1013.3438"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2243" x2="2284" y1="1013.3438" y2="1013.3438"/>
+        <polygon fill="#A80036" points="2253,1009.3438,2243,1013.3438,2253,1017.3438,2249,1013.3438" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2249" y="995.4873">20</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="154" x="2267" y="995.4873">pwd = generatePassword()</text>
+        <polygon fill="#A80036" points="1958,1039.3438,1948,1043.3438,1958,1047.3438,1954,1043.3438" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1952" x2="2231" y1="1043.3438" y2="1043.3438"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1964" y="1038.8389">21</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="137" x="1982" y="1038.8389">auth = getAuthFacade()</text>
+        <polygon fill="#A80036" points="1802,1099.6953,1792,1103.6953,1802,1107.6953,1798,1103.6953" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1796" x2="2231" y1="1103.6953" y2="1103.6953"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1808" y="1099.1904">22</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="250" x="1826" y="1099.1904">addUserWithRole(user,ROLE_SNS_USER)</text>
+        <polygon fill="#A80036" points="86,1160.0469,76,1164.0469,86,1168.0469,82,1164.0469" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="80" x2="670" y1="1164.0469" y2="1164.0469"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="92" y="1159.542">23</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="51" x="110" y="1159.542">Success</text>
+        <!--
+@startuml
+autonumber
+actor "Receptionist" as RECEP
+control RegisterSNSUserUI as UI
+control RegisterSNSUserController as Controller
+
+
+RECEP -> UI: register new sns user
+activate UI
+UI-> Controller : create
+activate Controller
+Controller -> App: app=getInstance()
+activate App
+deactivate App
+Controller -> "app : App": session = getCurrentUserSession()
+activate "app : App"
+deactivate "app : App"
+Controller -> "session : UserSession": answer = isLoggedInWithRole(ROLE_RECEPTIONIST)
+activate "session : UserSession"
+deactivate "session : UserSession"
+deactivate Controller
+
+alt answer = true
+UI -> RECEP: Asks for the user's information. (Email, Name, Address, Phone number and Health user number)
+deactivate UI
+
+RECEP->UI: inserts info
+activate UI
+UI -> Controller: newSnsUser(email, name,address,phonenumber.healthusernumber)
+activate Controller
+Controller -> "app : App" : getCompany()
+activate "app : App"
+deactivate "app : App"
+Controller -> "company : Company": getAuthFacade()
+activate "company : Company"
+deactivate "company : Company"
+Controller -> "auth : AuthFacade": answer = existsUser(email)
+activate "auth : AuthFacade"
+deactivate "auth : AuthFacade"
+alt answer = false
+Controller -> "company : Company()" : getPlaform()
+activate "company : Company()"
+deactivate "company : Company()"
+Controller -> "platform : Platform" : getRegisterSNSUser()
+activate "platform : Platform"
+deactivate "platform : Platform"
+Controller -> RegisterSNSUser: user = newUser(email,name,address,phonenumber,healthusernumber)
+activate RegisterSNSUser
+RegisterSNSUser -> RegisterSNSUser: validateUser(user)
+deactivate RegisterSNSUser
+deactivate Controller
+
+UI-> RECEP: Shows the new user's data and asks to confirm
+deactivate UI
+
+RECEP -> UI: confirms
+activate UI
+UI -> Controller: addUser()
+activate Controller
+Controller -> RegisterSNSUser : addUser(user,company)
+activate RegisterSNSUser
+RegisterSNSUser -> RegisterSNSUser: pwd = generatePassword()
+RegisterSNSUser -> "company : Company()": auth = getAuthFacade()
+activate "company : Company()"
+deactivate "company : Company()"
+RegisterSNSUser -> "auth : AuthFacade": addUserWithRole(user,ROLE_SNS_USER)
+activate "auth : AuthFacade"
+deactivate "auth : AuthFacade"
+deactivate RegisterSNSUser
+deactivate Controller
+UI -> RECEP: Success
+deactivate UI
+end
+end
+
+@enduml
+
+PlantUML version 2017.11(Wed Apr 19 17:18:59 BST 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_111-b14
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

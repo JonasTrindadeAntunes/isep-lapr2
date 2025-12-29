@@ -1,0 +1,172 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ScheduleVaccinationController</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.controller.SNSUser</a>
+</div>
+
+<h1>Coverage Summary for Class: ScheduleVaccinationController (app.controller.SNSUser)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ScheduleVaccinationController</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    55,6%
+  </span>
+  <span class="absValue">
+    (5/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    47,6%
+  </span>
+  <span class="absValue">
+    (10/21)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.controller.SNSUser;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.controller.App;
+<i class="no-highlight">4</i>&nbsp;import app.domain.model.*;
+<i class="no-highlight">5</i>&nbsp;import app.domain.model.VaccinationCenter.Slot;
+<i class="no-highlight">6</i>&nbsp;import app.domain.model.VaccinationCenter.VaccinationCenter;
+<i class="no-highlight">7</i>&nbsp;import app.domain.model.Vaccine.VaccineType;
+<i class="no-highlight">8</i>&nbsp;import app.domain.shared.Constants;
+<i class="no-highlight">9</i>&nbsp;import pt.isep.lei.esoft.auth.UserSession;
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;import java.util.Date;
+<i class="no-highlight">12</i>&nbsp;import java.util.List;
+<i class="no-highlight">13</i>&nbsp;
+<i class="no-highlight">14</i>&nbsp;public class ScheduleVaccinationController {
+<i class="no-highlight">15</i>&nbsp;
+<i class="no-highlight">16</i>&nbsp;    private App app;
+<i class="no-highlight">17</i>&nbsp;
+<b class="fc"><i class="no-highlight">18</i>&nbsp;    public ScheduleVaccinationController(){</b>
+<b class="fc"><i class="no-highlight">19</i>&nbsp;        this.app = App.getInstance();</b>
+<i class="no-highlight">20</i>&nbsp;    }
+<i class="no-highlight">21</i>&nbsp;
+<i class="no-highlight">22</i>&nbsp;    public boolean validateUserSession(){
+<b class="fc"><i class="no-highlight">23</i>&nbsp;        UserSession session = this.app.getCurrentUserSession();</b>
+<b class="fc"><i class="no-highlight">24</i>&nbsp;        return session.isLoggedInWithRole(Constants.ROLE_SNS_USER);</b>
+<i class="no-highlight">25</i>&nbsp;    }
+<i class="no-highlight">26</i>&nbsp;
+<i class="no-highlight">27</i>&nbsp;    public List&lt;VaccinationCenter&gt; getVaccinationCenterList(){
+<b class="fc"><i class="no-highlight">28</i>&nbsp;        return this.app.getCompany().getPlatform().getRegisterVaccinationCenter().getListVaccinationCenters();</b>
+<i class="no-highlight">29</i>&nbsp;    }
+<i class="no-highlight">30</i>&nbsp;
+<i class="no-highlight">31</i>&nbsp;
+<i class="no-highlight">32</i>&nbsp;    public List&lt;VaccineType&gt; getAvailableVaccineTypes(Object vaccinationCenter){
+<b class="fc"><i class="no-highlight">33</i>&nbsp;        VaccinationCenter vc = (VaccinationCenter)  vaccinationCenter;</b>
+<b class="fc"><i class="no-highlight">34</i>&nbsp;        return vc.getListVaccineTypes();</b>
+<i class="no-highlight">35</i>&nbsp;    }
+<i class="no-highlight">36</i>&nbsp;
+<i class="no-highlight">37</i>&nbsp;    public List&lt;Slot&gt; getAvailableSlots(Object vaccinationCenter, Object day){
+<b class="fc"><i class="no-highlight">38</i>&nbsp;        VaccinationCenter vc = (VaccinationCenter)  vaccinationCenter;</b>
+<b class="fc"><i class="no-highlight">39</i>&nbsp;        Date d = (Date) day;</b>
+<b class="fc"><i class="no-highlight">40</i>&nbsp;        return vc.getAllAvailableSlotsInVaccinationCenter(d);</b>
+<i class="no-highlight">41</i>&nbsp;    }
+<i class="no-highlight">42</i>&nbsp;
+<i class="no-highlight">43</i>&nbsp;    public VaccineSchedule createVaccineSchedule(Object vaccinationCenter, Object vaccineType, Object date, Object slot){
+<b class="nc"><i class="no-highlight">44</i>&nbsp;        VaccinationCenter vc = (VaccinationCenter)  vaccinationCenter;</b>
+<b class="nc"><i class="no-highlight">45</i>&nbsp;        UserSession session = this.app.getCurrentUserSession();</b>
+<b class="nc"><i class="no-highlight">46</i>&nbsp;        SNSUser user = this.app.getCompany().getPlatform().getRegisterSNSUser().getSNSUserByEmail(session.getUserId().getEmail());</b>
+<b class="nc"><i class="no-highlight">47</i>&nbsp;        return vc.createVaccineSchedule(user,(VaccineType) vaccineType,(Date) date,(Slot) slot);</b>
+<i class="no-highlight">48</i>&nbsp;    }
+<i class="no-highlight">49</i>&nbsp;
+<i class="no-highlight">50</i>&nbsp;    public boolean scheduleVaccine(Object vaccinationCenter, Object vaccineSchedule){
+<b class="nc"><i class="no-highlight">51</i>&nbsp;        VaccinationCenter vc = (VaccinationCenter)  vaccinationCenter;</b>
+<b class="nc"><i class="no-highlight">52</i>&nbsp;        VaccineSchedule vs = (VaccineSchedule) vaccineSchedule;</b>
+<b class="nc"><i class="no-highlight">53</i>&nbsp;        return vc.scheduleVaccine(vs);</b>
+<i class="no-highlight">54</i>&nbsp;    }
+<i class="no-highlight">55</i>&nbsp;
+<i class="no-highlight">56</i>&nbsp;    public boolean receiveSMSNotification(Object vaccinationCenter, Object vaccineSchedule){
+<b class="nc"><i class="no-highlight">57</i>&nbsp;        SMSNotifier sms = this.app.getCompany().getPlatform().getSmsNotifier();</b>
+<b class="nc"><i class="no-highlight">58</i>&nbsp;        return sms.addVaccineSchedule((VaccinationCenter) vaccinationCenter, (VaccineSchedule) vaccineSchedule);</b>
+<i class="no-highlight">59</i>&nbsp;    }
+<i class="no-highlight">60</i>&nbsp;
+<i class="no-highlight">61</i>&nbsp;
+<i class="no-highlight">62</i>&nbsp;    public boolean emailNotifier(Object vaccinationCenter, Object vaccineSchedule) {
+<b class="nc"><i class="no-highlight">63</i>&nbsp;        EmailNotifier emailNotifier = this.app.getCompany().getPlatform().getEmailNotifier();</b>
+<b class="nc"><i class="no-highlight">64</i>&nbsp;        return emailNotifier.addVaccineSchedule((VaccinationCenter) vaccinationCenter, (VaccineSchedule) vaccineSchedule);</b>
+<i class="no-highlight">65</i>&nbsp;
+<i class="no-highlight">66</i>&nbsp;    }
+<i class="no-highlight">67</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

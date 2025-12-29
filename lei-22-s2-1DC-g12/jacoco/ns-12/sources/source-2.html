@@ -1,0 +1,170 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ExportVaccinationStatisticsUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.ui.console.CenterCoordinator</a>
+</div>
+
+<h1>Coverage Summary for Class: ExportVaccinationStatisticsUI (app.ui.console.CenterCoordinator)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ExportVaccinationStatisticsUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/24)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.ui.console.CenterCoordinator;
+<i class="no-highlight">2</i>&nbsp;import app.controller.CenterCoordinator.ExportVaccinationStatisticsController;
+<i class="no-highlight">3</i>&nbsp;import app.domain.shared.MessageBundle;
+<i class="no-highlight">4</i>&nbsp;import app.ui.console.utils.Utils;
+<i class="no-highlight">5</i>&nbsp;import java.util.Date;
+<i class="no-highlight">6</i>&nbsp;
+<i class="no-highlight">7</i>&nbsp;
+<i class="no-highlight">8</i>&nbsp;public class ExportVaccinationStatisticsUI implements Runnable{
+<i class="no-highlight">9</i>&nbsp;
+<i class="no-highlight">10</i>&nbsp;    private ExportVaccinationStatisticsController m_controller;
+<i class="no-highlight">11</i>&nbsp;
+<b class="nc"><i class="no-highlight">12</i>&nbsp;    public ExportVaccinationStatisticsUI(){</b>
+<b class="nc"><i class="no-highlight">13</i>&nbsp;        m_controller = new ExportVaccinationStatisticsController();</b>
+<i class="no-highlight">14</i>&nbsp;    }
+<i class="no-highlight">15</i>&nbsp;
+<i class="no-highlight">16</i>&nbsp;    public void run() {
+<i class="no-highlight">17</i>&nbsp;
+<b class="nc"><i class="no-highlight">18</i>&nbsp;        System.out.println(&quot;Export Vaccination Statistics&quot;);</b>
+<i class="no-highlight">19</i>&nbsp;
+<b class="nc"><i class="no-highlight">20</i>&nbsp;        if (!m_controller.checkLogin()) {</b>
+<b class="nc"><i class="no-highlight">21</i>&nbsp;            System.out.println(MessageBundle.getString(&quot;unauthorizeduser&quot;));</b>
+<i class="no-highlight">22</i>&nbsp;            return;
+<i class="no-highlight">23</i>&nbsp;        }
+<i class="no-highlight">24</i>&nbsp;
+<b class="nc"><i class="no-highlight">25</i>&nbsp;        if(m_controller.getVaccinationCenter())</b>
+<i class="no-highlight">26</i>&nbsp;        {
+<i class="no-highlight">27</i>&nbsp;
+<b class="nc"><i class="no-highlight">28</i>&nbsp;            Object beginDate = Utils.readDateFromConsole(&quot;Specify the beginning date to do the vaccination statistics&quot;);</b>
+<b class="nc"><i class="no-highlight">29</i>&nbsp;            Object endDate = Utils.readDateFromConsole(&quot;Specify the end date to do the vaccination statistics&quot;);</b>
+<i class="no-highlight">30</i>&nbsp;
+<b class="nc"><i class="no-highlight">31</i>&nbsp;           if(m_controller.addFullyVaccinatedUsers((Date) beginDate,(Date) endDate))</b>
+<i class="no-highlight">32</i>&nbsp;           {
+<b class="nc"><i class="no-highlight">33</i>&nbsp;               for (String s : m_controller.getData())</b>
+<b class="nc"><i class="no-highlight">34</i>&nbsp;                   System.out.println(s);</b>
+<i class="no-highlight">35</i>&nbsp;
+<b class="nc"><i class="no-highlight">36</i>&nbsp;               if (Utils.confirm(MessageBundle.getString(&quot;confirmdata&quot;) + &quot; (S/N)&quot;)) {</b>
+<i class="no-highlight">37</i>&nbsp;
+<b class="nc"><i class="no-highlight">38</i>&nbsp;                   String fileName = Utils.readLineFromConsole(&quot;Introduce the file name(ex:VaccinationStatistics.csv):&quot;);</b>
+<b class="nc"><i class="no-highlight">39</i>&nbsp;                   boolean success = m_controller.exportVaccinationStatistics(fileName);</b>
+<i class="no-highlight">40</i>&nbsp;
+<b class="nc"><i class="no-highlight">41</i>&nbsp;                   if (success) {</b>
+<b class="nc"><i class="no-highlight">42</i>&nbsp;                       System.out.println(MessageBundle.getString(&quot;fileexportedto&quot;) + fileName);</b>
+<b class="nc"><i class="no-highlight">43</i>&nbsp;                       System.out.println(MessageBundle.getString(&quot;operationsucessful&quot;));</b>
+<i class="no-highlight">44</i>&nbsp;                   } else {
+<b class="nc"><i class="no-highlight">45</i>&nbsp;                       System.out.println(MessageBundle.getString(&quot;errorexporting&quot;));</b>
+<i class="no-highlight">46</i>&nbsp;                   }
+<b class="nc"><i class="no-highlight">47</i>&nbsp;               } else</b>
+<b class="nc"><i class="no-highlight">48</i>&nbsp;                   run();</b>
+<i class="no-highlight">49</i>&nbsp;           }else
+<b class="nc"><i class="no-highlight">50</i>&nbsp;               run();</b>
+<i class="no-highlight">51</i>&nbsp;
+<i class="no-highlight">52</i>&nbsp;
+<b class="nc"><i class="no-highlight">53</i>&nbsp;        }else</b>
+<i class="no-highlight">54</i>&nbsp;        {
+<b class="nc"><i class="no-highlight">55</i>&nbsp;            System.out.println(&quot;null vaccination center&quot;);</b>
+<b class="nc"><i class="no-highlight">56</i>&nbsp;            run();</b>
+<i class="no-highlight">57</i>&nbsp;        }
+<i class="no-highlight">58</i>&nbsp;
+<i class="no-highlight">59</i>&nbsp;
+<i class="no-highlight">60</i>&nbsp;
+<i class="no-highlight">61</i>&nbsp;
+<i class="no-highlight">62</i>&nbsp;
+<i class="no-highlight">63</i>&nbsp;
+<i class="no-highlight">64</i>&nbsp;    }
+<i class="no-highlight">65</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

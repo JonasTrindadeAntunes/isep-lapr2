@@ -1,0 +1,53 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+skinparam padding 2
+skinparam ranksep 100
+skinparam classFontSize 18
+
+class RecordDailyTask
+{
+-App m_oApp
+}
+
+class Company{
+-designation
++getPlatform()
++getAuthFacade()
+}
+
+class App{
++getCompany()
++{static} static getInstance()
+-bootstrap()
+}
+
+class Platform{
+-description
+}
+
+class AuthFacade
+
+class RegisterVaccinationCenter{
+-listVaccinationCenters
++getListVaccinationCenters()
+}
+
+class VaccinationCenter{
+-Name
++getName()
++getNumTotalVaccinesDay()
+}
+
+
+RecordDailyTask ..> Company
+RecordDailyTask ..> Platform
+RecordDailyTask ..> App
+Company "1" --> "1" Platform : has >
+Company ..> AuthFacade
+App ..> AuthFacade
+Platform "1" --> "1" RegisterVaccinationCenter : has >
+RegisterVaccinationCenter "1" --> "*" VaccinationCenter : has >
+
+@enduml

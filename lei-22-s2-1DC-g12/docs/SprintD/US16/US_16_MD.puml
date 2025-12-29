@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class CenterCoordinator
+
+
+class Platform
+
+class Company{
+-designation
+}
+
+class VaccinationCenter{
+- openingHours
+- openingMinutes
+- closingHours
+- closingMinutes
+- slotDuration
+}
+
+class Employee
+
+Employee <|-- CenterCoordinator
+Employee "*" -- "1" Platform : registers in >
+CenterCoordinator "1" -- "1" VaccinationCenter : manages >
+Company "1" -- "1" Platform : has >
+Platform "1" -- "*" VaccinationCenter : register in <
+
+
+
+
+
+@enduml

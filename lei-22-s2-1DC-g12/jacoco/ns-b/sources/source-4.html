@@ -1,0 +1,223 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > RecoveryRoom</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.domain.model.VaccinationCenter</a>
+</div>
+
+<h1>Coverage Summary for Class: RecoveryRoom (app.domain.model.VaccinationCenter)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">RecoveryRoom</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (4/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (5/20)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.domain.model.VaccinationCenter;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.controller.App;
+<i class="no-highlight">4</i>&nbsp;import app.domain.model.SMSNotifier;
+<i class="no-highlight">5</i>&nbsp;import app.domain.model.SNSUser;
+<i class="no-highlight">6</i>&nbsp;import java.io.Serializable;
+<i class="no-highlight">7</i>&nbsp;import java.util.*;
+<i class="no-highlight">8</i>&nbsp;
+<i class="no-highlight">9</i>&nbsp;/**
+<i class="no-highlight">10</i>&nbsp; * The type Recovery room.
+<i class="no-highlight">11</i>&nbsp; */
+<i class="no-highlight">12</i>&nbsp;public class RecoveryRoom implements Serializable {
+<i class="no-highlight">13</i>&nbsp;
+<i class="no-highlight">14</i>&nbsp;    private int recoveryPeriod;
+<b class="fc"><i class="no-highlight">15</i>&nbsp;    private static String configName = &quot;Recovery.Time&quot;;</b>
+<i class="no-highlight">16</i>&nbsp;    /**
+<i class="no-highlight">17</i>&nbsp;     * The Map.
+<i class="no-highlight">18</i>&nbsp;     */
+<b class="fc"><i class="no-highlight">19</i>&nbsp;    TreeMap&lt;Date, SNSUser&gt; map = new TreeMap&lt;Date,SNSUser&gt;();</b>
+<i class="no-highlight">20</i>&nbsp;
+<i class="no-highlight">21</i>&nbsp;
+<i class="no-highlight">22</i>&nbsp;    /**
+<i class="no-highlight">23</i>&nbsp;     * Instantiates a new Recovery room.
+<i class="no-highlight">24</i>&nbsp;     *
+<i class="no-highlight">25</i>&nbsp;     */
+<b class="fc"><i class="no-highlight">26</i>&nbsp;    public RecoveryRoom() {</b>
+<i class="no-highlight">27</i>&nbsp;    }
+<i class="no-highlight">28</i>&nbsp;
+<i class="no-highlight">29</i>&nbsp;    /**
+<i class="no-highlight">30</i>&nbsp;     * Gets recovery period.
+<i class="no-highlight">31</i>&nbsp;     *
+<i class="no-highlight">32</i>&nbsp;     * @return the recovery period
+<i class="no-highlight">33</i>&nbsp;     */
+<i class="no-highlight">34</i>&nbsp;    public int getRecoveryPeriod() {
+<b class="nc"><i class="no-highlight">35</i>&nbsp;        return recoveryPeriod;</b>
+<i class="no-highlight">36</i>&nbsp;    }
+<i class="no-highlight">37</i>&nbsp;
+<i class="no-highlight">38</i>&nbsp;    /**
+<i class="no-highlight">39</i>&nbsp;     * Sets recovery period.
+<i class="no-highlight">40</i>&nbsp;     *
+<i class="no-highlight">41</i>&nbsp;     * @param recoveryPeriod the recovery period
+<i class="no-highlight">42</i>&nbsp;     */
+<i class="no-highlight">43</i>&nbsp;    public void setRecoveryPeriod(int recoveryPeriod) {
+<b class="nc"><i class="no-highlight">44</i>&nbsp;        this.recoveryPeriod = recoveryPeriod;</b>
+<i class="no-highlight">45</i>&nbsp;    }
+<i class="no-highlight">46</i>&nbsp;
+<i class="no-highlight">47</i>&nbsp;
+<i class="no-highlight">48</i>&nbsp;    /**
+<i class="no-highlight">49</i>&nbsp;     * when the user takes the vaccine we register that date that he took the vaccine as &quot;admissionInRoom&quot;
+<i class="no-highlight">50</i>&nbsp;     * because that is the date we consider that he was sent to RecoveryRoom
+<i class="no-highlight">51</i>&nbsp;     *
+<i class="no-highlight">52</i>&nbsp;     * @param user            the user
+<i class="no-highlight">53</i>&nbsp;     * @param admissionInRoom the admission in room
+<i class="no-highlight">54</i>&nbsp;     * @return the boolean
+<i class="no-highlight">55</i>&nbsp;     */
+<i class="no-highlight">56</i>&nbsp;    boolean sentSNSUserToRecoveryRoom(SNSUser user, Date admissionInRoom) {
+<b class="fc"><i class="no-highlight">57</i>&nbsp;        return (map.put(admissionInRoom,user) == null);</b>
+<i class="no-highlight">58</i>&nbsp;    }
+<i class="no-highlight">59</i>&nbsp;
+<i class="no-highlight">60</i>&nbsp;
+<i class="no-highlight">61</i>&nbsp;    //List&lt;SNSUser&gt; getUsersByArrivalDate() {return new ArrayList&lt;&gt;(map.values());}
+<i class="no-highlight">62</i>&nbsp;
+<i class="no-highlight">63</i>&nbsp;
+<i class="no-highlight">64</i>&nbsp;    /**
+<i class="no-highlight">65</i>&nbsp;     * If returns null it means the user already left the room
+<i class="no-highlight">66</i>&nbsp;     *
+<i class="no-highlight">67</i>&nbsp;     * @param snsUserNumber the sns user number
+<i class="no-highlight">68</i>&nbsp;     * @return the sns user
+<i class="no-highlight">69</i>&nbsp;     */
+<i class="no-highlight">70</i>&nbsp;    public SNSUser getSNSUser(String snsUserNumber)
+<i class="no-highlight">71</i>&nbsp;    {
+<b class="nc"><i class="no-highlight">72</i>&nbsp;        List&lt;SNSUser&gt; listSNSUsers = getSNSUserStillInsideRecoveryRoom();</b>
+<i class="no-highlight">73</i>&nbsp;
+<b class="nc"><i class="no-highlight">74</i>&nbsp;        for(SNSUser user : listSNSUsers)</b>
+<i class="no-highlight">75</i>&nbsp;        {
+<b class="nc"><i class="no-highlight">76</i>&nbsp;            if(user.getSnsUserNumber().equals(snsUserNumber))</b>
+<b class="nc"><i class="no-highlight">77</i>&nbsp;                return user;</b>
+<b class="nc"><i class="no-highlight">78</i>&nbsp;        }</b>
+<i class="no-highlight">79</i>&nbsp;
+<b class="nc"><i class="no-highlight">80</i>&nbsp;        return null;</b>
+<i class="no-highlight">81</i>&nbsp;    }
+<i class="no-highlight">82</i>&nbsp;
+<i class="no-highlight">83</i>&nbsp;
+<i class="no-highlight">84</i>&nbsp;    /**
+<i class="no-highlight">85</i>&nbsp;     * The idea here is to get only the SNSUser that dont exceeded the recovery period
+<i class="no-highlight">86</i>&nbsp;     *  we use the date of admission inside recovery room and the current date
+<i class="no-highlight">87</i>&nbsp;     *  and if the difference between those two are bigger then
+<i class="no-highlight">88</i>&nbsp;     *  the recovery period it means the user already left the room
+<i class="no-highlight">89</i>&nbsp;     *
+<i class="no-highlight">90</i>&nbsp;     * @return the sns user still inside recovery room
+<i class="no-highlight">91</i>&nbsp;     */
+<i class="no-highlight">92</i>&nbsp;    //
+<i class="no-highlight">93</i>&nbsp;    public List&lt;SNSUser&gt; getSNSUserStillInsideRecoveryRoom()
+<i class="no-highlight">94</i>&nbsp;    {
+<i class="no-highlight">95</i>&nbsp;        // Get entry set of the TreeMap using entrySet
+<b class="nc"><i class="no-highlight">96</i>&nbsp;        Set&lt;Map.Entry&lt;Date, SNSUser&gt; &gt; entrySet = map.entrySet();</b>
+<i class="no-highlight">97</i>&nbsp;
+<i class="no-highlight">98</i>&nbsp;        // Convert entrySet to Array using toArray method
+<b class="nc"><i class="no-highlight">99</i>&nbsp;        Map.Entry&lt;Date, SNSUser&gt;[] entryArray = entrySet.toArray(new Map.Entry[entrySet.size()]);</b>
+<i class="no-highlight">100</i>&nbsp;
+<i class="no-highlight">101</i>&nbsp;
+<b class="nc"><i class="no-highlight">102</i>&nbsp;        List&lt;SNSUser&gt; listSNSUsers = new ArrayList&lt;&gt;();</b>
+<i class="no-highlight">103</i>&nbsp;
+<b class="nc"><i class="no-highlight">104</i>&nbsp;        for(int i = 0; i &lt; entrySet.size() ; i++)</b>
+<i class="no-highlight">105</i>&nbsp;        {
+<b class="nc"><i class="no-highlight">106</i>&nbsp;            if(System.currentTimeMillis() - entryArray[i].getKey().getTime() &lt; this.recoveryPeriod  )</b>
+<i class="no-highlight">107</i>&nbsp;            {
+<b class="nc"><i class="no-highlight">108</i>&nbsp;                listSNSUsers.add(entryArray[i].getValue());</b>
+<i class="no-highlight">109</i>&nbsp;            }
+<i class="no-highlight">110</i>&nbsp;        }
+<i class="no-highlight">111</i>&nbsp;
+<b class="nc"><i class="no-highlight">112</i>&nbsp;        return listSNSUsers;</b>
+<i class="no-highlight">113</i>&nbsp;    }
+<i class="no-highlight">114</i>&nbsp;
+<i class="no-highlight">115</i>&nbsp;    public void setRecoveryTime(int recoveryTime) {
+<b class="fc"><i class="no-highlight">116</i>&nbsp;        this.recoveryPeriod = recoveryTime;</b>
+<i class="no-highlight">117</i>&nbsp;    }
+<i class="no-highlight">118</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

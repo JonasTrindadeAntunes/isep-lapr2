@@ -1,0 +1,259 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Slot</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">app.domain.model.VaccinationCenter</a>
+</div>
+
+<h1>Coverage Summary for Class: Slot (app.domain.model.VaccinationCenter)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Slot</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (6/12)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    69%
+  </span>
+  <span class="absValue">
+    (29/42)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package app.domain.model.VaccinationCenter;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import app.domain.model.SNSUser;
+<i class="no-highlight">4</i>&nbsp;import app.domain.model.VaccineSchedule;
+<i class="no-highlight">5</i>&nbsp;import app.domain.model.Vaccine.VaccineType;
+<i class="no-highlight">6</i>&nbsp;import app.domain.shared.MessageBundle;
+<i class="no-highlight">7</i>&nbsp;
+<i class="no-highlight">8</i>&nbsp;import java.io.Serializable;
+<i class="no-highlight">9</i>&nbsp;import java.util.*;
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;/**
+<i class="no-highlight">12</i>&nbsp; * The type Slot.
+<i class="no-highlight">13</i>&nbsp; */
+<i class="no-highlight">14</i>&nbsp;public class Slot implements Serializable, Comparable&lt;Slot&gt;{
+<i class="no-highlight">15</i>&nbsp;
+<i class="no-highlight">16</i>&nbsp;
+<i class="no-highlight">17</i>&nbsp;    private Date hour;
+<i class="no-highlight">18</i>&nbsp;
+<i class="no-highlight">19</i>&nbsp;    private List&lt;VaccineSchedule&gt; scheduledVaccinations;
+<i class="no-highlight">20</i>&nbsp;
+<i class="no-highlight">21</i>&nbsp;
+<i class="no-highlight">22</i>&nbsp;    /**
+<i class="no-highlight">23</i>&nbsp;     * Instantiates a new Slot.
+<i class="no-highlight">24</i>&nbsp;     *
+<i class="no-highlight">25</i>&nbsp;     * @param hour the hour
+<i class="no-highlight">26</i>&nbsp;     */
+<b class="fc"><i class="no-highlight">27</i>&nbsp;    public Slot(Date hour){</b>
+<b class="fc"><i class="no-highlight">28</i>&nbsp;        this.hour = hour;</b>
+<b class="fc"><i class="no-highlight">29</i>&nbsp;        this.scheduledVaccinations = new ArrayList&lt;&gt;();</b>
+<i class="no-highlight">30</i>&nbsp;    }
+<i class="no-highlight">31</i>&nbsp;
+<i class="no-highlight">32</i>&nbsp;    /**
+<i class="no-highlight">33</i>&nbsp;     * Checks if the slots&#39; date is before the current system time
+<i class="no-highlight">34</i>&nbsp;     * @return true if slot&#39;s date is before the current system time
+<i class="no-highlight">35</i>&nbsp;     */
+<i class="no-highlight">36</i>&nbsp;    public boolean beforeCurrentDate(){
+<b class="nc"><i class="no-highlight">37</i>&nbsp;        Calendar cal = Calendar.getInstance();</b>
+<b class="nc"><i class="no-highlight">38</i>&nbsp;        return this.hour.before(cal.getTime());</b>
+<i class="no-highlight">39</i>&nbsp;    }
+<i class="no-highlight">40</i>&nbsp;
+<i class="no-highlight">41</i>&nbsp;    /**
+<i class="no-highlight">42</i>&nbsp;     * Get current number of vaccinations int.
+<i class="no-highlight">43</i>&nbsp;     *
+<i class="no-highlight">44</i>&nbsp;     * @return the int
+<i class="no-highlight">45</i>&nbsp;     */
+<i class="no-highlight">46</i>&nbsp;    public int getCurrentNumberOfVaccinations(){
+<b class="fc"><i class="no-highlight">47</i>&nbsp;        return scheduledVaccinations.size();</b>
+<i class="no-highlight">48</i>&nbsp;    }
+<i class="no-highlight">49</i>&nbsp;
+<i class="no-highlight">50</i>&nbsp;    /**
+<i class="no-highlight">51</i>&nbsp;     * Get scheduled vaccinations list.
+<i class="no-highlight">52</i>&nbsp;     *
+<i class="no-highlight">53</i>&nbsp;     * @return the list
+<i class="no-highlight">54</i>&nbsp;     */
+<i class="no-highlight">55</i>&nbsp;    public List&lt;VaccineSchedule&gt; getScheduledVaccinations(){
+<b class="nc"><i class="no-highlight">56</i>&nbsp;        return this.scheduledVaccinations;</b>
+<i class="no-highlight">57</i>&nbsp;    }
+<i class="no-highlight">58</i>&nbsp;
+<i class="no-highlight">59</i>&nbsp;    @Override
+<i class="no-highlight">60</i>&nbsp;    public int compareTo(Slot o) {
+<b class="fc"><i class="no-highlight">61</i>&nbsp;        Calendar hour1 = Calendar.getInstance();</b>
+<b class="fc"><i class="no-highlight">62</i>&nbsp;        hour1.setTime(this.hour);</b>
+<b class="fc"><i class="no-highlight">63</i>&nbsp;        Calendar hour2 = Calendar.getInstance();</b>
+<b class="fc"><i class="no-highlight">64</i>&nbsp;        hour2.setTime(o.hour);</b>
+<b class="fc"><i class="no-highlight">65</i>&nbsp;        int diff = Integer.compare(hour1.get(Calendar.HOUR_OF_DAY),hour2.get(Calendar.HOUR_OF_DAY));</b>
+<i class="no-highlight">66</i>&nbsp;
+<b class="fc"><i class="no-highlight">67</i>&nbsp;        if(diff != 0)</b>
+<b class="fc"><i class="no-highlight">68</i>&nbsp;            return diff;</b>
+<i class="no-highlight">69</i>&nbsp;
+<b class="fc"><i class="no-highlight">70</i>&nbsp;        return Integer.compare(hour1.get(Calendar.MINUTE),hour2.get(Calendar.MINUTE));</b>
+<i class="no-highlight">71</i>&nbsp;    }
+<i class="no-highlight">72</i>&nbsp;
+<i class="no-highlight">73</i>&nbsp;    /**
+<i class="no-highlight">74</i>&nbsp;     * Returns the string of the current object or instance
+<i class="no-highlight">75</i>&nbsp;     */
+<i class="no-highlight">76</i>&nbsp;    @Override
+<i class="no-highlight">77</i>&nbsp;    public String toString() {
+<b class="nc"><i class="no-highlight">78</i>&nbsp;        return &quot;Slot{&quot; +</b>
+<b class="nc"><i class="no-highlight">79</i>&nbsp;                MessageBundle.getString(&quot;hour&quot;) + &quot;=&quot; + hour +</b>
+<b class="nc"><i class="no-highlight">80</i>&nbsp;                MessageBundle.getString(&quot;scheduledvaccines&quot;) + &quot;:&quot; + this.getCurrentNumberOfVaccinations() +</b>
+<i class="no-highlight">81</i>&nbsp;                &#39;}&#39;;
+<i class="no-highlight">82</i>&nbsp;    }
+<i class="no-highlight">83</i>&nbsp;
+<i class="no-highlight">84</i>&nbsp;    /**
+<i class="no-highlight">85</i>&nbsp;     * Scheduled vaccination boolean.
+<i class="no-highlight">86</i>&nbsp;     *
+<i class="no-highlight">87</i>&nbsp;     * @param day         the day
+<i class="no-highlight">88</i>&nbsp;     * @param vaccineType the vaccine type
+<i class="no-highlight">89</i>&nbsp;     * @param snsUser     the sns user
+<i class="no-highlight">90</i>&nbsp;     * @return the boolean
+<i class="no-highlight">91</i>&nbsp;     */
+<i class="no-highlight">92</i>&nbsp;    public boolean scheduledVaccination(Date day, VaccineType vaccineType, SNSUser snsUser) {
+<b class="fc"><i class="no-highlight">93</i>&nbsp;        VaccineSchedule vaccineSchedule = createVaccineSchedule(day,vaccineType,snsUser);</b>
+<b class="fc"><i class="no-highlight">94</i>&nbsp;        snsUser.addVaccineSchedule(vaccineSchedule);</b>
+<b class="fc"><i class="no-highlight">95</i>&nbsp;        return scheduledVaccinations.add(vaccineSchedule);</b>
+<i class="no-highlight">96</i>&nbsp;    }
+<i class="no-highlight">97</i>&nbsp;
+<i class="no-highlight">98</i>&nbsp;    /**
+<i class="no-highlight">99</i>&nbsp;     * Create vaccine schedule.
+<i class="no-highlight">100</i>&nbsp;     *
+<i class="no-highlight">101</i>&nbsp;     * @param day         the day
+<i class="no-highlight">102</i>&nbsp;     * @param vaccineType the vaccine type
+<i class="no-highlight">103</i>&nbsp;     * @param snsUser     the sns user
+<i class="no-highlight">104</i>&nbsp;     * @return the vaccine schedule
+<i class="no-highlight">105</i>&nbsp;     */
+<i class="no-highlight">106</i>&nbsp;    public VaccineSchedule createVaccineSchedule(Date day,VaccineType vaccineType, SNSUser snsUser) {
+<b class="fc"><i class="no-highlight">107</i>&nbsp;        return new VaccineSchedule(createDate(day),vaccineType,snsUser);</b>
+<i class="no-highlight">108</i>&nbsp;    }
+<i class="no-highlight">109</i>&nbsp;
+<i class="no-highlight">110</i>&nbsp;    /**
+<i class="no-highlight">111</i>&nbsp;     * Creates the vaccination schedule date combining the day information with the slot time.
+<i class="no-highlight">112</i>&nbsp;     * @param date the day for the vaccine schedule
+<i class="no-highlight">113</i>&nbsp;     * @return date and time of the vaccine schedule
+<i class="no-highlight">114</i>&nbsp;     */
+<i class="no-highlight">115</i>&nbsp;    private Date createDate(Date date){
+<b class="fc"><i class="no-highlight">116</i>&nbsp;        Calendar dateTime = Calendar.getInstance();</b>
+<b class="fc"><i class="no-highlight">117</i>&nbsp;        Calendar hour = Calendar.getInstance();</b>
+<b class="fc"><i class="no-highlight">118</i>&nbsp;        hour.setTime(this.hour);</b>
+<b class="fc"><i class="no-highlight">119</i>&nbsp;        Calendar scheduleDay = Calendar.getInstance();</b>
+<b class="fc"><i class="no-highlight">120</i>&nbsp;        scheduleDay.setTime(date);</b>
+<b class="fc"><i class="no-highlight">121</i>&nbsp;        dateTime.set(Calendar.YEAR, scheduleDay.get(Calendar.YEAR));</b>
+<b class="fc"><i class="no-highlight">122</i>&nbsp;        dateTime.set(Calendar.MONTH, scheduleDay.get(Calendar.MONTH));</b>
+<b class="fc"><i class="no-highlight">123</i>&nbsp;        dateTime.set(Calendar.DAY_OF_MONTH, scheduleDay.get(Calendar.DAY_OF_MONTH));</b>
+<b class="fc"><i class="no-highlight">124</i>&nbsp;        dateTime.set(Calendar.HOUR_OF_DAY, hour.get(Calendar.HOUR_OF_DAY));</b>
+<b class="fc"><i class="no-highlight">125</i>&nbsp;        dateTime.set(Calendar.MINUTE, hour.get(Calendar.MINUTE));</b>
+<b class="fc"><i class="no-highlight">126</i>&nbsp;        dateTime.set(Calendar.SECOND,0);</b>
+<b class="fc"><i class="no-highlight">127</i>&nbsp;        dateTime.set(Calendar.MILLISECOND,0);</b>
+<b class="fc"><i class="no-highlight">128</i>&nbsp;        return dateTime.getTime();</b>
+<i class="no-highlight">129</i>&nbsp;    }
+<i class="no-highlight">130</i>&nbsp;
+<i class="no-highlight">131</i>&nbsp;    /**
+<i class="no-highlight">132</i>&nbsp;     * Schedule vaccination.
+<i class="no-highlight">133</i>&nbsp;     *
+<i class="no-highlight">134</i>&nbsp;     * @param vaccineSchedule the vaccine schedule
+<i class="no-highlight">135</i>&nbsp;     * @return the boolean
+<i class="no-highlight">136</i>&nbsp;     */
+<i class="no-highlight">137</i>&nbsp;    public boolean scheduleVaccination(VaccineSchedule vaccineSchedule) {
+<b class="nc"><i class="no-highlight">138</i>&nbsp;        vaccineSchedule.getSnsUser().addVaccineSchedule(vaccineSchedule);</b>
+<b class="nc"><i class="no-highlight">139</i>&nbsp;        return this.scheduledVaccinations.add(vaccineSchedule);</b>
+<i class="no-highlight">140</i>&nbsp;    }
+<i class="no-highlight">141</i>&nbsp;
+<i class="no-highlight">142</i>&nbsp;    @Override
+<i class="no-highlight">143</i>&nbsp;    public boolean equals(Object o) {
+<b class="nc"><i class="no-highlight">144</i>&nbsp;        if (this == o) return true;</b>
+<b class="nc"><i class="no-highlight">145</i>&nbsp;        if (o == null || getClass() != o.getClass()) return false;</b>
+<b class="nc"><i class="no-highlight">146</i>&nbsp;        Slot slot = (Slot) o;</b>
+<b class="nc"><i class="no-highlight">147</i>&nbsp;        return Objects.equals(hour, slot.hour) &amp;&amp; Objects.equals(scheduledVaccinations, slot.scheduledVaccinations);</b>
+<i class="no-highlight">148</i>&nbsp;    }
+<i class="no-highlight">149</i>&nbsp;
+<i class="no-highlight">150</i>&nbsp;    @Override
+<i class="no-highlight">151</i>&nbsp;    public int hashCode() {
+<b class="nc"><i class="no-highlight">152</i>&nbsp;        return Objects.hash(hour, scheduledVaccinations);</b>
+<i class="no-highlight">153</i>&nbsp;    }
+<i class="no-highlight">154</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-06-19 22:26</div>
+</div>
+</body>
+</html>

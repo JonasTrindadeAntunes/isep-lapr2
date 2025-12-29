@@ -1,0 +1,96 @@
+@startuml
+autonumber
+
+actor "Center Coordinator" as CC
+participant "SortDataUI" as UI
+participant "controller\n:SortDataController" as Controller
+participant ":App" as App
+participant "app \n:App" as app
+participant "comp \n:Company" as Company
+participant "plat \n:Platform" as Platform
+participant "session \n:UserSession" as Session
+participant ":ImportPerformanceFromCSV" as IMPFC
+participant ":Algorithms" as ALG
+participant "reg \n:RegisterEmployee" as RegisterEmployee
+participant ":Employee" as Employee
+
+'1
+activate CC
+CC -> UI: starts sorting the data from the legacy system
+activate UI
+
+'2
+UI -> Controller**: controller = new ImportDataController()
+activate Controller
+
+'3
+Controller -> App: app = getInstance()
+activate App
+deactivate App
+
+'4
+Controller -> app: comp = getCompany()
+activate app
+deactivate app
+
+'5
+Controller -> Company: plat = getPlatform()
+activate Company
+deactivate Company
+deactivate Controller
+
+'6
+UI -> Controller: checkLogin()
+activate Controller
+
+'7
+Controller -> app: session = getCurrentUserSession()
+activate app
+deactivate app
+
+'8
+Controller -> Session: answer = isLoggedInWithRole(Constants ROLE_CENTER_COORDINATOR)
+activate Session
+deactivate Session
+deactivate Controller
+
+'9
+UI --> CC: asks for preferred data to sort (arrival time or leaving time) and its sorting method (bubblesort or quicksort)
+deactivate UI
+
+loop
+'10
+CC -> UI: chooses the preferred date to sort and sorting method (typeData)
+activate UI
+
+alt  typeData = 1 (arrival time and bubblesort)
+
+'11
+UI -> Controller : sortByArrivalTime()
+activate Controller
+
+'12
+Controller -> Platform: getImportPerformanceFromCSV()
+activate Platform
+deactivate Platform
+
+'13
+Controller -> IMPFC: getPerformanceDataListString()
+activate IMPFC
+deactivate IMPFC
+
+
+'14
+Controller -> ALG: bubbleSortDates(sortElementOfArray,performanceDataListString)
+
+
+activate ALG
+deactivate ALG
+deactivate Controller
+end
+
+'15
+UI --> CC: shows the sorted data, total number of sorted elements and the elapsed time
+deactivate UI
+end
+@enduml
